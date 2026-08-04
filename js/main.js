@@ -79,7 +79,7 @@ function renderHome(){
         '<div class="hero-photo">' +
           '<div class="frame"></div>' +
           '<div class="photo-box">' +
-            '<img src="images/portrait.jpg" alt="Estée Desanctis" onerror="this.style.display=\'none\';document.getElementById(\'photo-fallback\').style.display=\'flex\';">' +
+            '<img src="images/portrait.png" alt="Estée Desanctis" onerror="this.style.display=\'none\';document.getElementById(\'photo-fallback\').style.display=\'flex\';">' +
             '<div class="photo-placeholder" id="photo-fallback" style="display:none;">Ta photo ici<br><small>(ajoute images/portrait.jpg)</small></div>' +
           '</div>' +
         '</div>' +
