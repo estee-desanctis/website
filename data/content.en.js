@@ -10,15 +10,12 @@ window.CONTENT_EN = {
     "work": "My Work",
     "articles": "Articles",
     "testimonials": "Testimonial",
-    "contact": "Contact me",
-    "contactBtn": "Contact me"
+    "contact": "Contact me"
   },
   "hero": {
     "greeting": "Hello",
     "line1": "I'm a",
     "role": "Product Designer",
-    "line2": "& Ecodesigner",
-    "badge": "Estée Desanctis",
     "bio": "I'm Estée, a creative Product Designer. I've been helping businesses to solve their problems with my design skills for 8+ years.",
     "ctaContact": "Contact me",
     "ctaCV": "Download CV",
@@ -41,7 +38,7 @@ window.CONTENT_EN = {
     "kicker": "About",
     "title": "me",
     "intro": [
-      "Senior Product Designer with 8+ years specializing in complex SaaS & B2B products, turning friction-heavy, data-dense experiences into intuitive, high-performing, ethical journeys, with proven consumer-facing range.",
+      "Senior Product Designer with 8+ years specializing in complex SaaS & B2B products, turning friction-heavy, data-dense experiences into intuitive, high-performing, ethical journeys.",
       "I pair measurable business impact with design leverage: AI-augmented workflows, scalable design systems, and research practices that make whole teams faster — not just the screens."
     ],
     "philosophy": {
