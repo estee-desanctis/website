@@ -10,17 +10,14 @@ window.CONTENT_FR = {
     "work": "Mes projets",
     "articles": "Articles",
     "testimonials": "Témoignages",
-    "contact": "Me contacter",
-    "contactBtn": "Contact me"
+    "contact": "Me contacter"
   },
   "hero": {
     "greeting": "Hello",
     "line1": "Je suis",
     "role": "Product Designer",
-    "line2": "& Ecodesigner",
-    "badge": "Estée Desanctis",
     "bio": "Je suis Estée, Senior Product Designer freelance. J'aide les entreprises à résoudre leurs problèmes grâce à mes compétences en design depuis plus de 8 ans.",
-    "ctaContact": "Contact me",
+    "ctaContact": "Me contacter",
     "ctaCV": "Télécharger mon CV",
     "cvFile": "documents/Resume2026_FR_EsteeDesanctis_SrProductDesigner.pdf",
     "follow": "Me suivre sur :"
@@ -41,7 +38,7 @@ window.CONTENT_FR = {
     "kicker": "À propos de",
     "title": "moi",
     "intro": [
-      "Senior Product Designer, 8+ ans d'expérience spécialisée sur les produits SaaS & B2B complexes, à transformer des expériences frictionnelles et riches en données en parcours intuitifs, performants et éthiques, avec une vraie polyvalence sur le grand public.",
+      "Senior Product Designer, 8+ ans d'expérience spécialisée sur les produits SaaS & B2B complexes, à transformer des expériences frictionnelles et riches en données en parcours intuitifs, performants et éthiques.",
       "J'associe un impact business mesurable à un effet de levier design : workflows augmentés par l'IA, design systems scalables et pratiques de recherche qui accélèrent toute l'équipe — pas seulement les écrans."
     ],
     "philosophy": {
