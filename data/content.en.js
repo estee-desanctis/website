@@ -26,12 +26,12 @@ window.CONTENT_EN = {
     "kicker": "Why",
     "title": "Hire Me",
     "categories": [
-      { "icon": "🧭", "title": "Design Leadership", "tags": ["Design strategy", "Design ops", "Mentoring & team enablement", "Stakeholder management", "Cross-functional collaboration", "Design reviews"] },
-      { "icon": "🔍", "title": "Research", "tags": ["User research", "Interviews", "Usability testing", "Journey mapping", "A/B & MAB testing", "Analytics"] },
-      { "icon": "🎨", "title": "Design", "tags": ["Product & interaction design", "Prototyping", "UX writing", "Design systems at scale"] },
-      { "icon": "🤖", "title": "AI for Design", "tags": ["AI-augmented design ops", "Custom GPTs & agents", "MCP", "Claude Code", "Figma Make"] },
-      { "icon": "🌱", "title": "Responsible Design", "tags": ["Accessibility (WCAG, RGAA)", "Eco-design (RGESN)", "Inclusive design"] },
-      { "icon": "🛠️", "title": "Tools", "tags": ["Figma", "Adobe Suite", "Storybook", "ZeroHeight", "Hotjar", "Maze", "UserTesting", "Google Analytics", "VWO", "HTML/CSS", "JavaScript", "GitHub"] }
+      { "icon": "groups", "title": "Design Leadership", "tags": ["Design strategy", "Design ops", "Mentoring & team enablement", "Stakeholder management", "Cross-functional collaboration", "Design reviews"] },
+      { "icon": "search", "title": "Research", "tags": ["User research", "Interviews", "Usability testing", "Journey mapping", "A/B & MAB testing", "Analytics"] },
+      { "icon": "palette", "title": "Design", "tags": ["Product & interaction design", "Prototyping", "UX writing", "Design systems at scale"] },
+      { "icon": "smart_toy", "title": "AI for Design", "tags": ["AI-augmented design ops", "Custom GPTs & agents", "MCP", "Claude Code", "Figma Make"] },
+      { "icon": "eco", "title": "Responsible Design", "tags": ["Accessibility (WCAG, RGAA)", "Eco-design (RGESN)", "Inclusive design"] },
+      { "icon": "build", "title": "Tools", "tags": ["Figma", "Adobe Suite", "Storybook", "ZeroHeight", "Hotjar", "Maze", "UserTesting", "Google Analytics", "VWO", "HTML/CSS", "JavaScript", "GitHub"] }
     ]
   },
   "about": {
@@ -54,7 +54,9 @@ window.CONTENT_EN = {
   "projectsSection": {
     "kicker": "See my latest",
     "title": "projects",
-    "seeMore": "See more"
+    "seeMore": "See more",
+    "portfolioFile": "documents/Portfolio2026_EN_ProductDesign_EsteeDesanctis.pdf",
+    "downloadPortfolio": "Download portfolio (PDF)"
   },
   "articlesSection": {
     "kicker": "See my latest",
@@ -178,20 +180,6 @@ window.CONTENT_EN = {
         { "label": "Get the file on Figma Community", "url": "https://www.figma.com/community/file/1570296210659982522/accessible-font-checker" },
         { "label": "Read the write-up on GreenIT.fr (FR)", "url": "https://www.greenit.fr/2025/11/20/accessible-font-checker-un-outil-figma-pour-evaluer-la-lisibilite-des-polices-et-rendre-vos-contenus-plus-inclusifs/" }
       ]
-    },
-    {
-      "id": "ai-design-ops",
-      "date": "January 2026",
-      "title": "Making AI a design-ops teammate, not a shortcut",
-      "excerpt": "How I built an AI-augmented design ops practice without sacrificing quality or team trust.",
-      "body": "At CoderPad, I owned end-to-end integration of AI workflows into the team's design ops: custom GPTs, agents, skills, tokens, MCP, plugins and dashboards. The goal wasn't to replace design judgment but to take repetitive tasks off designers' plates (summaries, first explorations, token consistency) so more time went to high-value decisions. The real challenge was keeping the team's trust: every automation had to stay explainable and correctable. That's the same principle behind the AI-assisted grading feature I designed for recruiters, with adjustable AI autonomy and the recruiter always keeping the final call. The result: augmented output for a 3-designer team, standardized deliverables from low-fi to high-fi, without ever losing control of quality."
-    },
-    {
-      "id": "design-systems-at-scale",
-      "date": "October 2025",
-      "title": "A design system is not a component library",
-      "excerpt": "What I learned building and scaling WCAG-compliant design systems across three different platforms.",
-      "body": "At Dualsun, as the sole designer across three platforms on a constrained budget, an inconsistent design system had become a direct blocker to delivery. The real leverage wasn't adding more components, it was making the system usable by non-designers: PMs, developers, freelance graphic designers. That means documented semantic tokens, short usage guides, and ready-to-use dev tickets. A successful design system is measured less by its visual coverage than by its ability to save time for the whole team: at Dualsun, that meant +20% PM early discovery and −50% research time, simply because best practices became accessible to everyone."
     }
   ],
   "testimonials": [

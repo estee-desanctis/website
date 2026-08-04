@@ -23,15 +23,15 @@ window.CONTENT_FR = {
     "follow": "Me suivre sur :"
   },
   "whyHire": {
-    "kicker": "Why",
-    "title": "Hire Me",
+    "kicker": "Pourquoi",
+    "title": "me choisir",
     "categories": [
-      { "icon": "🧭", "title": "Leadership Design", "tags": ["Stratégie design", "Design ops", "Mentorat & montée en compétence", "Gestion des parties prenantes", "Collaboration cross-fonctionnelle", "Design reviews"] },
-      { "icon": "🔍", "title": "Recherche", "tags": ["User research", "Entretiens", "Tests d'utilisabilité", "Journey mapping", "A/B & MAB testing", "Analytics"] },
-      { "icon": "🎨", "title": "Design", "tags": ["Product & interaction design", "Prototypage", "UX writing", "Design systems à l'échelle"] },
-      { "icon": "🤖", "title": "IA pour le design", "tags": ["Design ops augmenté par l'IA", "GPTs custom & agents", "MCP", "Claude Code", "Figma Make"] },
-      { "icon": "🌱", "title": "Design responsable", "tags": ["Accessibilité (WCAG, RGAA)", "Écoconception (RGESN)", "Design inclusif"] },
-      { "icon": "🛠️", "title": "Outils", "tags": ["Figma", "Adobe Suite", "Storybook", "ZeroHeight", "Hotjar", "Maze", "UserTesting", "Google Analytics", "VWO", "HTML/CSS", "JavaScript", "GitHub"] }
+      { "icon": "groups", "title": "Leadership Design", "tags": ["Stratégie design", "Design ops", "Mentorat & montée en compétence", "Gestion des parties prenantes", "Collaboration cross-fonctionnelle", "Design reviews"] },
+      { "icon": "search", "title": "Recherche", "tags": ["User research", "Entretiens", "Tests d'utilisabilité", "Journey mapping", "A/B & MAB testing", "Analytics"] },
+      { "icon": "palette", "title": "Design", "tags": ["Product & interaction design", "Prototypage", "UX writing", "Design systems à l'échelle"] },
+      { "icon": "smart_toy", "title": "IA pour le design", "tags": ["Design ops augmenté par l'IA", "GPTs custom & agents", "MCP", "Claude Code", "Figma Make"] },
+      { "icon": "eco", "title": "Design responsable", "tags": ["Accessibilité (WCAG, RGAA)", "Écoconception (RGESN)", "Design inclusif"] },
+      { "icon": "build", "title": "Outils", "tags": ["Figma", "Adobe Suite", "Storybook", "ZeroHeight", "Hotjar", "Maze", "UserTesting", "Google Analytics", "VWO", "HTML/CSS", "JavaScript", "GitHub"] }
     ]
   },
   "about": {
@@ -52,43 +52,45 @@ window.CONTENT_FR = {
     ]
   },
   "projectsSection": {
-    "kicker": "See my latest",
-    "title": "projects",
-    "seeMore": "See more"
+    "kicker": "Découvrez mes derniers",
+    "title": "projets",
+    "seeMore": "Voir plus",
+    "portfolioFile": "documents/Portfolio2026_FR_ProductDesign_EsteeDesanctis.pdf",
+    "downloadPortfolio": "Télécharger mon portfolio (PDF)"
   },
   "articlesSection": {
-    "kicker": "See my latest",
+    "kicker": "Découvrez mes derniers",
     "title": "articles",
-    "seeAll": "See all articles",
-    "readMore": "Read more"
+    "seeAll": "Voir tous les articles",
+    "readMore": "Lire la suite"
   },
   "testimonialsSection": {
-    "title": "7+ satisfied clients",
-    "seeAll": "See all recommendations",
+    "title": "7+ clients satisfaits",
+    "seeAll": "Voir toutes les recommandations",
     "stats": [
-      { "label": "Quality", "stars": 5 },
-      { "label": "Deadlines", "stars": 5 },
+      { "label": "Qualité", "stars": 5 },
+      { "label": "Délais", "stars": 5 },
       { "label": "Communication", "stars": 5 }
     ]
   },
   "contactSection": {
-    "kicker": "Let's discuss your",
+    "kicker": "Discutons de votre",
     "title": "projet",
     "email": "estee.desanctis@gmail.com",
     "emailLabel": "Email",
-    "locationLabel": "Work from",
+    "locationLabel": "Basée à",
     "location": "Marseille, France",
-    "availabilityLabel": "Available",
-    "availability": "5 days, remote",
-    "languagesLabel": "Language",
-    "languages": "English, French, Portuguese",
+    "availabilityLabel": "Disponibilité",
+    "availability": "5 jours, remote",
+    "languagesLabel": "Langues",
+    "languages": "Anglais, Français, Portugais",
     "form": {
-      "surname": "Surname",
-      "name": "Name",
+      "surname": "Nom",
+      "name": "Prénom",
       "email": "Email",
       "emailPlaceholder": "john.doe@gmail.com",
-      "project": "Your project",
-      "projectPlaceholder": "Hello, I'm interested in a Product Designer to...",
+      "project": "Votre projet",
+      "projectPlaceholder": "Bonjour, je suis intéressé(e) par une Product Designer pour…",
       "send": "Envoyer"
     }
   },
@@ -178,20 +180,6 @@ window.CONTENT_FR = {
         { "label": "Télécharger le fichier sur Figma Community", "url": "https://www.figma.com/community/file/1570296210659982522/accessible-font-checker" },
         { "label": "Lire l'article sur GreenIT.fr", "url": "https://www.greenit.fr/2025/11/20/accessible-font-checker-un-outil-figma-pour-evaluer-la-lisibilite-des-polices-et-rendre-vos-contenus-plus-inclusifs/" }
       ]
-    },
-    {
-      "id": "design-ops-ia",
-      "date": "Janvier 2026",
-      "title": "Faire de l'IA un coéquipier design ops, pas un raccourci",
-      "excerpt": "Comment j'ai construit un design ops augmenté par l'IA sans sacrifier la qualité ni la confiance de l'équipe.",
-      "body": "Chez CoderPad, j'ai piloté l'intégration de bout en bout de workflows IA dans le design ops de l'équipe : GPTs custom, agents, skills, tokens, MCP, plugins et dashboards. L'objectif n'était pas de remplacer le jugement design mais de reprendre les tâches répétitives (résumés, premières explorations, cohérence des tokens) pour laisser plus de temps aux décisions à forte valeur. Le vrai défi a été de garder la confiance de l'équipe : chaque automatisation devait rester explicable et corrigible. C'est le même principe que j'ai appliqué à la fonctionnalité de notation assistée par IA pour les recruteurs, avec une autonomie IA ajustable et un recruteur toujours décisionnaire final. Résultat : une production augmentée pour une équipe de 3 designers, des livrables standardisés du low-fi au high-fi, sans jamais perdre la main sur la qualité."
-    },
-    {
-      "id": "design-systems-echelle",
-      "date": "Octobre 2025",
-      "title": "Un design system, ce n'est pas une bibliothèque de composants",
-      "excerpt": "Ce que j'ai appris en construisant et en faisant passer à l'échelle des design systems conformes WCAG sur trois plateformes différentes.",
-      "body": "Chez Dualsun, seule designer sur trois plateformes et à budget contraint, un design system incohérent était devenu un frein direct à la livraison. Le vrai levier n'a pas été de multiplier les composants, mais de rendre le système utilisable par des non-designers : PM, développeurs, graphistes freelance. Cela veut dire des tokens sémantiques documentés, des guides d'usage courts, et des tickets dev prêts à l'emploi. Un design system réussi se mesure moins à sa couverture visuelle qu'à sa capacité à faire gagner du temps à toute l'équipe : chez Dualsun, cela s'est traduit par +20% d'exploration amont pour les PM et −50% de temps de recherche, simplement parce que les bonnes pratiques étaient devenues accessibles à tous."
     }
   ],
   "testimonials": [
