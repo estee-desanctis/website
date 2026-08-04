@@ -32,7 +32,7 @@ function renderHeader(){
     '<div class="header-inner">' +
       '<a href="index.html" class="logo"><img src="images/logo.png" alt="EcoDesign logo">EcoDesign</a>' +
       '<nav class="main-nav" id="main-nav"><ul>' +
-        '<li><a href="index.html#profile">'+t.nav.about+'</a></li>' +
+        '<li><a href="index.html#about">'+t.nav.about+'</a></li>' +
         '<li><a href="portfolio.html">'+t.nav.work+'</a></li>' +
         '<li><a href="articles.html">'+t.nav.articles+'</a></li>' +
         '<li><a href="index.html#testimonials">'+t.nav.testimonials+'</a></li>' +
@@ -100,13 +100,30 @@ function renderHome(){
       '</div>';
   }
 
+  var about = document.getElementById('about-content');
+  if(about && t.about){
+    var a = t.about;
+    about.innerHTML =
+      '<div class="section-head"><h2 class="big">'+a.kicker+' <span class="accent">'+a.title+'</span></h2></div>' +
+      '<div class="about-grid">' +
+        '<div class="about-intro">' + a.intro.map(function(p){ return '<p>'+p+'</p>'; }).join('') + '</div>' +
+        '<div class="about-philosophy"><div class="quote-mark">“</div><p class="philosophy-quote">'+a.philosophy.quote+'</p><p class="philosophy-sub">'+a.philosophy.sub+'</p></div>' +
+      '</div>' +
+      '<div class="pillars-grid">' +
+        a.pillars.map(function(p){
+          return '<div class="pillar-card"><h3>'+p.title+'</h3><p>'+p.desc+'</p><div class="pillar-metric">'+p.metric+'</div></div>';
+        }).join('') +
+      '</div>';
+  }
+
   var why = document.getElementById('why-content');
   if(why){
     why.innerHTML =
       '<div class="section-head"><h2 class="big">'+t.whyHire.kicker+' <span class="accent">'+t.whyHire.title+'</span> ?</h2></div>' +
-      '<div class="why-grid">' +
-        t.whyHire.items.map(function(c){
-          return '<div class="why-card"><div class="icon">'+c.icon+'</div><h3>'+c.title+'</h3><p>'+c.desc+'</p></div>';
+      '<div class="skills-grid">' +
+        t.whyHire.categories.map(function(c){
+          return '<div class="skill-card"><div class="skill-head"><span class="icon">'+c.icon+'</span><h3>'+c.title+'</h3></div>' +
+            '<div class="skill-tags">'+ c.tags.map(function(tg){ return '<span class="tag">'+tg+'</span>'; }).join('') +'</div></div>';
         }).join('') +
       '</div>';
   }
@@ -253,11 +270,17 @@ function renderProjectDetail(){
       '<div class="main">' +
         '<h3 class="h3" style="margin-bottom:8px;">'+ (getLang()==='fr' ? 'Le défi' : 'The challenge') +'</h3>' +
         '<p>'+p.challenge+'</p>' +
+        '<h3 class="h3" style="margin:28px 0 8px;">'+ (getLang()==='fr' ? 'Méthodologie' : 'Methodology') +'</h3>' +
         p.process.map(function(step){
-          return '<div class="process-step"><div class="step-label">'+step.step+'</div><h3>'+step.title+'</h3><p>'+step.desc+'</p></div>';
+          return '<div class="process-step numbered"><div class="step-num">'+(step.num||'')+'</div><div><div class="step-label">'+step.step+'</div><h3>'+step.title+'</h3><p>'+step.desc+'</p></div></div>';
         }).join('') +
         '<h3 class="h3" style="margin-bottom:8px;">'+ (getLang()==='fr' ? 'Résultats' : 'Results') +'</h3>' +
-        '<div class="results-list">'+ p.results.map(function(r){return '<span class="res">'+r+'</span>';}).join('') +'</div>' +
+        (p.stats && p.stats.length ? '<div class="stats-callouts">'+ p.stats.map(function(s){
+          return '<div class="stat-callout"><div class="stat-value">'+s.value+'</div><div class="stat-label">'+s.label+'</div></div>';
+        }).join('') +'</div>' : '') +
+        (p.achievements && p.achievements.length ? '<div class="achievements"><div class="ach-title">'+ (getLang()==='fr' ? 'Réussites clés' : 'Key achievements') +'</div>' +
+          p.achievements.map(function(ac){ return '<div class="ach-item">✓ '+ac+'</div>'; }).join('') +
+        '</div>' : '<div class="results-list">'+ p.results.map(function(r){return '<span class="res">'+r+'</span>';}).join('') +'</div>') +
       '</div>' +
       '<div class="side">' +
         '<div class="block"><h3>'+ (getLang()==='fr'?'Mon rôle':'My role') +'</h3><ul>'+ p.role.map(function(r){return '<li>• '+r+'</li>';}).join('') +'</ul></div>' +
@@ -282,6 +305,9 @@ function renderArticleDetail(){
       '<h1 style="text-align:center;">'+a.title+'</h1>' +
     '</div>' +
     '<div class="article-body"><p>'+a.body.split('. ').join('. </p><p>')+'</p></div>' +
+    (a.links && a.links.length ? '<div class="article-links">'+ a.links.map(function(l){
+      return '<a class="btn btn-primary btn-sm" href="'+l.url+'" target="_blank" rel="noopener">'+l.label+' ↗</a>';
+    }).join('') +'</div>' : '') +
     '<div style="text-align:center;"><a class="back-link" href="articles.html">← '+t.nav.articles+'</a></div>';
 }
 

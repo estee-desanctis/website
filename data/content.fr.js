@@ -28,13 +28,30 @@ window.CONTENT_FR = {
   "whyHire": {
     "kicker": "Why",
     "title": "Hire Me",
-    "items": [
-      { "icon": "🔍", "title": "User Research", "desc": "Conduis des recherches et des entretiens pour identifier les besoins, comportements et points de friction, et éclairer les décisions de design." },
-      { "icon": "🧭", "title": "UX Design", "desc": "Définis les parcours utilisateurs, l'architecture de l'information et les interactions pour une navigation fluide et intuitive." },
-      { "icon": "🎨", "title": "UI Design", "desc": "Crée des interfaces à haute fidélité et des prototypes interactifs à partir de composants de design system." },
-      { "icon": "📊", "title": "Data Analytics & Testing", "desc": "Analyse le comportement utilisateur et teste via A/B et MAB testing pour améliorer l'utilisabilité et l'engagement." },
-      { "icon": "🌱", "title": "Ecoconception", "desc": "Conçoit des expériences sobres et performantes pour réduire la consommation d'énergie et l'empreinte carbone." },
-      { "icon": "♿", "title": "Accessibilité", "desc": "Crée des expériences inclusives conformes aux standards WCAG et RGAA." }
+    "categories": [
+      { "icon": "🧭", "title": "Leadership Design", "tags": ["Stratégie design", "Design ops", "Mentorat & montée en compétence", "Gestion des parties prenantes", "Collaboration cross-fonctionnelle", "Design reviews"] },
+      { "icon": "🔍", "title": "Recherche", "tags": ["User research", "Entretiens", "Tests d'utilisabilité", "Journey mapping", "A/B & MAB testing", "Analytics"] },
+      { "icon": "🎨", "title": "Design", "tags": ["Product & interaction design", "Prototypage", "UX writing", "Design systems à l'échelle"] },
+      { "icon": "🤖", "title": "IA pour le design", "tags": ["Design ops augmenté par l'IA", "GPTs custom & agents", "MCP", "Claude Code", "Figma Make"] },
+      { "icon": "🌱", "title": "Design responsable", "tags": ["Accessibilité (WCAG, RGAA)", "Écoconception (RGESN)", "Design inclusif"] },
+      { "icon": "🛠️", "title": "Outils", "tags": ["Figma", "Adobe Suite", "Storybook", "ZeroHeight", "Hotjar", "Maze", "UserTesting", "Google Analytics", "VWO", "HTML/CSS", "JavaScript", "GitHub"] }
+    ]
+  },
+  "about": {
+    "kicker": "À propos de",
+    "title": "moi",
+    "intro": [
+      "Senior Product Designer, 8+ ans d'expérience spécialisée sur les produits SaaS & B2B complexes, à transformer des expériences frictionnelles et riches en données en parcours intuitifs, performants et éthiques, avec une vraie polyvalence sur le grand public.",
+      "J'associe un impact business mesurable à un effet de levier design : workflows augmentés par l'IA, design systems scalables et pratiques de recherche qui accélèrent toute l'équipe — pas seulement les écrans."
+    ],
+    "philosophy": {
+      "quote": "Le design est un effet de levier pour toute l'équipe, pas seulement un livrable pour l'écran.",
+      "sub": "Je mesure mon impact à la vitesse et à la confiance que je crée autour de moi, pas seulement à la qualité visuelle d'une interface."
+    },
+    "pillars": [
+      { "title": "Faire monter en compétence", "desc": "Je fais de la recherche et du design une affaire d'équipe, pas un goulot concentré sur une personne. J'ai formé les PM à mener leurs propres entretiens et fait monter en compétence les équipes Marketing, Ingénierie et Produit sur Figma.", "metric": "−50% temps de recherche" },
+      { "title": "Fixer le standard", "desc": "Je relève le niveau de qualité et le rends reproductible dans l'équipe, en animant les design reviews, en contribuant aux tech et QA reviews, et en rédigeant des guides réutilisables.", "metric": "Guides adoptés par l'équipe" },
+      { "title": "Débloquer la livraison", "desc": "Je transforme le design de frein en accélérateur pour toute la roadmap : rédaction de tickets dev, pilotage des tech reviews, livraison de templates réutilisables.", "metric": "+20% exploration PM" }
     ]
   },
   "projectsSection": {
@@ -96,10 +113,20 @@ window.CONTENT_FR = {
       "team": ["3 designers", "Product managers", "Ingénierie & QA"],
       "tools": ["Figma", "GPTs custom & agents", "MCP · Claude Code", "Design tokens"],
       "results": ["Décisions de recrutement plus rapides", "Moins de temps par candidat", "Notation plus cohérente", "Collaboration d'équipe"],
+      "stats": [
+        { "value": "−77%", "label": "Temps de design HF & review (de ~35 à ~8 jours)" }
+      ],
+      "achievements": [
+        "Décisions de recrutement plus rapides et plus sûres",
+        "Notation plus cohérente entre recruteurs",
+        "Collaboration d'équipe sur les fiches candidat",
+        "Process de design haute-fidélité 4x plus rapide grâce à un workflow assisté par IA"
+      ],
       "process": [
-        { "step": "01 · Cadrer", "title": "Concevoir les surfaces de revue IA", "desc": "J'ai conçu des questions de relance (vidéo, capture d'écran, texte) qui demandent au candidat d'expliquer son code, et un outil de notation assistée par IA avec une autonomie IA ajustable." },
-        { "step": "02 · Alléger l'effort", "title": "Réduire la charge de revue", "desc": "Transcription et résumés vidéo par IA pour décider sans visionner l'enregistrement complet, plus un chatbot pour comparer candidats, exercices ou campagnes entières en langage naturel." },
-        { "step": "03 · En faire une affaire d'équipe", "title": "Fiches candidat partageables", "desc": "Analyse IA taguable et partageable dans une fiche candidat que chaque collègue peut ouvrir, appuyée sur un design system tokenisé et un design ops IA que je pilote." }
+        { "num": "01", "step": "Cadrer", "title": "Concevoir les surfaces de revue IA", "desc": "J'ai conçu des questions de relance (vidéo, capture d'écran, texte) qui demandent au candidat d'expliquer son code, et un outil de notation assistée par IA avec une autonomie IA ajustable." },
+        { "num": "02", "step": "Alléger l'effort", "title": "Réduire la charge de revue", "desc": "Transcription et résumés vidéo par IA pour décider sans visionner l'enregistrement complet, plus un chatbot pour comparer candidats, exercices ou campagnes entières en langage naturel." },
+        { "num": "03", "step": "En faire une affaire d'équipe", "title": "Fiches candidat partageables", "desc": "Analyse IA taguable et partageable dans une fiche candidat que chaque collègue peut ouvrir, appuyée sur un design system tokenisé et un design ops IA que je pilote." },
+        { "num": "04", "step": "Accélérer avec l'IA", "title": "Refondre le process de design lui-même", "desc": "J'ai revisité notre méthodologie de design en utilisant le prototypage IA comme étape basse-fidélité : démos et tests directement dessus, puis export vers Figma via notre design system (Claude Design, Claude Code branché à Figma) et un plugin de lint design pour fiabiliser la refonte. Résultat : le temps de design haute-fidélité et de review est passé d'environ 30-40 jours à ~8 jours (reste le travail d'affinage UI du designer, mais le temps gagné en amont est considérable)." }
       ]
     },
     {
@@ -115,20 +142,45 @@ window.CONTENT_FR = {
       "team": ["Product managers", "Développeurs · QA", "Ingénieurs · Data · Marketing"],
       "tools": ["Figma", "Hotjar", "VWO (A/B, MAB)"],
       "results": ["+14% de conversion", "−50% de temps de recherche", "+20% d'exploration PM", "Cohérence multi-plateforme"],
+      "stats": [
+        { "value": "+14%", "label": "Conversion" },
+        { "value": "−50%", "label": "Temps de recherche" },
+        { "value": "+20%", "label": "Exploration PM" }
+      ],
+      "achievements": [
+        "Simulateur simplifié de 6 à 5 étapes, validé par tests A/B (MAB)",
+        "Design system WCAG déployé sur trois plateformes (Tailwind, Material/Ionic)",
+        "PM formés à mener leurs propres entretiens utilisateurs",
+        "Deux designers freelance encadrés pour paralléliser les livraisons sans recruter"
+      ],
       "process": [
-        { "step": "01 · Recherche", "title": "Refondre les parcours cœur", "desc": "J'ai simplifié le simulateur de 6 étapes à 5 en fusionnant l'étape d'exposition, source de confusion, dans l'étape toiture, et simplifié la configuration de l'app IoT." },
-        { "step": "02 · Débloquer", "title": "Lever le goulot d'étranglement", "desc": "J'ai rédigé des tickets dev, piloté les tech reviews et livré des templates réutilisables pour que le design ne soit plus le frein." },
-        { "step": "03 · Piloter & autonomiser", "title": "Piloter l'effort design", "desc": "J'ai encadré deux designers freelance pour paralléliser des fonctionnalités sans recruter, formé les PM à mener leurs entretiens, et fait passer à l'échelle un design system WCAG (Tailwind, Material/Ionic)." }
+        { "num": "01", "step": "Recherche", "title": "Refondre les parcours cœur", "desc": "J'ai simplifié le simulateur de 6 étapes à 5 en fusionnant l'étape d'exposition, source de confusion, dans l'étape toiture, et simplifié la configuration de l'app IoT." },
+        { "num": "02", "step": "Débloquer", "title": "Lever le goulot d'étranglement", "desc": "J'ai rédigé des tickets dev, piloté les tech reviews et livré des templates réutilisables pour que le design ne soit plus le frein." },
+        { "num": "03", "step": "Piloter & autonomiser", "title": "Piloter l'effort design", "desc": "J'ai encadré deux designers freelance pour paralléliser des fonctionnalités sans recruter, formé les PM à mener leurs entretiens, et fait passer à l'échelle un design system WCAG (Tailwind, Material/Ionic)." }
       ]
     }
   ],
   "articles": [
     {
       "id": "green-by-design",
-      "date": "Mars 2026",
+      "date": "Avril 2024",
       "title": "Green by Design : quand la sobriété numérique rencontre l'accessibilité",
-      "excerpt": "Un article UX pour rappeler l'importance de faire converger accessibilité et écoconception vers une expérience à la fois accessible et sobre.",
-      "body": "Écoconception et accessibilité sont trop souvent traitées comme deux chantiers séparés, l'un pour l'environnement, l'autre pour l'inclusion. Dans mon accompagnement de GreenIT sur l'audit de leurs outils et de leurs PDF, j'ai vu à quel point ces deux disciplines se renforcent mutuellement : une interface plus sobre est presque toujours plus lisible, plus rapide et plus simple à parcourir au clavier ou au lecteur d'écran. Réduire le poids d'une page (images compressées, composants réutilisés, animations superflues supprimées) diminue aussi la charge cognitive pour les personnes en situation de handicap. À l'inverse, une hiérarchie de contenu claire, pensée pour l'accessibilité, limite le nombre d'écrans, de requêtes et de re-renders inutiles. Sur mes projets, je pars désormais des référentiels RGESN et WCAG/RGAA en parallèle dès le cadrage, et non comme deux audits successifs en fin de course. Le résultat : moins d'itérations, une équipe alignée plus tôt, et un produit qui sert vraiment tout le monde, y compris la planète."
+      "excerpt": "Sobriété numérique et accessibilité sont trop souvent traitées comme deux chantiers séparés. Elles se renforcent en réalité mutuellement — et parfois s'affrontent.",
+      "body": "La technologie façonne aujourd'hui presque tous les aspects de nos vies, et notre dépendance croissante aux appareils et services numériques fait grandir leur empreinte environnementale. En tant que designers, nos décisions influencent directement le comportement des utilisateurs et la soutenabilité de nos produits numériques. Prioriser l'efficacité et le minimalisme — moins de médias, des animations plus simples, des interfaces épurées — accélère le chargement, réduit la donnée transférée et prolonge la durée de vie des appareils : de meilleurs produits, un moindre impact, et des coûts d'exploitation réduits. L'accessibilité va dans le même sens : rendre un service utilisable par tous, quels que soient les capacités ou le contexte, ce n'est pas seulement une case à cocher légale, c'est élargir l'audience et la valeur d'un produit tout en réduisant les refontes et le support liés aux problèmes d'usabilité. Les deux logiques ne sont pas toujours alignées : le contrôle vocal, par exemple, améliore l'accessibilité mais peut augmenter la consommation énergétique par le traitement de données en continu. Naviguer ces tensions avec discernement, selon le contexte et les besoins réels des utilisateurs, est justement ce qui rend ce travail de design intéressant.",
+      "links": [
+        { "label": "Lire l'article complet sur Medium (en anglais)", "url": "https://medium.com/@estee.desanctis/green-by-design-when-sustainability-meets-accessibility-83e08e208788" }
+      ]
+    },
+    {
+      "id": "accessible-font-checker",
+      "date": "Novembre 2025",
+      "title": "Accessible Font Checker : un outil Figma gratuit pour tester la lisibilité de vos polices",
+      "excerpt": "Un fichier Figma gratuit et open source pour repérer en 2 minutes les lettres ambiguës qui peuvent rendre un texte illisible pour les personnes dyslexiques ou malvoyantes.",
+      "body": "La lisibilité de la typographie, et plus largement la perceptibilité du contenu, est un pilier de l'accessibilité numérique — pourtant souvent négligé dans les projets de design. Certaines polices, aussi esthétiques soient-elles, posent des problèmes majeurs de lisibilité pour les personnes dyslexiques ou malvoyantes : lettres ambiguës (comme m et w), glyphes identiques (i, l, 1), ou formes trop similaires (a, e, o). Après une discussion avec les Designers Éthiques, j'ai constaté que peu d'outils permettaient d'identifier ces problèmes simplement, et j'ai donc créé Accessible Font Checker, un fichier Figma gratuit et open source pensé pour tester rapidement l'accessibilité d'une police : identifier les lettres ambiguës, vérifier la lisibilité sur des phrases courtes, longues ou des paragraphes entiers, ajuster l'interlignage et l'espacement pour améliorer la clarté, puis noter chaque critère et exporter le résultat pour le partager avec une équipe ou un client. L'outil s'adresse à tout le monde — designers, développeurs, chefs de projet — sans besoin d'être expert en accessibilité : il suffit de changer la police dans les styles locaux Figma et de suivre les indications visuelles. Deux minutes suffisent pour un premier test, et le fichier reste gratuit, open source et ouvert aux contributions.",
+      "links": [
+        { "label": "Télécharger le fichier sur Figma Community", "url": "https://www.figma.com/community/file/1570296210659982522/accessible-font-checker" },
+        { "label": "Lire l'article sur GreenIT.fr", "url": "https://www.greenit.fr/2025/11/20/accessible-font-checker-un-outil-figma-pour-evaluer-la-lisibilite-des-polices-et-rendre-vos-contenus-plus-inclusifs/" }
+      ]
     },
     {
       "id": "design-ops-ia",
