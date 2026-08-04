@@ -43,7 +43,6 @@ function renderHeader(){
           '<button data-lang="fr" class="'+(lang==='fr'?'active':'')+'">FR</button>' +
           '<button data-lang="en" class="'+(lang==='en'?'active':'')+'">EN</button>' +
         '</div>' +
-        '<a class="btn btn-primary btn-sm" href="index.html#contact">'+t.nav.contactBtn+'</a>' +
         '<button class="menu-toggle" id="menu-toggle">☰</button>' +
       '</div>' +
     '</div>';
@@ -80,21 +79,21 @@ function renderHome(){
           '<div class="frame"></div>' +
           '<div class="photo-box">' +
             '<img src="images/portrait.png" alt="Estée Desanctis" onerror="this.style.display=\'none\';document.getElementById(\'photo-fallback\').style.display=\'flex\';">' +
-            '<div class="photo-placeholder" id="photo-fallback" style="display:none;">Ta photo ici<br><small>(ajoute images/portrait.jpg)</small></div>' +
+            '<div class="photo-placeholder" id="photo-fallback" style="display:none;">Ta photo ici<br><small>(ajoute images/portrait.png)</small></div>' +
           '</div>' +
         '</div>' +
         '<div>' +
           '<div class="greeting">'+t.hero.greeting+'</div>' +
-          '<div class="hero-title">'+t.hero.line1+' <span class="highlight">'+t.hero.role+'</span> '+t.hero.line2+'</div>' +
-          '<span class="badge">'+t.hero.badge+'</span>' +
+          '<div class="hero-title">'+t.hero.line1+' <span class="highlight">'+t.hero.role+'</span></div>' +
           '<p class="hero-bio">'+t.hero.bio+'</p>' +
           '<div class="hero-ctas">' +
             '<a class="btn btn-primary" href="#contact">'+t.hero.ctaContact+'</a>' +
             '<a class="btn btn-outline" href="'+t.hero.cvFile+'" target="_blank">⬇ '+t.hero.ctaCV+'</a>' +
           '</div>' +
           '<div class="follow">'+t.hero.follow+
-            ' <a href="mailto:'+t.contactSection.email+'">✉</a>' +
-            ' <a href="https://linkedin.com/in/estee-desanctis" target="_blank">in</a>' +
+            ' <a href="https://linkedin.com/in/estee-desanctis" target="_blank" aria-label="LinkedIn">in</a>' +
+            ' <a href="https://www.behance.net/estee-desanctis/projects" target="_blank" aria-label="Behance">Be</a>' +
+            ' <a href="https://www.figma.com/@esteedesanctis" target="_blank" aria-label="Figma Community">Fi</a>' +
           '</div>' +
         '</div>' +
       '</div>';
