@@ -20,7 +20,12 @@ function el(html){
   d.innerHTML = html.trim();
   return d.firstChild;
 }
-function stars(n){ return '★'.repeat(n) + '☆'.repeat(5-n); }
+function icon(name, extraClass){ return '<span class="material-symbols-outlined'+(extraClass?' '+extraClass:'')+'" aria-hidden="true">'+name+'</span>'; }
+function stars(n){
+  var out = '';
+  for(var i=0;i<5;i++){ out += icon('star', 'star-ico'+(i<n?' filled':'')); }
+  return out;
+}
 function initials(name){ return name.split(' ').map(function(w){return w[0];}).join('').slice(0,2).toUpperCase(); }
 
 function renderHeader(){
@@ -43,7 +48,7 @@ function renderHeader(){
           '<button data-lang="fr" class="'+(lang==='fr'?'active':'')+'">FR</button>' +
           '<button data-lang="en" class="'+(lang==='en'?'active':'')+'">EN</button>' +
         '</div>' +
-        '<button class="menu-toggle" id="menu-toggle">☰</button>' +
+        '<button class="menu-toggle" id="menu-toggle" aria-label="Menu">'+icon('menu')+'</button>' +
       '</div>' +
     '</div>';
 
@@ -88,7 +93,7 @@ function renderHome(){
           '<p class="hero-bio">'+t.hero.bio+'</p>' +
           '<div class="hero-ctas">' +
             '<a class="btn btn-primary" href="#contact">'+t.hero.ctaContact+'</a>' +
-            '<a class="btn btn-outline" href="'+t.hero.cvFile+'" target="_blank">⬇ '+t.hero.ctaCV+'</a>' +
+            '<a class="btn btn-outline" href="'+t.hero.cvFile+'" target="_blank">'+icon('download')+' '+t.hero.ctaCV+'</a>' +
           '</div>' +
           '<div class="follow">'+t.hero.follow+
             ' <a href="https://linkedin.com/in/estee-desanctis" target="_blank" aria-label="LinkedIn">in</a>' +
@@ -106,7 +111,7 @@ function renderHome(){
       '<div class="section-head"><h2 class="big">'+a.kicker+' <span class="accent">'+a.title+'</span></h2></div>' +
       '<div class="about-grid">' +
         '<div class="about-intro">' + a.intro.map(function(p){ return '<p>'+p+'</p>'; }).join('') + '</div>' +
-        '<div class="about-philosophy"><div class="quote-mark">“</div><p class="philosophy-quote">'+a.philosophy.quote+'</p><p class="philosophy-sub">'+a.philosophy.sub+'</p></div>' +
+        '<div class="about-philosophy">'+icon('format_quote','quote-mark')+'<p class="philosophy-quote">'+a.philosophy.quote+'</p><p class="philosophy-sub">'+a.philosophy.sub+'</p></div>' +
       '</div>' +
       '<div class="pillars-grid">' +
         a.pillars.map(function(p){
@@ -121,7 +126,7 @@ function renderHome(){
       '<div class="section-head"><h2 class="big">'+t.whyHire.kicker+' <span class="accent">'+t.whyHire.title+'</span> ?</h2></div>' +
       '<div class="skills-grid">' +
         t.whyHire.categories.map(function(c){
-          return '<div class="skill-card"><div class="skill-head"><span class="icon">'+c.icon+'</span><h3>'+c.title+'</h3></div>' +
+          return '<div class="skill-card"><div class="skill-head">'+icon(c.icon,'icon')+'<h3>'+c.title+'</h3></div>' +
             '<div class="skill-tags">'+ c.tags.map(function(tg){ return '<span class="tag">'+tg+'</span>'; }).join('') +'</div></div>';
         }).join('') +
       '</div>';
@@ -134,7 +139,7 @@ function renderHome(){
       '<div class="projects-grid">' +
         t.projects.map(projectCard).join('') +
       '</div>' +
-      '<div class="center-link"><a href="portfolio.html">'+t.projectsSection.seeMore+' →</a></div>';
+      '<div class="center-link"><a href="portfolio.html">'+t.projectsSection.seeMore+' '+icon('arrow_forward')+'</a></div>';
   }
 
   var art = document.getElementById('articles-content');
@@ -144,7 +149,7 @@ function renderHome(){
       '<div class="articles-grid">' +
         t.articles.map(articleCard).join('') +
       '</div>' +
-      '<div class="center-link"><a href="articles.html">'+t.articlesSection.seeAll+' →</a></div>';
+      '<div class="center-link"><a href="articles.html">'+t.articlesSection.seeAll+' '+icon('arrow_forward')+'</a></div>';
   }
 
   var testi = document.getElementById('testimonials-content');
@@ -154,12 +159,12 @@ function renderHome(){
       '<div class="testi-grid">' +
         '<div class="stats-box">' +
           t.testimonialsSection.stats.map(function(s){
-            return '<div class="stat-row">'+s.label+'<div class="stars">'+stars(s.stars)+'</div></div>';
+            return '<div class="stat-row">'+s.label+'<div class="stars" role="img" aria-label="'+s.stars+'/5">'+stars(s.stars)+'</div></div>';
           }).join('') +
         '</div>' +
         t.testimonials.map(testiCard).join('') +
       '</div>' +
-      '<div class="center-link"><a href="index.html#testimonials">'+t.testimonialsSection.seeAll+' →</a></div>';
+      '<div class="center-link"><a href="index.html#testimonials">'+t.testimonialsSection.seeAll+' '+icon('arrow_forward')+'</a></div>';
   }
 
   var contact = document.getElementById('contact-content');
@@ -169,10 +174,10 @@ function renderHome(){
       '<div class="section-head"><h2 class="big">'+c.kicker+' <span class="accent">'+c.title+'</span></h2></div>' +
       '<div class="contact-grid">' +
         '<div class="contact-info">' +
-          infoItem('✉', c.emailLabel, c.email) +
-          infoItem('📍', c.locationLabel, c.location) +
-          infoItem('🗓', c.availabilityLabel, c.availability) +
-          infoItem('🌐', c.languagesLabel, c.languages) +
+          infoItem('mail', c.emailLabel, c.email) +
+          infoItem('location_on', c.locationLabel, c.location) +
+          infoItem('calendar_month', c.availabilityLabel, c.availability) +
+          infoItem('language', c.languagesLabel, c.languages) +
         '</div>' +
         '<form id="contact-form">' +
           '<div class="form-row">' +
@@ -181,7 +186,7 @@ function renderHome(){
           '</div>' +
           '<div class="field" style="margin-bottom:16px;"><label>'+c.form.email+'</label><input type="email" placeholder="'+c.form.emailPlaceholder+'"></div>' +
           '<div class="field" style="margin-bottom:16px;"><label>'+c.form.project+'</label><textarea placeholder="'+c.form.projectPlaceholder+'"></textarea></div>' +
-          '<div class="form-submit"><button type="submit" class="btn btn-outline">✉ '+c.form.send+'</button></div>' +
+          '<div class="form-submit"><button type="submit" class="btn btn-outline">'+icon('send')+' '+c.form.send+'</button></div>' +
         '</form>' +
       '</div>';
 
@@ -192,8 +197,8 @@ function renderHome(){
   }
 }
 
-function infoItem(icon,label,value){
-  return '<div class="item"><span class="ico">'+icon+'</span><div><div class="label">'+label+'</div><div>'+value+'</div></div></div>';
+function infoItem(iconName,label,value){
+  return '<div class="item">'+icon(iconName,'ico')+'<div><div class="label">'+label+'</div><div>'+value+'</div></div></div>';
 }
 
 function projectCard(p){
@@ -213,7 +218,7 @@ function articleCard(a){
     '<div class="date">'+a.date+'</div>' +
     '<h3>'+a.title+'</h3>' +
     '<p>'+a.excerpt+'</p>' +
-    '<div class="readmore">'+T().articlesSection.readMore+' →</div>' +
+    '<div class="readmore">'+T().articlesSection.readMore+' '+icon('arrow_forward')+'</div>' +
   '</a>';
 }
 
@@ -234,7 +239,9 @@ function renderPortfolioList(){
   var el2 = document.getElementById('list-content');
   el2.innerHTML =
     '<div class="page-hero"><div class="breadcrumb"><a href="index.html">'+t.nav.home+'</a> / '+t.nav.work+'</div>' +
-      '<h2 class="big">'+t.projectsSection.kicker+' <span class="accent">'+t.projectsSection.title+'</span></h2></div>' +
+      '<h2 class="big">'+t.projectsSection.kicker+' <span class="accent">'+t.projectsSection.title+'</span></h2>' +
+      '<div class="portfolio-download"><a class="btn btn-outline" href="'+t.projectsSection.portfolioFile+'" target="_blank">'+icon('picture_as_pdf')+' '+t.projectsSection.downloadPortfolio+'</a></div>' +
+    '</div>' +
     '<div class="projects-grid">'+ t.projects.map(projectCard).join('') +'</div>';
 }
 
@@ -278,7 +285,7 @@ function renderProjectDetail(){
           return '<div class="stat-callout"><div class="stat-value">'+s.value+'</div><div class="stat-label">'+s.label+'</div></div>';
         }).join('') +'</div>' : '') +
         (p.achievements && p.achievements.length ? '<div class="achievements"><div class="ach-title">'+ (getLang()==='fr' ? 'Réussites clés' : 'Key achievements') +'</div>' +
-          p.achievements.map(function(ac){ return '<div class="ach-item">✓ '+ac+'</div>'; }).join('') +
+          p.achievements.map(function(ac){ return '<div class="ach-item">'+icon('check_circle')+' '+ac+'</div>'; }).join('') +
         '</div>' : '<div class="results-list">'+ p.results.map(function(r){return '<span class="res">'+r+'</span>';}).join('') +'</div>') +
       '</div>' +
       '<div class="side">' +
@@ -287,7 +294,7 @@ function renderProjectDetail(){
         '<div class="block"><h3>'+ (getLang()==='fr'?'Outils':'Tools') +'</h3><ul>'+ p.tools.map(function(r){return '<li>• '+r+'</li>';}).join('') +'</ul></div>' +
       '</div>' +
     '</div>' +
-    '<div style="text-align:center;"><a class="back-link" href="portfolio.html">← '+t.nav.work+'</a></div>';
+    '<div style="text-align:center;"><a class="back-link" href="portfolio.html">'+icon('arrow_back')+' '+t.nav.work+'</a></div>';
 }
 
 // ---------- ARTICLE DETAIL ----------
@@ -305,9 +312,9 @@ function renderArticleDetail(){
     '</div>' +
     '<div class="article-body"><p>'+a.body.split('. ').join('. </p><p>')+'</p></div>' +
     (a.links && a.links.length ? '<div class="article-links">'+ a.links.map(function(l){
-      return '<a class="btn btn-primary btn-sm" href="'+l.url+'" target="_blank" rel="noopener">'+l.label+' ↗</a>';
+      return '<a class="btn btn-primary btn-sm" href="'+l.url+'" target="_blank" rel="noopener">'+l.label+' '+icon('open_in_new')+'</a>';
     }).join('') +'</div>' : '') +
-    '<div style="text-align:center;"><a class="back-link" href="articles.html">← '+t.nav.articles+'</a></div>';
+    '<div style="text-align:center;"><a class="back-link" href="articles.html">'+icon('arrow_back')+' '+t.nav.articles+'</a></div>';
 }
 
 function render(){
