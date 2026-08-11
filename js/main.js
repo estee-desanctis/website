@@ -27,6 +27,36 @@ function stars(n){
   return out;
 }
 function initials(name){ return name.split(' ').map(function(w){return w[0];}).join('').slice(0,2).toUpperCase(); }
+// Guillemet de citation en SVG inline (plutôt que la police d'icônes) : s'affiche
+// toujours correctement, même si la police externe ne charge pas, et évite une requête réseau.
+var QUOTE_ICON = '<svg class="quote-mark" viewBox="0 0 32 24" fill="none" aria-hidden="true" focusable="false"><path d="M0 24V14.4C0 9.6 1.2 6 3.6 3.6C6 1.2 9.2 0 13.2 0V4.8C10.8 4.8 9 5.6 7.8 7.2C6.6 8.8 6 10.8 6 13.2H12V24H0ZM18.8 24V14.4C18.8 9.6 20 6 22.4 3.6C24.8 1.2 28 0 32 0V4.8C29.6 4.8 27.8 5.6 26.6 7.2C25.4 8.8 24.8 10.8 24.8 13.2H30.8V24H18.8Z" fill="currentColor"/></svg>';
+
+// Trie les articles du plus récent au plus ancien à partir de leur date texte ("Avril 2024", "November 2025"...).
+var MONTHS_INDEX = {
+  janvier:0, jan:0, january:0,
+  fevrier:1, février:1, feb:1, february:1,
+  mars:2, mar:2, march:2,
+  avril:3, apr:3, april:3,
+  mai:4, may:4,
+  juin:5, jun:5, june:5,
+  juillet:6, jul:6, july:6,
+  aout:7, août:7, aug:7, august:7,
+  septembre:8, sept:8, sep:8, september:8,
+  octobre:9, oct:9, october:9,
+  novembre:10, nov:10, november:10,
+  decembre:11, décembre:11, dec:11, december:11
+};
+function parseArticleDate(str){
+  if(!str) return 0;
+  var norm = str.trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+  var parts = norm.split(/\s+/);
+  var year = parseInt(parts[parts.length-1], 10) || 0;
+  var month = MONTHS_INDEX[parts[0]];
+  return year * 12 + (month === undefined ? 0 : month);
+}
+function sortedArticles(t){
+  return t.articles.slice().sort(function(a,b){ return parseArticleDate(b.date) - parseArticleDate(a.date); });
+}
 
 function renderHeader(){
   var t = T();
@@ -35,7 +65,7 @@ function renderHeader(){
   if(!header) return;
   header.innerHTML =
     '<div class="header-inner">' +
-      '<a href="index.html" class="logo"><img src="images/logo.png" alt="EcoDesign logo">EcoDesign</a>' +
+      '<a href="index.html" class="logo"><img src="images/logo.png" alt="EcoDesign — '+t.nav.home+'"></a>' +
       '<nav class="main-nav" id="main-nav"><ul>' +
         '<li><a href="index.html#about">'+t.nav.about+'</a></li>' +
         '<li><a href="portfolio.html">'+t.nav.work+'</a></li>' +
@@ -66,7 +96,7 @@ function renderFooter(){
   if(!footer) return;
   footer.innerHTML =
     '<div class="wrap">' +
-      '<div class="flogo">EcoDesign</div>' +
+      '<a href="index.html" class="flogo"><img src="images/logo.png" alt="EcoDesign — '+t.nav.home+'"></a>' +
       '<div>'+t.footer.rights+' · '+t.footer.siret+'</div>' +
     '</div>';
 }
@@ -111,7 +141,7 @@ function renderHome(){
       '<div class="section-head"><h2 class="big">'+a.kicker+' <span class="accent">'+a.title+'</span></h2></div>' +
       '<div class="about-grid">' +
         '<div class="about-intro">' + a.intro.map(function(p){ return '<p>'+p+'</p>'; }).join('') + '</div>' +
-        '<div class="about-philosophy">'+icon('format_quote','quote-mark')+'<p class="philosophy-quote">'+a.philosophy.quote+'</p><p class="philosophy-sub">'+a.philosophy.sub+'</p></div>' +
+        '<div class="about-philosophy">'+QUOTE_ICON+'<p class="philosophy-quote">'+a.philosophy.quote+'</p><p class="philosophy-sub">'+a.philosophy.sub+'</p></div>' +
       '</div>' +
       '<div class="pillars-grid">' +
         a.pillars.map(function(p){
@@ -147,7 +177,7 @@ function renderHome(){
     art.innerHTML =
       '<div class="section-head"><h2 class="big">'+t.articlesSection.kicker+' <span class="accent">'+t.articlesSection.title+'</span></h2></div>' +
       '<div class="articles-grid">' +
-        t.articles.map(articleCard).join('') +
+        sortedArticles(t).map(articleCard).join('') +
       '</div>' +
       '<div class="center-link"><a href="articles.html">'+t.articlesSection.seeAll+' '+icon('arrow_forward')+'</a></div>';
   }
@@ -253,7 +283,7 @@ function renderArticlesList(){
   el2.innerHTML =
     '<div class="page-hero"><div class="breadcrumb"><a href="index.html">'+t.nav.home+'</a> / '+t.nav.articles+'</div>' +
       '<h2 class="big">'+t.articlesSection.kicker+' <span class="accent">'+t.articlesSection.title+'</span></h2></div>' +
-    '<div class="articles-grid">'+ t.articles.map(articleCard).join('') +'</div>';
+    '<div class="articles-grid">'+ sortedArticles(t).map(articleCard).join('') +'</div>';
 }
 
 // ---------- PROJECT DETAIL ----------
@@ -276,14 +306,14 @@ function renderProjectDetail(){
       '<div class="main">' +
         '<h3 class="h3" style="margin-bottom:8px;">'+ (getLang()==='fr' ? 'Le défi' : 'The challenge') +'</h3>' +
         '<p>'+p.challenge+'</p>' +
+        (p.stats && p.stats.length ? '<h3 class="h3" style="margin:24px 0 8px;">'+ (getLang()==='fr' ? "L'impact en chiffres" : 'The impact, in numbers') +'</h3><div class="stats-callouts">'+ p.stats.map(function(s){
+          return '<div class="stat-callout"><div class="stat-value">'+s.value+'</div><div class="stat-label">'+s.label+'</div></div>';
+        }).join('') +'</div>' : '') +
         '<h3 class="h3" style="margin:28px 0 8px;">'+ (getLang()==='fr' ? 'Méthodologie' : 'Methodology') +'</h3>' +
         p.process.map(function(step){
           return '<div class="process-step numbered"><div class="step-num">'+(step.num||'')+'</div><div><div class="step-label">'+step.step+'</div><h3>'+step.title+'</h3><p>'+step.desc+'</p></div></div>';
         }).join('') +
         '<h3 class="h3" style="margin-bottom:8px;">'+ (getLang()==='fr' ? 'Résultats' : 'Results') +'</h3>' +
-        (p.stats && p.stats.length ? '<div class="stats-callouts">'+ p.stats.map(function(s){
-          return '<div class="stat-callout"><div class="stat-value">'+s.value+'</div><div class="stat-label">'+s.label+'</div></div>';
-        }).join('') +'</div>' : '') +
         (p.achievements && p.achievements.length ? '<div class="achievements"><div class="ach-title">'+ (getLang()==='fr' ? 'Réussites clés' : 'Key achievements') +'</div>' +
           p.achievements.map(function(ac){ return '<div class="ach-item">'+icon('check_circle')+' '+ac+'</div>'; }).join('') +
         '</div>' : '<div class="results-list">'+ p.results.map(function(r){return '<span class="res">'+r+'</span>';}).join('') +'</div>') +

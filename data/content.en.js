@@ -105,27 +105,32 @@ window.CONTENT_EN = {
       "company": "CoderPad",
       "title": "AI-native hiring tools that cut recruiter overload",
       "subtitle": "SaaS technical-interview platform",
-      "tags": ["AI-native design", "0→1", "Design system"],
+      "tags": ["AI-native design", "0→1", "Design leadership"],
       "context": ["SaaS technical-interview platform", "AI feature design 0→1"],
-      "challenge": "Recruiters were drowning in async technical tests: long candidate videos to watch, scattered results to compare, slow and subjective decisions. My job: design AI-native tools that make hiring decisions faster and more confident, while keeping the recruiter in control of how much they delegate to AI.",
-      "role": ["AI feature design (0→1)", "Scoring & autonomy UX", "Video summary & transcription", "Collaborative candidate profiles"],
-      "team": ["3 designers", "Product managers", "Engineering & QA"],
-      "tools": ["Figma", "Custom GPTs & agents", "MCP · Claude Code", "Design tokens"],
+      "challenge": "Recruiters were drowning in async technical tests: long candidate videos to watch in full, scattered results to compare, slow and subjective decisions — while internally, every new AI feature took roughly 21 days of high-fidelity design and review to ship. My job: design AI-native tools that make hiring decisions faster and more confident without taking control away from the recruiter, lay the accessibility foundations of the design system, and grow the design team's autonomy and speed.",
+      "role": ["Lead product design (design team)", "AI feature design (0→1)", "Scoring & autonomy UX", "Accessibility guidelines", "Generative design system (Claude Design)"],
+      "team": ["3 Product Designers", "3 Product Managers", "20 Developers"],
+      "tools": ["Figma", "MCP · Claude Code · Skills & GPT agents", "Design tokens · Claude Design", "Fullstory · Metabase · Amplitude", "Notion · Slack · Gong"],
       "results": ["Faster hiring decisions", "Less time per candidate", "More consistent scoring", "Team-wide collaboration"],
       "stats": [
-        { "value": "−77%", "label": "HF design & review time (from ~35 to ~8 days)" }
+        { "value": "−80%", "label": "Design → review cycle (21 to 4 days, 5x quicker)" },
+        { "value": "60+", "label": "Client companies in 3 months (CAC 40, Fortune 500, EU tech scale-ups)" },
+        { "value": "10,000+", "label": "Tests graded by AI in 3 months" },
+        { "value": "95%", "label": "Users who agree with the AI's decision" }
       ],
       "achievements": [
-        "Faster, more confident hiring decisions",
-        "More consistent scoring across recruiters",
-        "Team-wide collaboration on candidate profiles",
-        "High-fidelity design process 4x faster thanks to an AI-assisted workflow"
+        "+65% growth in AI grading usage last month, driven by client adoption (Wix, Atos, Figma, Alan, EA…)",
+        "Accessibility guidelines set and rolled out across the design team",
+        "Design system built and prototyped on Claude Design, wired to Figma through Claude Code",
+        "Internal article on how our design team works, plus mentoring designers",
+        "Design/comms watch and alignment on the EU AI Act for our AI features"
       ],
       "process": [
-        { "num": "01", "step": "Frame", "title": "Design AI review surfaces", "desc": "I designed follow-up questions (video, screen-recording, text) that ask candidates to explain their code, and an AI-assisted scoring tool with adjustable AI autonomy." },
+        { "num": "01", "step": "Reframe the problem", "title": "A decision copilot, not one more tool", "desc": "Rather than stacking on more filters, I saw the chance to build a decision copilot: auto/partial AI grading, mobile-first and responsive, with follow-up questions (video, screen-recording, text) that ask candidates to explain their code, and adjustable AI autonomy." },
         { "num": "02", "step": "Reduce effort", "title": "Cut the review load", "desc": "Video transcription and AI summaries so recruiters decide without watching full recordings, plus a chatbot to compare candidates, exercises or whole campaigns in plain language." },
         { "num": "03", "step": "Make it a team sport", "title": "Shareable candidate profiles", "desc": "Taggable, shareable AI analysis inside a candidate profile any colleague can open, backed by a tokenized design system and AI design ops I own." },
-        { "num": "04", "step": "Accelerate with AI", "title": "Redesign the design process itself", "desc": "I revisited our design methodology by using AI prototyping as the low-fidelity step: demos and tests run directly on it, then export to Figma through our design system (Claude Design, Claude Code wired to Figma) and a design-lint plugin to keep the handoff reliable. Result: high-fidelity design and review time dropped from roughly 30-40 days to about 8 (fine-tuning the UI is still designer work, but the upfront time saved is substantial)." }
+        { "num": "04", "step": "Accelerate with AI", "title": "Redesign the design process itself", "desc": "I built the design system on Claude Design, prototyped on it, then wired Claude Code to Figma to generate mockups straight from the prototype, with a Figma lint plugin to keep the handoff reliable. Result: the design → review cycle dropped from 21 to 4 days (−80%, 5x quicker)." },
+        { "num": "05", "step": "Accessibility & leadership", "title": "Set the guidelines, grow the team", "desc": "I set the design system's accessibility guidelines, mentored the design team, shared how we work in an internal article, led the AI project on the design and PM side, and framed our design/comms approach to the EU AI Act for our AI features." }
       ]
     },
     {
@@ -136,7 +141,7 @@ window.CONTENT_EN = {
       "subtitle": "SaaS & IoT B2B solar platforms",
       "tags": ["Design system", "Research", "A/B testing"],
       "context": ["SaaS & IoT B2B solar platforms", "Sole designer, constrained budget"],
-      "challenge": "As the sole designer on a constrained budget, I had to simplify complex solar tools and unblock PMs, developers and marketing at once. A confusing roof + exposure step caused drop-off in the simulator, on top of an inconsistent, non-compliant design system.",
+      "challenge": "As the sole designer on a constrained budget, I had to simplify complex solar tools while unblocking PMs, developers and marketing at the same time. A confusing roof + exposure step was causing users to drop out mid-simulator, and an inconsistent, non-WCAG-compliant design system slowed down every release. My job: redesign the core journeys, remove the design bottleneck, and grow the team's autonomy.",
       "role": ["Solar simulator redesign", "IoT dashboard (piloted)", "WCAG design system", "Directed 2 freelance designers"],
       "team": ["Product managers", "Developers · QA", "Engineers · Data · Marketing"],
       "tools": ["Figma", "Hotjar", "VWO (A/B, MAB)"],
@@ -150,10 +155,11 @@ window.CONTENT_EN = {
         "Simulator simplified from 6 to 5 steps, validated by A/B (MAB) testing",
         "WCAG design system shipped across three platforms (Tailwind, Material/Ionic)",
         "PMs trained to run their own user interviews",
-        "Two freelance designers directed to parallelize delivery without new headcount"
+        "Two freelance designers directed to parallelize delivery without new headcount",
+        "Design system ready to absorb new platforms without added consistency debt"
       ],
       "process": [
-        { "num": "01", "step": "Research", "title": "Redesign the core journeys", "desc": "I simplified the simulator from 6 steps to 5 by folding the confusing exposure step into the roof step, and streamlined the IoT app setup." },
+        { "num": "01", "step": "Reframe the problem", "title": "A trust problem, not just a UX bug", "desc": "Rather than treating every drop-off as an isolated bug, I saw a clarity and trust problem in the journey. I simplified the simulator from 6 steps to 5 by folding the confusing exposure step into the roof step, and streamlined the IoT app setup." },
         { "num": "02", "step": "Unblock", "title": "Remove the bottleneck", "desc": "I wrote dev tickets, drove tech reviews and shipped reusable templates so design stopped being the blocker." },
         { "num": "03", "step": "Lead & enable", "title": "Direct the design effort", "desc": "I directed two freelance designers to parallelize features without new hires, trained PMs to run their own interviews, and scaled a WCAG design system (Tailwind, Material/Ionic)." }
       ]

@@ -105,27 +105,32 @@ window.CONTENT_FR = {
       "company": "CoderPad",
       "title": "Des outils de recrutement IA qui allègent la charge des recruteurs",
       "subtitle": "Plateforme SaaS de tests techniques",
-      "tags": ["AI-native design", "0→1", "Design system"],
+      "tags": ["AI-native design", "0→1", "Leadership design"],
       "context": ["SaaS de tests techniques", "Design de fonctionnalités IA 0→1"],
-      "challenge": "Les recruteurs croulaient sous les tests techniques asynchrones : longues vidéos à visionner, résultats éparpillés à comparer, décisions lentes et subjectives. Ma mission : concevoir des outils pilotés par l'IA pour décider plus vite et avec plus de confiance, en laissant le recruteur maître du niveau qu'il délègue à l'IA.",
-      "role": ["Design de fonctionnalités IA (0→1)", "UX notation & autonomie", "Résumé & transcription vidéo", "Fiches candidat collaboratives"],
-      "team": ["3 designers", "Product managers", "Ingénierie & QA"],
-      "tools": ["Figma", "GPTs custom & agents", "MCP · Claude Code", "Design tokens"],
+      "challenge": "Les recruteurs croulaient sous les tests techniques asynchrones : de longues vidéos à visionner en entier, des résultats éparpillés à comparer, des décisions lentes et subjectives — pendant qu'en interne, chaque nouvelle fonctionnalité IA prenait environ 21 jours de conception haute-fidélité et de review avant de sortir. Ma mission : concevoir des outils pilotés par l'IA qui accélèrent la décision de recrutement sans retirer la main au recruteur, poser les bases accessibilité du design system, et faire monter l'équipe design en autonomie et en vitesse.",
+      "role": ["Lead design produit (équipe design)", "Design de fonctionnalités IA (0→1)", "UX notation & autonomie", "Guidelines accessibilité", "Design system génératif (Claude Design)"],
+      "team": ["3 Product Designers", "3 Product Managers", "20 Développeurs"],
+      "tools": ["Figma", "MCP · Claude Code · Skills & agents GPT", "Design tokens · Claude Design", "Fullstory · Metabase · Amplitude", "Notion · Slack · Gong"],
       "results": ["Décisions de recrutement plus rapides", "Moins de temps par candidat", "Notation plus cohérente", "Collaboration d'équipe"],
       "stats": [
-        { "value": "−77%", "label": "Temps de design HF & review (de ~35 à ~8 jours)" }
+        { "value": "−80%", "label": "Cycle design → review (de 21 à 4 jours, 5x plus rapide)" },
+        { "value": "60+", "label": "Entreprises clientes en 3 mois (CAC 40, Fortune 500, scale-ups tech)" },
+        { "value": "10 000+", "label": "Tests évalués par l'IA en 3 mois" },
+        { "value": "95%", "label": "Utilisateurs d'accord avec la décision de l'IA" }
       ],
       "achievements": [
-        "Décisions de recrutement plus rapides et plus sûres",
-        "Notation plus cohérente entre recruteurs",
-        "Collaboration d'équipe sur les fiches candidat",
-        "Process de design haute-fidélité 4x plus rapide grâce à un workflow assisté par IA"
+        "+65% d'usage de la notation IA le mois dernier, porté par l'adoption client (Wix, Atos, Figma, Alan, EA…)",
+        "Guidelines d'accessibilité posées et diffusées à toute l'équipe design",
+        "Design system construit et prototypé sur Claude Design, connecté à Figma via Claude Code",
+        "Article interne sur notre façon de travailler en équipe design, et mentorat des designers",
+        "Veille et alignement design/communication sur l'AI Act européen pour nos fonctionnalités IA"
       ],
       "process": [
-        { "num": "01", "step": "Cadrer", "title": "Concevoir les surfaces de revue IA", "desc": "J'ai conçu des questions de relance (vidéo, capture d'écran, texte) qui demandent au candidat d'expliquer son code, et un outil de notation assistée par IA avec une autonomie IA ajustable." },
+        { "num": "01", "step": "Repenser le problème", "title": "Un copilote de décision, pas un outil de plus", "desc": "Plutôt que d'empiler des filtres, j'ai vu l'occasion de construire un copilote de décision : une notation IA auto/partielle, mobile-first et responsive, avec des questions de relance (vidéo, capture d'écran, texte) qui demandent au candidat d'expliquer son code, et une autonomie IA ajustable." },
         { "num": "02", "step": "Alléger l'effort", "title": "Réduire la charge de revue", "desc": "Transcription et résumés vidéo par IA pour décider sans visionner l'enregistrement complet, plus un chatbot pour comparer candidats, exercices ou campagnes entières en langage naturel." },
         { "num": "03", "step": "En faire une affaire d'équipe", "title": "Fiches candidat partageables", "desc": "Analyse IA taguable et partageable dans une fiche candidat que chaque collègue peut ouvrir, appuyée sur un design system tokenisé et un design ops IA que je pilote." },
-        { "num": "04", "step": "Accélérer avec l'IA", "title": "Refondre le process de design lui-même", "desc": "J'ai revisité notre méthodologie de design en utilisant le prototypage IA comme étape basse-fidélité : démos et tests directement dessus, puis export vers Figma via notre design system (Claude Design, Claude Code branché à Figma) et un plugin de lint design pour fiabiliser la refonte. Résultat : le temps de design haute-fidélité et de review est passé d'environ 30-40 jours à ~8 jours (reste le travail d'affinage UI du designer, mais le temps gagné en amont est considérable)." }
+        { "num": "04", "step": "Accélérer avec l'IA", "title": "Refondre le process de design lui-même", "desc": "J'ai construit le design system sur Claude Design, prototypé dessus, puis branché Claude Code à Figma pour générer les maquettes à partir du prototype, avec un plugin de lint Figma pour fiabiliser la refonte. Résultat : le cycle design → review est passé de 21 à 4 jours (−80%, 5x plus rapide)." },
+        { "num": "05", "step": "Accessibilité & leadership", "title": "Poser des guidelines, faire grandir l'équipe", "desc": "J'ai posé les guidelines d'accessibilité du design system, mentoré l'équipe design, partagé notre façon de travailler dans un article interne, piloté le projet IA côté design et PM, et cadré la communication autour de l'AI Act européen pour nos fonctionnalités IA." }
       ]
     },
     {
@@ -136,7 +141,7 @@ window.CONTENT_FR = {
       "subtitle": "Plateformes solaires SaaS & IoT B2B",
       "tags": ["Design system", "Recherche", "A/B testing"],
       "context": ["Plateformes solaires SaaS & IoT B2B", "Seule designer, budget contraint"],
-      "challenge": "Seule designer et à budget contraint, je devais simplifier des outils solaires complexes tout en débloquant les PM, les développeurs et le marketing. Une étape toiture + exposition confuse provoquait de l'abandon dans le simulateur, en plus d'un design system incohérent et non conforme.",
+      "challenge": "Seule designer et à budget contraint, je devais simplifier des outils solaires complexes tout en débloquant PM, développeurs et marketing en même temps. Une étape toiture + exposition confuse faisait abandonner des utilisateurs en plein simulateur, et un design system incohérent et non conforme WCAG ralentissait chaque livraison. Ma mission : refondre les parcours cœur, lever le goulot d'étranglement design, et faire monter l'équipe en autonomie.",
       "role": ["Refonte du simulateur solaire", "Dashboard IoT (piloté)", "Design system WCAG", "Encadrement de 2 freelances"],
       "team": ["Product managers", "Développeurs · QA", "Ingénieurs · Data · Marketing"],
       "tools": ["Figma", "Hotjar", "VWO (A/B, MAB)"],
@@ -150,10 +155,11 @@ window.CONTENT_FR = {
         "Simulateur simplifié de 6 à 5 étapes, validé par tests A/B (MAB)",
         "Design system WCAG déployé sur trois plateformes (Tailwind, Material/Ionic)",
         "PM formés à mener leurs propres entretiens utilisateurs",
-        "Deux designers freelance encadrés pour paralléliser les livraisons sans recruter"
+        "Deux designers freelance encadrés pour paralléliser les livraisons sans recruter",
+        "Design system prêt à absorber de nouvelles plateformes sans dette de cohérence"
       ],
       "process": [
-        { "num": "01", "step": "Recherche", "title": "Refondre les parcours cœur", "desc": "J'ai simplifié le simulateur de 6 étapes à 5 en fusionnant l'étape d'exposition, source de confusion, dans l'étape toiture, et simplifié la configuration de l'app IoT." },
+        { "num": "01", "step": "Repenser le problème", "title": "Un problème de confiance, pas juste un bug UX", "desc": "Plutôt que de traiter chaque abandon comme un bug isolé, j'ai vu un problème de clarté et de confiance dans le parcours. J'ai simplifié le simulateur de 6 étapes à 5 en fusionnant l'étape d'exposition, source de confusion, dans l'étape toiture, et simplifié la configuration de l'app IoT." },
         { "num": "02", "step": "Débloquer", "title": "Lever le goulot d'étranglement", "desc": "J'ai rédigé des tickets dev, piloté les tech reviews et livré des templates réutilisables pour que le design ne soit plus le frein." },
         { "num": "03", "step": "Piloter & autonomiser", "title": "Piloter l'effort design", "desc": "J'ai encadré deux designers freelance pour paralléliser des fonctionnalités sans recruter, formé les PM à mener leurs entretiens, et fait passer à l'échelle un design system WCAG (Tailwind, Material/Ionic)." }
       ]
