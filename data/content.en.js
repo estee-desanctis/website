@@ -105,7 +105,7 @@ window.CONTENT_EN = {
       "company": "CoderPad",
       "title": "AI-native hiring tools that cut recruiter overload",
       "subtitle": "SaaS technical-interview platform",
-      "tags": ["AI-native design", "0→1", "Design leadership"],
+      "tags": ["AI-native design", "0→1", "Design leadership", "Accessibility"],
       "context": ["SaaS technical-interview platform", "AI feature design 0→1"],
       "challenge": "Recruiters were drowning in async technical tests: long candidate videos to watch in full, scattered results to compare, slow and subjective decisions — while internally, every new AI feature took roughly 21 days of high-fidelity design and review to ship. My job: design AI-native tools that make hiring decisions faster and more confident without taking control away from the recruiter, lay the accessibility foundations of the design system, and grow the design team's autonomy and speed.",
       "role": ["Lead product design (design team)", "AI feature design (0→1)", "Scoring & autonomy UX", "Accessibility guidelines", "Generative design system (Claude Design)"],
@@ -118,19 +118,20 @@ window.CONTENT_EN = {
         { "value": "10,000+", "label": "Tests graded by AI in 3 months" },
         { "value": "95%", "label": "Users who agree with the AI's decision" }
       ],
+      "logosImage": "client logo strip (Wix, Atos, Figma, Alan, EA…) — confirm brand usage clearance before publishing",
       "achievements": [
         "+65% growth in AI grading usage last month, driven by client adoption (Wix, Atos, Figma, Alan, EA…)",
+        "AI grading shipped in three modes (none, partial, full) with a plain-language explained verdict — the recruiter always keeps the final call",
         "Accessibility guidelines set and rolled out across the design team",
-        "Design system built and prototyped on Claude Design, wired to Figma through Claude Code",
         "Internal article on how our design team works, plus mentoring designers",
         "Design/comms watch and alignment on the EU AI Act for our AI features"
       ],
       "process": [
-        { "num": "01", "step": "Reframe the problem", "title": "A decision copilot, not one more tool", "desc": "Rather than stacking on more filters, I saw the chance to build a decision copilot: auto/partial AI grading, mobile-first and responsive, with follow-up questions (video, screen-recording, text) that ask candidates to explain their code, and adjustable AI autonomy." },
+        { "num": "01", "step": "Reframe the problem", "title": "A decision copilot, not one more tool", "desc": "Rather than stacking on more filters, I saw the chance to build a decision copilot: make AI trustworthy for high-stakes hiring, not decide in the recruiter's place. I designed AI grading in three modes (none, partial, full), mobile-first and responsive, with follow-up questions (video, screen-recording, text) that ask candidates to explain their code, and adjustable AI autonomy — the recruiter always keeps control.", "image": "screenshot of the AI grading interface (criteria setup + candidate report with AI verdict)" },
         { "num": "02", "step": "Reduce effort", "title": "Cut the review load", "desc": "Video transcription and AI summaries so recruiters decide without watching full recordings, plus a chatbot to compare candidates, exercises or whole campaigns in plain language." },
         { "num": "03", "step": "Make it a team sport", "title": "Shareable candidate profiles", "desc": "Taggable, shareable AI analysis inside a candidate profile any colleague can open, backed by a tokenized design system and AI design ops I own." },
-        { "num": "04", "step": "Accelerate with AI", "title": "Redesign the design process itself", "desc": "I built the design system on Claude Design, prototyped on it, then wired Claude Code to Figma to generate mockups straight from the prototype, with a Figma lint plugin to keep the handoff reliable. Result: the design → review cycle dropped from 21 to 4 days (−80%, 5x quicker)." },
-        { "num": "05", "step": "Accessibility & leadership", "title": "Set the guidelines, grow the team", "desc": "I set the design system's accessibility guidelines, mentored the design team, shared how we work in an internal article, led the AI project on the design and PM side, and framed our design/comms approach to the EU AI Act for our AI features." }
+        { "num": "04", "step": "Accelerate with AI", "title": "Redesign the design process itself", "desc": "I built the design system on Claude Design, prototyped on it, then wired Claude Code to Figma to generate mockups straight from the prototype, with a Figma lint plugin to keep the handoff reliable. Result: the design → review cycle dropped from 21 to 4 days (−80%, 5x quicker).", "image": "screenshot of the Claude Design design system or the Claude Code → Figma pipeline" },
+        { "num": "05", "step": "Accessibility & leadership", "title": "Set the guidelines, grow the team", "desc": "I set the design system's accessibility guidelines — the foundation every AI feature we've shipped since builds on —, mentored the design team, shared how we work in an internal article, led the AI project on the design and PM side, and framed our design/comms approach to the EU AI Act for our AI features.", "image": "excerpt of the design system's accessibility guidelines (e.g. a contrast or documented-component page)" }
       ]
     },
     {

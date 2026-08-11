@@ -31,6 +31,13 @@ function initials(name){ return name.split(' ').map(function(w){return w[0];}).j
 // toujours correctement, même si la police externe ne charge pas, et évite une requête réseau.
 var QUOTE_ICON = '<svg class="quote-mark" viewBox="0 0 32 24" fill="none" aria-hidden="true" focusable="false"><path d="M0 24V14.4C0 9.6 1.2 6 3.6 3.6C6 1.2 9.2 0 13.2 0V4.8C10.8 4.8 9 5.6 7.8 7.2C6.6 8.8 6 10.8 6 13.2H12V24H0ZM18.8 24V14.4C18.8 9.6 20 6 22.4 3.6C24.8 1.2 28 0 32 0V4.8C29.6 4.8 27.8 5.6 26.6 7.2C25.4 8.8 24.8 10.8 24.8 13.2H30.8V24H18.8Z" fill="currentColor"/></svg>';
 
+// Placeholder visuel (SVG inline, pas de police externe) affiché sur les pages projet tant qu'une
+// vraie image n'a pas été déposée dans /images et référencée à la place de ce bloc.
+var IMAGE_PLACEHOLDER_ICON = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.8"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor"/><path d="M21 15l-5-5-4 4-3-3-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+function imgPlaceholder(caption){
+  return '<div class="img-placeholder">'+IMAGE_PLACEHOLDER_ICON+'<span>[image à insérer : '+caption+']</span></div>';
+}
+
 // Trie les articles du plus récent au plus ancien à partir de leur date texte ("Avril 2024", "November 2025"...).
 var MONTHS_INDEX = {
   janvier:0, jan:0, january:0,
@@ -308,10 +315,10 @@ function renderProjectDetail(){
         '<p>'+p.challenge+'</p>' +
         (p.stats && p.stats.length ? '<h3 class="h3" style="margin:24px 0 8px;">'+ (getLang()==='fr' ? "L'impact en chiffres" : 'The impact, in numbers') +'</h3><div class="stats-callouts">'+ p.stats.map(function(s){
           return '<div class="stat-callout"><div class="stat-value">'+s.value+'</div><div class="stat-label">'+s.label+'</div></div>';
-        }).join('') +'</div>' : '') +
+        }).join('') +'</div>' + (p.logosImage ? imgPlaceholder(p.logosImage) : '') : '') +
         '<h3 class="h3" style="margin:28px 0 8px;">'+ (getLang()==='fr' ? 'Méthodologie' : 'Methodology') +'</h3>' +
         p.process.map(function(step){
-          return '<div class="process-step numbered"><div class="step-num">'+(step.num||'')+'</div><div><div class="step-label">'+step.step+'</div><h3>'+step.title+'</h3><p>'+step.desc+'</p></div></div>';
+          return '<div class="process-step numbered"><div class="step-num">'+(step.num||'')+'</div><div><div class="step-label">'+step.step+'</div><h3>'+step.title+'</h3><p>'+step.desc+'</p>'+ (step.image ? imgPlaceholder(step.image) : '') +'</div></div>';
         }).join('') +
         '<h3 class="h3" style="margin-bottom:8px;">'+ (getLang()==='fr' ? 'Résultats' : 'Results') +'</h3>' +
         (p.achievements && p.achievements.length ? '<div class="achievements"><div class="ach-title">'+ (getLang()==='fr' ? 'Réussites clés' : 'Key achievements') +'</div>' +

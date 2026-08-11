@@ -105,7 +105,7 @@ window.CONTENT_FR = {
       "company": "CoderPad",
       "title": "Des outils de recrutement IA qui allègent la charge des recruteurs",
       "subtitle": "Plateforme SaaS de tests techniques",
-      "tags": ["AI-native design", "0→1", "Leadership design"],
+      "tags": ["AI-native design", "0→1", "Leadership design", "Accessibilité"],
       "context": ["SaaS de tests techniques", "Design de fonctionnalités IA 0→1"],
       "challenge": "Les recruteurs croulaient sous les tests techniques asynchrones : de longues vidéos à visionner en entier, des résultats éparpillés à comparer, des décisions lentes et subjectives — pendant qu'en interne, chaque nouvelle fonctionnalité IA prenait environ 21 jours de conception haute-fidélité et de review avant de sortir. Ma mission : concevoir des outils pilotés par l'IA qui accélèrent la décision de recrutement sans retirer la main au recruteur, poser les bases accessibilité du design system, et faire monter l'équipe design en autonomie et en vitesse.",
       "role": ["Lead design produit (équipe design)", "Design de fonctionnalités IA (0→1)", "UX notation & autonomie", "Guidelines accessibilité", "Design system génératif (Claude Design)"],
@@ -118,19 +118,20 @@ window.CONTENT_FR = {
         { "value": "10 000+", "label": "Tests évalués par l'IA en 3 mois" },
         { "value": "95%", "label": "Utilisateurs d'accord avec la décision de l'IA" }
       ],
+      "logosImage": "bandeau de logos clients (Wix, Atos, Figma, Alan, EA…) — vérifier l'autorisation d'usage de marque avant publication",
       "achievements": [
         "+65% d'usage de la notation IA le mois dernier, porté par l'adoption client (Wix, Atos, Figma, Alan, EA…)",
+        "Notation IA livrée en trois modes (sans IA, partielle, complète) avec verdict expliqué en clair — le recruteur garde toujours la décision finale",
         "Guidelines d'accessibilité posées et diffusées à toute l'équipe design",
-        "Design system construit et prototypé sur Claude Design, connecté à Figma via Claude Code",
         "Article interne sur notre façon de travailler en équipe design, et mentorat des designers",
         "Veille et alignement design/communication sur l'AI Act européen pour nos fonctionnalités IA"
       ],
       "process": [
-        { "num": "01", "step": "Repenser le problème", "title": "Un copilote de décision, pas un outil de plus", "desc": "Plutôt que d'empiler des filtres, j'ai vu l'occasion de construire un copilote de décision : une notation IA auto/partielle, mobile-first et responsive, avec des questions de relance (vidéo, capture d'écran, texte) qui demandent au candidat d'expliquer son code, et une autonomie IA ajustable." },
+        { "num": "01", "step": "Repenser le problème", "title": "Un copilote de décision, pas un outil de plus", "desc": "Plutôt que d'empiler des filtres, j'ai vu l'occasion de construire un copilote de décision : rendre l'IA digne de confiance pour un recrutement à fort enjeu, pas décider à la place du recruteur. J'ai conçu une notation IA en trois modes (sans IA, partielle, complète), mobile-first et responsive, avec des questions de relance (vidéo, capture d'écran, texte) qui demandent au candidat d'expliquer son code, et une autonomie IA ajustable — le recruteur garde toujours la main.", "image": "capture de l'interface de notation IA (définition des critères + rapport candidat avec verdict IA)" },
         { "num": "02", "step": "Alléger l'effort", "title": "Réduire la charge de revue", "desc": "Transcription et résumés vidéo par IA pour décider sans visionner l'enregistrement complet, plus un chatbot pour comparer candidats, exercices ou campagnes entières en langage naturel." },
         { "num": "03", "step": "En faire une affaire d'équipe", "title": "Fiches candidat partageables", "desc": "Analyse IA taguable et partageable dans une fiche candidat que chaque collègue peut ouvrir, appuyée sur un design system tokenisé et un design ops IA que je pilote." },
-        { "num": "04", "step": "Accélérer avec l'IA", "title": "Refondre le process de design lui-même", "desc": "J'ai construit le design system sur Claude Design, prototypé dessus, puis branché Claude Code à Figma pour générer les maquettes à partir du prototype, avec un plugin de lint Figma pour fiabiliser la refonte. Résultat : le cycle design → review est passé de 21 à 4 jours (−80%, 5x plus rapide)." },
-        { "num": "05", "step": "Accessibilité & leadership", "title": "Poser des guidelines, faire grandir l'équipe", "desc": "J'ai posé les guidelines d'accessibilité du design system, mentoré l'équipe design, partagé notre façon de travailler dans un article interne, piloté le projet IA côté design et PM, et cadré la communication autour de l'AI Act européen pour nos fonctionnalités IA." }
+        { "num": "04", "step": "Accélérer avec l'IA", "title": "Refondre le process de design lui-même", "desc": "J'ai construit le design system sur Claude Design, prototypé dessus, puis branché Claude Code à Figma pour générer les maquettes à partir du prototype, avec un plugin de lint Figma pour fiabiliser la refonte. Résultat : le cycle design → review est passé de 21 à 4 jours (−80%, 5x plus rapide).", "image": "capture du design system sur Claude Design ou du pipeline Claude Code → Figma" },
+        { "num": "05", "step": "Accessibilité & leadership", "title": "Poser des guidelines, faire grandir l'équipe", "desc": "J'ai posé les guidelines d'accessibilité du design system — la base sur laquelle s'appuie toute fonctionnalité IA qu'on livre depuis —, mentoré l'équipe design, partagé notre façon de travailler dans un article interne, piloté le projet IA côté design et PM, et cadré la communication autour de l'AI Act européen pour nos fonctionnalités IA.", "image": "extrait des guidelines d'accessibilité du design system (ex. page de contraste ou composant documenté)" }
       ]
     },
     {
