@@ -26,12 +26,12 @@ window.CONTENT_FR = {
     "kicker": "Pourquoi",
     "title": "me choisir",
     "categories": [
-      { "icon": "groups", "title": "Leadership Design", "tags": ["Stratégie design", "Design ops", "Mentorat & montée en compétence", "Gestion des parties prenantes", "Collaboration cross-fonctionnelle", "Design reviews"] },
-      { "icon": "search", "title": "Recherche", "tags": ["User research", "Entretiens", "Tests d'utilisabilité", "Journey mapping", "A/B & MAB testing", "Analytics"] },
-      { "icon": "palette", "title": "Design", "tags": ["Product & interaction design", "Prototypage", "UX writing", "Design systems à l'échelle"] },
-      { "icon": "smart_toy", "title": "IA pour le design", "tags": ["Design ops augmenté par l'IA", "GPTs custom & agents", "MCP", "Claude Code", "Figma Make"] },
-      { "icon": "eco", "title": "Design responsable", "tags": ["Accessibilité (WCAG, RGAA)", "Écoconception (RGESN)", "Design inclusif"] },
-      { "icon": "build", "title": "Outils", "tags": ["Figma", "Adobe Suite", "Storybook", "ZeroHeight", "Hotjar", "Maze", "UserTesting", "Google Analytics", "VWO", "HTML/CSS", "JavaScript", "GitHub"] }
+      { "icon": "groups", "title": "Leadership Design", "tags": ["Collaboration cross-fonctionnelle", "Design ops", "Design reviews", "Gestion des parties prenantes", "Mentorat & montée en compétence", "Stratégie design"] },
+      { "icon": "search", "title": "Recherche", "tags": ["A/B & MAB testing", "Analytics", "Entretiens", "Journey mapping", "Tests d'utilisabilité", "User research"] },
+      { "icon": "palette", "title": "Design", "tags": ["Design systems à l'échelle", "Product & interaction design", "Prototypage", "UX writing"] },
+      { "icon": "smart_toy", "title": "IA pour le design", "tags": ["Claude Code", "Design ops augmenté par l'IA", "Figma Make", "GPTs custom & agents", "MCP"] },
+      { "icon": "eco", "title": "Design responsable", "tags": ["Accessibilité (WCAG, RGAA)", "Design inclusif", "Écoconception (RGESN)"] },
+      { "icon": "build", "title": "Outils", "tags": ["Adobe Suite", "Amplitude", "Figma", "FullStory", "GitHub", "Google Analytics", "Hotjar", "HTML/CSS", "JavaScript", "Maze", "Metabase", "Storybook", "VWO", "ZeroHeight"] }
     ]
   },
   "about": {
@@ -48,7 +48,7 @@ window.CONTENT_FR = {
     },
     "pillars": [
       { "title": "Faire monter l'équipe en autonomie", "desc": "Quand le design devient un point de passage obligé, je forme PM, devs, marketing et ingénieurs produit à travailler eux-mêmes sur le design system et à mener leurs propres entretiens utilisateurs. Chez Dualsun, ça a libéré l'équipe sans recruter.", "metric": "−50% temps de recherche" },
-      { "title": "Accélérer avec l'IA, sans perdre la main", "desc": "Je construis des design systems tokenisés et des pipelines IA (Figma ↔ Claude Code) pour livrer plus vite sans sacrifier la qualité. Et quand je conçois des fonctionnalités IA, l'humain garde toujours la décision finale — jamais l'algorithme seul.", "metric": "−71% cycle design → review" },
+      { "title": "Accélérer avec l'IA, sans perdre la main", "desc": "Je construis des design systems tokenisés et des pipelines IA (Figma ↔ Claude Code) pour livrer plus vite sans sacrifier la qualité. Et quand je conçois des fonctionnalités IA, l'humain garde toujours la décision finale — jamais l'algorithme seul.", "metric": "−81% cycle design → review" },
       { "title": "Poser des fondations accessibles, dès le départ", "desc": "J'intègre l'accessibilité (WCAG, RGAA) et l'écoconception (RGESN) dans les fondations du design system, pas en rattrapage à la fin — pour des produits utilisables par plus de monde, avec moins de dette à corriger ensuite.", "metric": "Design systems conformes WCAG, à l'échelle" }
     ]
   },
@@ -97,6 +97,7 @@ window.CONTENT_FR = {
   },
   "footer": {
     "rights": "2026 Tous droits réservés",
+    "brand": "ECODESIGN",
     "siret": "SIRET 893 874 487 00018"
   },
   "projects": [
@@ -115,7 +116,7 @@ window.CONTENT_FR = {
       "tools": ["Figma · Figma Make", "MCP · Claude Code · Skills & agents", "Design tokens · Claude Design", "Fullstory · Metabase · Amplitude", "Notion · Slack · Gong"],
       "results": ["Décisions de recrutement plus rapides", "Moins de temps par candidat", "Notation plus cohérente", "Collaboration d'équipe"],
       "stats": [
-        { "value": "−71%", "label": "Cycle design → review (de 21 à 6 jours, 3,5x plus rapide)" },
+        { "value": "−81%", "label": "Cycle design → review (de 21 à 4 jours, 5,25x plus rapide)" },
         { "value": "60+", "label": "Entreprises clientes en 3 mois (CAC 40, Fortune 500, scale-ups tech)" },
         { "value": "10 000+", "label": "Tests évalués par l'IA en 3 mois" }
       ],
@@ -127,8 +128,8 @@ window.CONTENT_FR = {
       ],
       "process": [
         { "num": "01", "step": "Repenser le problème", "title": "Un copilote de décision, pas un outil de plus", "desc": "Plutôt que d'empiler des filtres, j'ai vu l'occasion de construire un copilote de décision : rendre l'IA digne de confiance pour un recrutement à fort enjeu, pas décider à la place du recruteur. J'ai conçu une notation IA en trois modes (sans IA, partielle, complète), mobile-first et responsive, avec des questions de relance (vidéo, capture d'écran, texte) qui demandent au candidat d'expliquer son code, et une autonomie IA ajustable — le recruteur définit ses critères et garde toujours la main sur la décision finale.", "image": { "src": "images/coderpad-ai-grading-criteria.webp", "alt": "Écran de configuration des critères de la notation assistée par IA de CoderPad, avec validation automatique et validation manuelle assistée par IA.", "caption": "L'écran de configuration des critères de la notation assistée par IA de CoderPad — UI réelle, livrée en production. Trois modes (sans IA, partielle, complète) gardent le recruteur maître de la décision.", "w": 900, "h": 774 } },
-        { "num": "02", "step": "Alléger l'effort", "title": "Réduire la charge de revue", "desc": "Transcription et résumés vidéo par IA pour décider sans visionner l'enregistrement complet, plus un chatbot pour comparer candidats, exercices ou campagnes entières en langage naturel. Le rapport candidat affiche le verdict et l'analyse de l'IA critère par critère, en langage clair — et le recruteur peut toujours confirmer ou corriger chacun d'eux.", "image": { "src": "images/coderpad-candidate-report.webp", "alt": "Rapport candidat CoderPad affichant, critère par critère, le verdict de l'IA (réussite ou échec) avec le raisonnement en langage clair.", "caption": "Le rapport côté candidat : chaque critère affiche un verdict réussite/échec avec le raisonnement de l'IA en langage clair.", "w": 627, "h": 408 } },
-        { "num": "03", "step": "Accélérer avec l'IA", "title": "Refondre le process de design lui-même", "desc": "J'ai construit le design system sur Claude Design, prototypé dessus, puis branché Claude Code à Figma pour générer les maquettes à partir du prototype, avec un plugin de lint Figma pour fiabiliser la refonte. Résultat : le cycle design → review est passé de 21 à 6 jours (−71%, 3,5x plus rapide).", "image": { "src": "images/coderpad-design-system-wcag.webp", "alt": "Librairie de composants Figma de CoderPad avec vérification de contraste WCAG en direct et tokens de couleur sémantiques, en thème clair et sombre.", "caption": "Le design system Figma que j'ai construit sur Claude Design — vérification de contraste WCAG en direct, tokens de couleur sémantiques, theming light/dark sur le même composant — la base qui a permis de diviser le cycle design → review par plus de trois.", "w": 1400, "h": 707 } },
+        { "num": "02", "step": "Alléger l'effort", "title": "Réduire la charge de revue", "desc": "Transcription et résumés vidéo par IA pour décider sans visionner l'enregistrement complet, plus un chatbot pour comparer candidats, exercices ou campagnes entières en langage naturel. Le rapport candidat affiche le verdict et l'analyse de l'IA critère par critère, en langage clair — et le recruteur peut toujours confirmer ou corriger chacun d'eux.", "image": { "src": "images/image6-ai-assisted-grading-candidate-report-verdict.png", "alt": "Rapport candidat CoderPad affichant, critère par critère, le verdict de l'IA (réussite ou échec) avec le raisonnement en langage clair.", "caption": "Le rapport côté candidat : chaque critère affiche un verdict réussite/échec avec le raisonnement de l'IA en langage clair.", "w": 627, "h": 408 } },
+        { "num": "03", "step": "Accélérer avec l'IA", "title": "Refondre le process de design lui-même", "desc": "J'ai construit le design system sur Claude Design, prototypé dessus, puis branché Claude Code à Figma pour générer les maquettes à partir du prototype, avec un plugin de lint Figma pour fiabiliser la refonte. Résultat : le cycle design → review est passé de 21 à 4 jours (−81%, 5,25x plus rapide).", "image": { "src": "images/coderpad-design-system-wcag.webp", "alt": "Librairie de composants Figma de CoderPad avec vérification de contraste WCAG en direct et tokens de couleur sémantiques, en thème clair et sombre.", "caption": "Le design system Figma que j'ai construit sur Claude Design — vérification de contraste WCAG en direct, tokens de couleur sémantiques, theming light/dark sur le même composant — la base qui a permis de diviser le cycle design → review par plus de trois.", "w": 1400, "h": 707 } },
         { "num": "04", "step": "Accessibilité & leadership", "title": "Poser des guidelines, faire grandir l'équipe", "desc": "J'ai posé les guidelines d'accessibilité du design system — la base sur laquelle s'appuie toute fonctionnalité IA qu'on livre depuis —, mentoré l'équipe design, partagé notre façon de travailler dans un article interne, et piloté le projet IA côté design et PM.", "image": { "src": "images/coderpad-a11y-keyboard-guide.webp", "alt": "Extrait du guide de référence interne « Keyboard navigation guidelines » rédigé pour les designers et développeurs de CoderPad.", "caption": "Un des guides de référence internes que je rédige et maintiens — ici sur l'accessibilité clavier — pour que les bonnes pratiques passent à l'échelle de l'équipe, pas seulement par moi.", "w": 1400, "h": 1240 } }
       ],
       "resultsImage": [

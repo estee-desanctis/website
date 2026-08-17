@@ -122,7 +122,7 @@ function renderFooter(){
   footer.innerHTML =
     '<div class="wrap">' +
       '<a href="index.html" class="flogo"><img src="images/logo.png" alt="EcoDesign — '+t.nav.home+'"></a>' +
-      '<div>'+t.footer.rights+' · '+t.footer.siret+'</div>' +
+      '<div>'+t.footer.rights+(t.footer.brand ? ' · '+t.footer.brand : '')+' · '+t.footer.siret+'</div>' +
     '</div>';
 }
 
@@ -276,7 +276,7 @@ function infoItem(iconName,label,value){
 
 function projectCard(p){
   return '<a class="project-card" href="portfolio-projet.html?id='+p.id+'">' +
-    '<div class="thumb">'+p.company+'</div>' +
+    '<div class="thumb">'+ (p.coverImage ? '<img src="'+p.coverImage.src+'" alt="" loading="lazy" decoding="async">' : p.company) +'</div>' +
     '<div class="body">' +
       '<div class="status">'+p.status+'</div>' +
       '<h3 class="title">'+p.title+'</h3>' +

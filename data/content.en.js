@@ -18,7 +18,7 @@ window.CONTENT_EN = {
     "role": "Product Designer",
     "bio": "I'm Estée, Senior Product Designer. I help businesses simplify their journeys and speed up their design funnel, for 8+ years.",
     "ctaContact": "Contact me",
-    "ctaCV": "Download CV",
+    "ctaCV": "Download Resume",
     "cvFile": "documents/Resume2026_EN_EsteeDesanctis_SrProductDesigner.pdf",
     "follow": "Follow me on:"
   },
@@ -26,12 +26,12 @@ window.CONTENT_EN = {
     "kicker": "Why",
     "title": "Hire Me",
     "categories": [
-      { "icon": "groups", "title": "Design Leadership", "tags": ["Design strategy", "Design ops", "Mentoring & team enablement", "Stakeholder management", "Cross-functional collaboration", "Design reviews"] },
-      { "icon": "search", "title": "Research", "tags": ["User research", "Interviews", "Usability testing", "Journey mapping", "A/B & MAB testing", "Analytics"] },
-      { "icon": "palette", "title": "Design", "tags": ["Product & interaction design", "Prototyping", "UX writing", "Design systems at scale"] },
-      { "icon": "smart_toy", "title": "AI for Design", "tags": ["AI-augmented design ops", "Custom GPTs & agents", "MCP", "Claude Code", "Figma Make"] },
+      { "icon": "groups", "title": "Design Leadership", "tags": ["Cross-functional collaboration", "Design ops", "Design reviews", "Design strategy", "Mentoring & team enablement", "Stakeholder management"] },
+      { "icon": "search", "title": "Research", "tags": ["A/B & MAB testing", "Analytics", "Interviews", "Journey mapping", "Usability testing", "User research"] },
+      { "icon": "palette", "title": "Design", "tags": ["Design systems at scale", "Product & interaction design", "Prototyping", "UX writing"] },
+      { "icon": "smart_toy", "title": "AI for Design", "tags": ["AI-augmented design ops", "Claude Code", "Custom GPTs & agents", "Figma Make", "MCP"] },
       { "icon": "eco", "title": "Responsible Design", "tags": ["Accessibility (WCAG, RGAA)", "Eco-design (RGESN)", "Inclusive design"] },
-      { "icon": "build", "title": "Tools", "tags": ["Figma", "Adobe Suite", "Storybook", "ZeroHeight", "Hotjar", "Maze", "UserTesting", "Google Analytics", "VWO", "HTML/CSS", "JavaScript", "GitHub"] }
+      { "icon": "build", "title": "Tools", "tags": ["Adobe Suite", "Amplitude", "Figma", "FullStory", "GitHub", "Google Analytics", "Hotjar", "HTML/CSS", "JavaScript", "Maze", "Metabase", "Storybook", "VWO", "ZeroHeight"] }
     ]
   },
   "about": {
@@ -48,7 +48,7 @@ window.CONTENT_EN = {
     },
     "pillars": [
       { "title": "Growing the team's autonomy", "desc": "When design becomes a mandatory checkpoint, I train PMs, developers, marketing and product engineers to work directly in the design system and run their own user interviews. At Dualsun, that unblocked the team without hiring.", "metric": "−50% research time" },
-      { "title": "Moving faster with AI, without losing control", "desc": "I build tokenized design systems and AI pipelines (Figma ↔ Claude Code) to ship faster without cutting corners. And when I design AI features, a human always keeps the final call — never the algorithm alone.", "metric": "−71% design → review cycle" },
+      { "title": "Moving faster with AI, without losing control", "desc": "I build tokenized design systems and AI pipelines (Figma ↔ Claude Code) to ship faster without cutting corners. And when I design AI features, a human always keeps the final call — never the algorithm alone.", "metric": "−81% design → review cycle" },
       { "title": "Building accessible foundations from day one", "desc": "I bake accessibility (WCAG, RGAA) and eco-design (RGESN) into the design system's foundations, not as an afterthought — for products more people can use, with less debt to fix later.", "metric": "WCAG-compliant design systems, at scale" }
     ]
   },
@@ -97,6 +97,7 @@ window.CONTENT_EN = {
   },
   "footer": {
     "rights": "2026 All rights reserved",
+    "brand": "ECODESIGN",
     "siret": "SIRET 893 874 487 00018"
   },
   "projects": [
@@ -115,7 +116,7 @@ window.CONTENT_EN = {
       "tools": ["Figma · Figma Make", "MCP · Claude Code · Skills & agents", "Design tokens · Claude Design", "Fullstory · Metabase · Amplitude", "Notion · Slack · Gong"],
       "results": ["Faster hiring decisions", "Less time per candidate", "More consistent scoring", "Team-wide collaboration"],
       "stats": [
-        { "value": "−71%", "label": "Design → review cycle (21 to 6 days, 3.5x quicker)" },
+        { "value": "−81%", "label": "Design → review cycle (21 to 4 days, 5.25x quicker)" },
         { "value": "60+", "label": "Client companies in 3 months (CAC 40, Fortune 500, EU tech scale-ups)" },
         { "value": "10,000+", "label": "Tests graded by AI in 3 months" }
       ],
@@ -127,8 +128,8 @@ window.CONTENT_EN = {
       ],
       "process": [
         { "num": "01", "step": "Reframe the problem", "title": "A decision copilot, not one more tool", "desc": "Rather than stacking on more filters, I saw the chance to build a decision copilot: make AI trustworthy for high-stakes hiring, not decide in the recruiter's place. I designed AI grading in three modes (none, partial, full), mobile-first and responsive, with follow-up questions (video, screen-recording, text) that ask candidates to explain their code, and adjustable AI autonomy — the recruiter sets their own criteria and always keeps the final call.", "image": { "src": "images/coderpad-ai-grading-criteria.webp", "alt": "CoderPad's AI-assisted grading criteria configuration screen, with automatic and AI-assisted manual validation.", "caption": "The AI-assisted grading criteria configuration screen — real, shipped-in-production UI. Three modes (none, partial, full) keep the recruiter in control of the decision.", "w": 900, "h": 774 } },
-        { "num": "02", "step": "Reduce effort", "title": "Cut the review load", "desc": "Video transcription and AI summaries so recruiters decide without watching full recordings, plus a chatbot to compare candidates, exercises or whole campaigns in plain language. The candidate report shows the AI's verdict and reasoning criterion by criterion, in plain language — and the recruiter can always confirm or correct each one.", "image": { "src": "images/coderpad-candidate-report.webp", "alt": "CoderPad candidate report showing, criterion by criterion, the AI's pass/fail verdict with plain-language reasoning.", "caption": "The candidate-facing report: each criterion shows a pass/fail verdict with the AI's reasoning in plain language.", "w": 627, "h": 408 } },
-        { "num": "03", "step": "Accelerate with AI", "title": "Redesign the design process itself", "desc": "I built the design system on Claude Design, prototyped on it, then wired Claude Code to Figma to generate mockups straight from the prototype, with a Figma lint plugin to keep the handoff reliable. Result: the design → review cycle dropped from 21 to 6 days (−71%, 3.5x quicker).", "image": { "src": "images/coderpad-design-system-wcag.webp", "alt": "CoderPad's Figma component library with live WCAG contrast checking and semantic color tokens, shown in light and dark theme.", "caption": "The Figma design system I built on Claude Design — live WCAG contrast checking, semantic color tokens, light/dark theming on the same component — the foundation that let me cut the design → review cycle by more than three.", "w": 1400, "h": 707 } },
+        { "num": "02", "step": "Reduce effort", "title": "Cut the review load", "desc": "Video transcription and AI summaries so recruiters decide without watching full recordings, plus a chatbot to compare candidates, exercises or whole campaigns in plain language. The candidate report shows the AI's verdict and reasoning criterion by criterion, in plain language — and the recruiter can always confirm or correct each one.", "image": { "src": "images/image6-ai-assisted-grading-candidate-report-verdict.png", "alt": "CoderPad candidate report showing, criterion by criterion, the AI's pass/fail verdict with plain-language reasoning.", "caption": "The candidate-facing report: each criterion shows a pass/fail verdict with the AI's reasoning in plain language.", "w": 627, "h": 408 } },
+        { "num": "03", "step": "Accelerate with AI", "title": "Redesign the design process itself", "desc": "I built the design system on Claude Design, prototyped on it, then wired Claude Code to Figma to generate mockups straight from the prototype, with a Figma lint plugin to keep the handoff reliable. Result: the design → review cycle dropped from 21 to 4 days (−81%, 5.25x quicker).", "image": { "src": "images/coderpad-design-system-wcag.webp", "alt": "CoderPad's Figma component library with live WCAG contrast checking and semantic color tokens, shown in light and dark theme.", "caption": "The Figma design system I built on Claude Design — live WCAG contrast checking, semantic color tokens, light/dark theming on the same component — the foundation that let me cut the design → review cycle by more than three.", "w": 1400, "h": 707 } },
         { "num": "04", "step": "Accessibility & leadership", "title": "Set the guidelines, grow the team", "desc": "I set the design system's accessibility guidelines — the foundation every AI feature we've shipped since builds on —, mentored the design team, shared how we work in an internal article, and led the AI project on the design and PM side.", "image": { "src": "images/coderpad-a11y-keyboard-guide.webp", "alt": "Excerpt of the internal 'Keyboard navigation guidelines' reference guide written for CoderPad's designers and developers.", "caption": "One of the internal reference guides I write and maintain — here on keyboard accessibility — so best practices scale across the team, not just through me.", "w": 1400, "h": 1240 } }
       ],
       "resultsImage": [
