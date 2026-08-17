@@ -127,12 +127,13 @@ window.CONTENT_EN = {
         "Design/comms watch and alignment on the EU AI Act for our AI features"
       ],
       "process": [
-        { "num": "01", "step": "Reframe the problem", "title": "A decision copilot, not one more tool", "desc": "Rather than stacking on more filters, I saw the chance to build a decision copilot: make AI trustworthy for high-stakes hiring, not decide in the recruiter's place. I designed AI grading in three modes (none, partial, full), mobile-first and responsive, with follow-up questions (video, screen-recording, text) that ask candidates to explain their code, and adjustable AI autonomy — the recruiter always keeps control.", "image": "screenshot of the AI grading interface (criteria setup + candidate report with AI verdict)" },
-        { "num": "02", "step": "Reduce effort", "title": "Cut the review load", "desc": "Video transcription and AI summaries so recruiters decide without watching full recordings, plus a chatbot to compare candidates, exercises or whole campaigns in plain language." },
+        { "num": "01", "step": "Reframe the problem", "title": "A decision copilot, not one more tool", "desc": "Rather than stacking on more filters, I saw the chance to build a decision copilot: make AI trustworthy for high-stakes hiring, not decide in the recruiter's place. I designed AI grading in three modes (none, partial, full), mobile-first and responsive, with follow-up questions (video, screen-recording, text) that ask candidates to explain their code, and adjustable AI autonomy — the recruiter sets their own criteria and always keeps the final call.", "image": { "src": "images/coderpad-ai-grading-criteria.webp", "alt": "CoderPad's AI-assisted grading criteria configuration screen, with automatic and AI-assisted manual validation.", "caption": "The AI-assisted grading criteria configuration screen — real, shipped-in-production UI. Three modes (none, partial, full) keep the recruiter in control of the decision.", "w": 900, "h": 774 } },
+        { "num": "02", "step": "Reduce effort", "title": "Cut the review load", "desc": "Video transcription and AI summaries so recruiters decide without watching full recordings, plus a chatbot to compare candidates, exercises or whole campaigns in plain language. The candidate report shows the AI's verdict and reasoning criterion by criterion, in plain language — and the recruiter can always confirm or correct each one.", "image": { "src": "images/coderpad-candidate-report.webp", "alt": "CoderPad candidate report showing, criterion by criterion, the AI's pass/fail verdict with plain-language reasoning.", "caption": "The candidate-facing report: each criterion shows a pass/fail verdict with the AI's reasoning in plain language.", "w": 627, "h": 408 } },
         { "num": "03", "step": "Make it a team sport", "title": "Shareable candidate profiles", "desc": "Taggable, shareable AI analysis inside a candidate profile any colleague can open, backed by a tokenized design system and AI design ops I own." },
         { "num": "04", "step": "Accelerate with AI", "title": "Redesign the design process itself", "desc": "I built the design system on Claude Design, prototyped on it, then wired Claude Code to Figma to generate mockups straight from the prototype, with a Figma lint plugin to keep the handoff reliable. Result: the design → review cycle dropped from 21 to 4 days (−80%, 5x quicker).", "image": "screenshot of the Claude Design design system or the Claude Code → Figma pipeline" },
-        { "num": "05", "step": "Accessibility & leadership", "title": "Set the guidelines, grow the team", "desc": "I set the design system's accessibility guidelines — the foundation every AI feature we've shipped since builds on —, mentored the design team, shared how we work in an internal article, led the AI project on the design and PM side, and framed our design/comms approach to the EU AI Act for our AI features.", "image": "excerpt of the design system's accessibility guidelines (e.g. a contrast or documented-component page)" }
-      ]
+        { "num": "05", "step": "Accessibility & leadership", "title": "Set the guidelines, grow the team", "desc": "I set the design system's accessibility guidelines — the foundation every AI feature we've shipped since builds on —, mentored the design team, shared how we work in an internal article, led the AI project on the design and PM side, and framed our design/comms approach to the EU AI Act for our AI features.", "image": { "src": "images/coderpad-design-system-wcag.webp", "alt": "CoderPad's Figma component library with live WCAG contrast checking and semantic color tokens, shown in light and dark theme.", "caption": "Figma component library: live WCAG contrast checking, semantic color tokens, and light/dark theming on the same component — WCAG-compliant, tokenized, and built accessible from the start.", "w": 1400, "h": 707 } }
+      ],
+      "resultsImage": { "src": "images/coderpad-a11y-keyboard-guide.webp", "alt": "Excerpt of the internal 'Keyboard navigation guidelines' reference guide written for CoderPad's designers and developers.", "caption": "One of the internal reference guides I write and maintain — here on keyboard accessibility — so best practices scale across the team, not just through me.", "w": 1400, "h": 1240 }
     },
     {
       "id": "dualsun",
@@ -140,30 +141,33 @@ window.CONTENT_EN = {
       "company": "Dualsun",
       "title": "Unblocking a solar B2B team with research and a scalable system",
       "subtitle": "SaaS & IoT B2B solar platforms",
-      "tags": ["Design system", "Research", "A/B testing"],
+      "tags": ["Design system", "Research", "A/B testing", "Content design"],
       "context": ["SaaS & IoT B2B solar platforms", "Sole designer, constrained budget"],
-      "challenge": "As the sole designer on a constrained budget, I had to simplify complex solar tools while unblocking PMs, developers and marketing at the same time. A confusing roof + exposure step was causing users to drop out mid-simulator, and an inconsistent, non-WCAG-compliant design system slowed down every release. My job: redesign the core journeys, remove the design bottleneck, and grow the team's autonomy.",
-      "role": ["Solar simulator redesign", "IoT dashboard (piloted)", "WCAG design system", "Directed 2 freelance designers"],
+      "challenge": "As the sole designer on a constrained budget across SaaS & IoT B2B solar platforms, I had to turn complex, unintuitive experiences into clear journeys while unblocking PMs, developers and marketing at the same time. A confusing roof + exposure step was causing users to drop out mid-simulator, and an inconsistent, non-WCAG-compliant design system slowed down every release across the product's three surfaces (web, installer app, IoT dashboard). My job: redesign the core journeys, remove the design bottleneck, and grow the team's autonomy — one designer, a tight budget, three platforms: the impact had to come from leverage, not hours.",
+      "role": ["Solar simulator redesign (web & mobile)", "IoT dashboard (piloted)", "Cross-platform WCAG design system", "Tone of voice & content design", "Directed 2 freelance designers"],
       "team": ["Product managers", "Developers · QA", "Engineers · Data · Marketing"],
       "tools": ["Figma", "Hotjar", "VWO (A/B, MAB)"],
       "results": ["+14% conversion", "−50% research time", "+20% PM discovery", "Cross-platform consistency"],
       "stats": [
-        { "value": "+14%", "label": "Conversion" },
+        { "value": "+14%", "label": "Conversion, validated by A/B testing (MAB)" },
         { "value": "−50%", "label": "Research time" },
-        { "value": "+20%", "label": "PM discovery" }
+        { "value": "+20%", "label": "PM discovery" },
+        { "value": "✓", "label": "Cross-platform consistency" }
       ],
       "achievements": [
-        "Simulator simplified from 6 to 5 steps, validated by A/B (MAB) testing",
-        "WCAG design system shipped across three platforms (Tailwind, Material/Ionic)",
+        "Simulator simplified from 6 to 5 steps by merging roof and exposure, validated by A/B (MAB) testing → +14% conversion",
+        "WCAG design system shipped and unified across three platforms (Tailwind, Material/Ionic)",
+        "Tone of voice written per user persona (professional installer vs. homeowner), with right/wrong copy examples so the whole team applies it consistently",
         "PMs trained to run their own user interviews",
-        "Two freelance designers directed to parallelize delivery without new headcount",
-        "Design system ready to absorb new platforms without added consistency debt"
+        "Two freelance designers directed to parallelize delivery without new headcount"
       ],
       "process": [
-        { "num": "01", "step": "Reframe the problem", "title": "A trust problem, not just a UX bug", "desc": "Rather than treating every drop-off as an isolated bug, I saw a clarity and trust problem in the journey. I simplified the simulator from 6 steps to 5 by folding the confusing exposure step into the roof step, and streamlined the IoT app setup." },
+        { "num": "01", "step": "Reframe the problem", "title": "A trust problem, not just a UX bug", "desc": "Rather than treating every drop-off as an isolated bug, I saw a clarity and trust problem in the journey. I simplified the simulator from 6 steps to 5 by folding the confusing exposure step into the roof step — same satellite reference, a single decision to make — and streamlined the IoT app setup so customers and installers could succeed on their own.", "image": { "src": "images/dualsun-roof-step-merge.webp", "alt": "Comparison of the old two-step journey (Roof, then Exposure) and the new merged 'Your roof' step on Dualsun's simulator.", "caption": "Left: the old two-step journey (Roof, then Exposure). Right: the new merged 'Your roof' step that replaces both — +14% conversion, validated by A/B (MAB) testing.", "w": 1400, "h": 1105 } },
         { "num": "02", "step": "Unblock", "title": "Remove the bottleneck", "desc": "I wrote dev tickets, drove tech reviews and shipped reusable templates so design stopped being the blocker." },
-        { "num": "03", "step": "Lead & enable", "title": "Direct the design effort", "desc": "I directed two freelance designers to parallelize features without new hires, trained PMs to run their own interviews, and scaled a WCAG design system (Tailwind, Material/Ionic)." }
-      ]
+        { "num": "03", "step": "A tone of voice built per user persona", "title": "Proof of content design, not just visuals", "desc": "Alongside the visual system, I wrote the product's tone-of-voice rules with distinct guidance per audience: professional installers need direct, jargon-light instructions; homeowners need reassurance and plain language. Each rule ships with a right/wrong example, so the whole team applies it consistently.", "image": { "src": "images/dualsun-tone-of-voice.webp", "alt": "Excerpt of Dualsun's tone-of-voice guidelines for the 'Installer' persona, with right and wrong copy examples.", "caption": "Tone-of-voice rules written for the 'Installer' persona, with right/wrong copy examples so the whole team applies them consistently.", "w": 1400, "h": 902 } },
+        { "num": "04", "step": "Lead & enable", "title": "A guided journey, fully responsive", "desc": "I directed two freelance designers to parallelize features without new hires, trained PMs to run their own interviews, and scaled a WCAG design system (Tailwind, Material/Ionic) — with the same clarity and logic on mobile as on the desktop simulator, no account required.", "image": { "src": "images/dualsun-mobile-journey.webp", "alt": "The four steps of Dualsun's prospect journey on mobile: project, roof, solutions, consumption.", "caption": "The four-step journey for prospects (no account) — project, roof, solutions, consumption — shown here on mobile, end to end.", "w": 1210, "h": 1400 } }
+      ],
+      "resultsImage": { "src": "images/dualsun-iot-dashboard.webp", "alt": "Two views of Dualsun's IoT dashboard: daily electricity production (SHELLYbox) and yearly hot-water production (SPRINGbox).", "caption": "The same clarity, across every product — left, the daily electricity view (SHELLYbox); right, the yearly hot-water production view (SPRINGbox), sharing the same visual language.", "w": 780, "h": 923 }
     }
   ],
   "articles": [

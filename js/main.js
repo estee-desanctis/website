@@ -37,6 +37,15 @@ var IMAGE_PLACEHOLDER_ICON = '<svg width="20" height="20" viewBox="0 0 24 24" fi
 function imgPlaceholder(caption){
   return '<div class="img-placeholder">'+IMAGE_PLACEHOLDER_ICON+'<span>[image à insérer : '+caption+']</span></div>';
 }
+// Renders a real project screenshot with an accessible caption, or falls back
+// to the text placeholder when only a caption string (no image yet) is given.
+function projectFigure(img){
+  if(!img) return '';
+  if(typeof img === 'string') return imgPlaceholder(img);
+  return '<figure class="project-figure"><img src="'+img.src+'" alt="'+(img.alt||'')+'" width="'+(img.w||'')+'" height="'+(img.h||'')+'" loading="lazy" decoding="async">' +
+    (img.caption ? '<figcaption>'+img.caption+'</figcaption>' : '') +
+  '</figure>';
+}
 
 // Trie les articles du plus récent au plus ancien à partir de leur date texte ("Avril 2024", "November 2025"...).
 var MONTHS_INDEX = {
@@ -315,15 +324,16 @@ function renderProjectDetail(){
         '<p>'+p.challenge+'</p>' +
         (p.stats && p.stats.length ? '<h3 class="h3" style="margin:24px 0 8px;">'+ (getLang()==='fr' ? "L'impact en chiffres" : 'The impact, in numbers') +'</h3><div class="stats-callouts">'+ p.stats.map(function(s){
           return '<div class="stat-callout"><div class="stat-value">'+s.value+'</div><div class="stat-label">'+s.label+'</div></div>';
-        }).join('') +'</div>' + (p.logosImage ? imgPlaceholder(p.logosImage) : '') : '') +
+        }).join('') +'</div>' + (p.logosImage ? projectFigure(p.logosImage) : '') : '') +
         '<h3 class="h3" style="margin:28px 0 8px;">'+ (getLang()==='fr' ? 'Méthodologie' : 'Methodology') +'</h3>' +
         p.process.map(function(step){
-          return '<div class="process-step numbered"><div class="step-num">'+(step.num||'')+'</div><div><div class="step-label">'+step.step+'</div><h3>'+step.title+'</h3><p>'+step.desc+'</p>'+ (step.image ? imgPlaceholder(step.image) : '') +'</div></div>';
+          return '<div class="process-step numbered"><div class="step-num">'+(step.num||'')+'</div><div><div class="step-label">'+step.step+'</div><h3>'+step.title+'</h3><p>'+step.desc+'</p>'+ (step.image ? projectFigure(step.image) : '') +'</div></div>';
         }).join('') +
         '<h3 class="h3" style="margin-bottom:8px;">'+ (getLang()==='fr' ? 'Résultats' : 'Results') +'</h3>' +
         (p.achievements && p.achievements.length ? '<div class="achievements"><div class="ach-title">'+ (getLang()==='fr' ? 'Réussites clés' : 'Key achievements') +'</div>' +
           p.achievements.map(function(ac){ return '<div class="ach-item">'+icon('check_circle')+' '+ac+'</div>'; }).join('') +
         '</div>' : '<div class="results-list">'+ p.results.map(function(r){return '<span class="res">'+r+'</span>';}).join('') +'</div>') +
+        (p.resultsImage ? projectFigure(p.resultsImage) : '') +
       '</div>' +
       '<div class="side">' +
         '<div class="block"><h3>'+ (getLang()==='fr'?'Mon rôle':'My role') +'</h3><ul>'+ p.role.map(function(r){return '<li>• '+r+'</li>';}).join('') +'</ul></div>' +
