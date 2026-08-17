@@ -3,6 +3,9 @@
 // (variables window.CONTENT_FR et window.CONTENT_EN). Modifie ces fichiers pour changer le texte,
 // ajouter un projet, un article ou un témoignage — pas besoin de toucher à ce fichier.
 
+// Page externe (Malt) listant tous les avis clients.
+var TESTIMONIALS_URL = 'https://www.malt.fr/profile/esteedesanctis#appraisals-section';
+
 function getLang(){
   var saved = localStorage.getItem('ed_lang');
   if(saved === 'fr' || saved === 'en') return saved;
@@ -37,10 +40,16 @@ var IMAGE_PLACEHOLDER_ICON = '<svg width="20" height="20" viewBox="0 0 24 24" fi
 function imgPlaceholder(caption){
   return '<div class="img-placeholder">'+IMAGE_PLACEHOLDER_ICON+'<span>[image à insérer : '+caption+']</span></div>';
 }
+// Découpe un texte en paragraphes sur les doubles retours à la ligne ("\n\n"),
+// pour les blocs de contenu projet un peu longs (défi, étapes de méthodologie).
+function paragraphs(text){
+  return (text||'').split('\n\n').map(function(p){ return '<p>'+p+'</p>'; }).join('');
+}
 // Renders a real project screenshot with an accessible caption, or falls back
 // to the text placeholder when only a caption string (no image yet) is given.
 function projectFigure(img){
   if(!img) return '';
+  if(Array.isArray(img)) return img.map(projectFigure).join('');
   if(typeof img === 'string') return imgPlaceholder(img);
   return '<figure class="project-figure"><img src="'+img.src+'" alt="'+(img.alt||'')+'" width="'+(img.w||'')+'" height="'+(img.h||'')+'" loading="lazy" decoding="async">' +
     (img.caption ? '<figcaption>'+img.caption+'</figcaption>' : '') +
@@ -157,7 +166,9 @@ function renderHome(){
       '<div class="section-head"><h2 class="big">'+a.kicker+' <span class="accent">'+a.title+'</span></h2></div>' +
       '<div class="about-grid">' +
         '<div class="about-intro">' + a.intro.map(function(p){ return '<p>'+p+'</p>'; }).join('') + '</div>' +
-        '<div class="about-philosophy">'+QUOTE_ICON+'<p class="philosophy-quote">'+a.philosophy.quote+'</p><p class="philosophy-sub">'+a.philosophy.sub+'</p></div>' +
+        '<div class="about-philosophy">'+QUOTE_ICON+'<p class="philosophy-quote">'+a.philosophy.quote+'</p>'+
+          (a.philosophy.author ? '<p class="philosophy-author">— '+a.philosophy.author+'</p>' : '')+
+          '<p class="philosophy-sub">'+a.philosophy.sub+'</p></div>' +
       '</div>' +
       '<div class="pillars-grid">' +
         a.pillars.map(function(p){
@@ -210,7 +221,7 @@ function renderHome(){
         '</div>' +
         t.testimonials.map(testiCard).join('') +
       '</div>' +
-      '<div class="center-link"><a href="index.html#testimonials">'+t.testimonialsSection.seeAll+' '+icon('arrow_forward')+'</a></div>';
+      '<div class="center-link"><a href="'+TESTIMONIALS_URL+'" target="_blank" rel="noopener">'+t.testimonialsSection.seeAll+' '+icon('arrow_forward')+'</a></div>';
   }
 
   var contact = document.getElementById('contact-content');
@@ -227,18 +238,34 @@ function renderHome(){
         '</div>' +
         '<form id="contact-form">' +
           '<div class="form-row">' +
-            '<div class="field"><label>'+c.form.surname+'</label><input type="text"></div>' +
-            '<div class="field"><label>'+c.form.name+'</label><input type="text"></div>' +
+            '<div class="field"><label for="cf-surname">'+c.form.surname+'</label><input id="cf-surname" type="text"></div>' +
+            '<div class="field"><label for="cf-name">'+c.form.name+'</label><input id="cf-name" type="text"></div>' +
           '</div>' +
-          '<div class="field" style="margin-bottom:16px;"><label>'+c.form.email+'</label><input type="email" placeholder="'+c.form.emailPlaceholder+'"></div>' +
-          '<div class="field" style="margin-bottom:16px;"><label>'+c.form.project+'</label><textarea placeholder="'+c.form.projectPlaceholder+'"></textarea></div>' +
+          '<div class="field" style="margin-bottom:16px;"><label for="cf-email">'+c.form.email+'</label><input id="cf-email" type="email" placeholder="'+c.form.emailPlaceholder+'"></div>' +
+          '<div class="field" style="margin-bottom:16px;"><label for="cf-project">'+c.form.project+'</label><textarea id="cf-project" placeholder="'+c.form.projectPlaceholder+'"></textarea></div>' +
           '<div class="form-submit"><button type="submit" class="btn btn-outline">'+icon('send')+' '+c.form.send+'</button></div>' +
         '</form>' +
       '</div>';
 
     document.getElementById('contact-form').addEventListener('submit', function(e){
       e.preventDefault();
-      window.location.href = 'mailto:'+c.email+'?subject=Contact%20site%20EcoDesign';
+      var isFr = getLang() === 'fr';
+      var surname = document.getElementById('cf-surname').value;
+      var name = document.getElementById('cf-name').value;
+      var senderEmail = document.getElementById('cf-email').value;
+      var project = document.getElementById('cf-project').value;
+      var subject = isFr ? 'Contact site EcoDesign' : 'EcoDesign website contact';
+      var bodyLines = [
+        (isFr ? 'Nom : ' : 'Surname: ') + surname,
+        (isFr ? 'Prénom : ' : 'Name: ') + name,
+        (isFr ? 'Email : ' : 'Email: ') + senderEmail,
+        '',
+        project
+      ];
+      // Ouvre Gmail (composition web) plutôt que le client mail par défaut du système.
+      var gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to='+encodeURIComponent(c.email)+
+        '&su='+encodeURIComponent(subject)+'&body='+encodeURIComponent(bodyLines.join('\n'));
+      window.open(gmailUrl, '_blank', 'noopener');
     });
   }
 }
@@ -317,17 +344,19 @@ function renderProjectDetail(){
       '<p style="color:#666;max-width:640px;">'+p.subtitle+'</p>' +
       '<div class="detail-meta">'+ p.tags.map(function(tg){return '<span class="tag">'+tg+'</span>';}).join('') +'</div>' +
     '</div>' +
-    '<div class="detail-cover">'+p.company+'</div>' +
+    (p.coverImage ? '<div class="detail-cover"><img src="'+p.coverImage.src+'" alt="'+(p.coverImage.alt||'')+'" loading="lazy" decoding="async"></div>' : '<div class="detail-cover">'+p.company+'</div>') +
     '<div class="detail-columns">' +
       '<div class="main">' +
         '<h3 class="h3" style="margin-bottom:8px;">'+ (getLang()==='fr' ? 'Le défi' : 'The challenge') +'</h3>' +
-        '<p>'+p.challenge+'</p>' +
+        paragraphs(p.challenge) +
         (p.stats && p.stats.length ? '<h3 class="h3" style="margin:24px 0 8px;">'+ (getLang()==='fr' ? "L'impact en chiffres" : 'The impact, in numbers') +'</h3><div class="stats-callouts">'+ p.stats.map(function(s){
           return '<div class="stat-callout"><div class="stat-value">'+s.value+'</div><div class="stat-label">'+s.label+'</div></div>';
         }).join('') +'</div>' + (p.logosImage ? projectFigure(p.logosImage) : '') : '') +
         '<h3 class="h3" style="margin:28px 0 8px;">'+ (getLang()==='fr' ? 'Méthodologie' : 'Methodology') +'</h3>' +
         p.process.map(function(step){
-          return '<div class="process-step numbered"><div class="step-num">'+(step.num||'')+'</div><div><div class="step-label">'+step.step+'</div><h3>'+step.title+'</h3><p>'+step.desc+'</p>'+ (step.image ? projectFigure(step.image) : '') +'</div></div>';
+          return '<div class="process-step numbered"><div class="step-num">'+(step.num||'')+'</div><div><div class="step-label">'+step.step+'</div><h3>'+step.title+'</h3>'+
+            (step.quote ? '<blockquote class="step-quote">“'+step.quote.text+'”<cite>— '+step.quote.author+'</cite></blockquote>' : '')+
+            paragraphs(step.desc)+ (step.image ? projectFigure(step.image) : '') +'</div></div>';
         }).join('') +
         '<h3 class="h3" style="margin-bottom:8px;">'+ (getLang()==='fr' ? 'Résultats' : 'Results') +'</h3>' +
         (p.achievements && p.achievements.length ? '<div class="achievements"><div class="ach-title">'+ (getLang()==='fr' ? 'Réussites clés' : 'Key achievements') +'</div>' +
