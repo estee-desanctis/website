@@ -107,9 +107,9 @@ window.CONTENT_FR = {
       "company": "CoderPad",
       "title": "Des outils de recrutement IA qui allègent la charge des recruteurs",
       "subtitle": "Plateforme SaaS de tests techniques",
-      "tags": ["AI-native design", "0→1", "Leadership design", "Accessibilité"],
+      "tags": ["AI-native design", "0→1", "Cadrage produit", "Leadership design", "Accessibilité"],
       "context": ["SaaS de tests techniques", "Design de fonctionnalités IA 0→1"],
-      "challenge": "Les recruteurs croulaient sous les tests techniques asynchrones : de longues vidéos à visionner, des résultats éparpillés à comparer, beaucoup de candidats avec un score similaire difficile à départager, des décisions lentes et subjectives — pendant qu'en interne, chaque nouvelle fonctionnalité prenait 21j de conception haute-fidélité et de review en moyenne avant d'être envoyé en développement.\n\nMa mission : concevoir des outils pilotés par l'IA qui accélèrent la décision de recrutement sans retirer la main au recruteur, poser les bases accessibilité du design system, et faire monter l'équipe design en autonomie et en vitesse.",
+      "challenge": "Les recruteurs croulaient sous les tests techniques asynchrones : de longues vidéos à visionner, des résultats éparpillés à comparer, beaucoup de candidats avec un score similaire difficile à départager, des décisions lentes et subjectives — pendant qu'en interne, chaque nouvelle fonctionnalité prenait 21j de conception haute-fidélité et de review en moyenne avant d'être envoyé en développement.\n\nLe sujet n'est pas arrivé sous forme de brief tout fait : un signal de churn sur des comptes entreprise à fort enjeu a déclenché une phase de diagnostic croisant data et terrain. J'ai mené une série d'entretiens avec des recruteurs utilisateurs, en complément de l'analyse data et des retours clients remontés par le Customer Success, pour comprendre ce qui pesait vraiment dans les décisions de résiliation. Ces entretiens ont fait ressortir un point de friction récurrent chez les comptes à risque : la notation manuelle des tests techniques, chronophage et peu fiable — un signal qui a pesé dans la décision de prioriser la notation IA comme réponse à un enjeu de rétention, pas seulement comme fonctionnalité IA à la mode.\n\nMa mission : concevoir des outils pilotés par l'IA qui accélèrent la décision de recrutement sans retirer la main au recruteur, poser les bases accessibilité du design system, et faire monter l'équipe design en autonomie et en vitesse.",
       "coverImage": { "src": "images/coderpad-cover.jpg", "alt": "Visuel de présentation de CoderPad : écran d'accueil produit et indicateurs de performance candidat (rang, durée, score)." },
       "role": ["Lead design produit (équipe design)", "Design de fonctionnalités IA (0→1)", "Guidelines accessibilité & design", "AI Design Ops, Design system génératif"],
       "team": ["3 Product Designers", "3 Product Managers", "20 Développeurs"],
@@ -121,6 +121,7 @@ window.CONTENT_FR = {
         { "value": "10 000+", "label": "Tests évalués par l'IA en 3 mois" }
       ],
       "achievements": [
+        "Diagnostic croisant signal de churn, entretiens utilisateurs et retours clients remontés par le Customer Success — à l'origine de la priorisation de la notation IA, un enjeu de rétention traduit en critères de succès produit et pas seulement en outils de mesure",
         "+65% d'usage de la notation IA, porté par l'adoption client (LinkedIn, OpenAI, Toyota, Discord)",
         "Notation IA livrée en trois modes (sans IA, partielle, complète) avec verdict expliqué en clair — le recruteur garde toujours la décision finale",
         "Guidelines d'accessibilité posées dans l'équipe produit et partagées dans l'entreprise",

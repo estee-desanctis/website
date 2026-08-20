@@ -107,9 +107,9 @@ window.CONTENT_EN = {
       "company": "CoderPad",
       "title": "AI-native hiring tools that cut recruiter overload",
       "subtitle": "SaaS technical-interview platform",
-      "tags": ["AI-native design", "0→1", "Design leadership", "Accessibility"],
+      "tags": ["AI-native design", "0→1", "Product framing", "Design leadership", "Accessibility"],
       "context": ["SaaS technical-interview platform", "AI feature design 0→1"],
-      "challenge": "Recruiters were drowning in async technical tests: long videos to watch, scattered results to compare, plenty of candidates with a similar score that's hard to tell apart, slow and subjective decisions — while internally, every new feature took 21 days of high-fidelity design and review on average before being handed off to development.\n\nMy job: design AI-native tools that speed up hiring decisions without taking control away from the recruiter, lay the accessibility foundations of the design system, and grow the design team's autonomy and speed.",
+      "challenge": "Recruiters were drowning in async technical tests: long videos to watch, scattered results to compare, plenty of candidates with a similar score that's hard to tell apart, slow and subjective decisions — while internally, every new feature took 21 days of high-fidelity design and review on average before being handed off to development.\n\nThis didn't start as a ready-made brief: a churn signal on high-stakes enterprise accounts triggered a diagnosis phase that crossed data with the ground. I ran a series of interviews with recruiter users, alongside the data analysis and feedback surfaced by Customer Success, to understand what was really driving cancellation decisions. Those interviews surfaced a recurring friction point among at-risk accounts: manual grading of technical tests, slow and inconsistent — a signal that fed directly into the decision to prioritize AI grading as an answer to a retention problem, not just a trendy AI feature.\n\nMy job: design AI-native tools that speed up hiring decisions without taking control away from the recruiter, lay the accessibility foundations of the design system, and grow the design team's autonomy and speed.",
       "coverImage": { "src": "images/coderpad-cover.jpg", "alt": "CoderPad product visual: homepage screen and candidate performance stats (rank, duration, score)." },
       "role": ["Lead product design (design team)", "AI feature design (0→1)", "Accessibility & design guidelines", "AI Design Ops, generative design system"],
       "team": ["3 Product Designers", "3 Product Managers", "20 Developers"],
@@ -121,6 +121,7 @@ window.CONTENT_EN = {
         { "value": "10,000+", "label": "Tests graded by AI in 3 months" }
       ],
       "achievements": [
+        "Diagnosis crossing a churn signal, user interviews and Customer Success feedback — behind the decision to prioritize AI grading, turning a retention problem into product success criteria, not just measurement tools",
         "+65% growth in AI grading usage, driven by client adoption (LinkedIn, OpenAI, Toyota, Discord)",
         "AI grading shipped in three modes (none, partial, full) with a plain-language explained verdict — the recruiter always keeps the final call",
         "Accessibility guidelines set within the product team and shared company-wide",
