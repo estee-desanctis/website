@@ -16,7 +16,7 @@ window.CONTENT_FR = {
     "greeting": "UX UI • Accessibilité • IA générative",
     "line1": "Je suis",
     "role": "Product Designer",
-    "bio": "Je suis Estée, Senior Product Designer. J'aide les entreprises à simplifier leurs parcours et accélérer leur funnel design depuis plus de 8 ans.",
+    "bio": "Je suis Estée, Product Designer depuis +8 ans. J'aide les entreprises à simplifier leurs parcours et accélérer leur funnel design.",
     "ctaContact": "Me contacter",
     "ctaCV": "Télécharger mon CV",
     "cvFile": "documents/Resume2026_FR_EsteeDesanctis_SrProductDesigner.pdf",
@@ -38,7 +38,7 @@ window.CONTENT_FR = {
     "kicker": "À propos de",
     "title": "moi",
     "intro": [
-      "Senior Product Designer de +8 ans d'expérience. Ma spécialité, c'est les produits SaaS & B2B complexes : transformer des expériences frictionnelles et riches en données en parcours intuitifs, performants et inclusifs.",
+      "Ma spécialité ? Les produits SaaS & B2B complexes : transformer des expériences frictionnelles et riches en données en parcours intuitifs, performants et inclusifs.",
       "J'associe un impact business mesurable à un effet de levier design : workflows augmentés par l'IA, design systems scalables et pratiques de recherche qui accélèrent toute l'équipe, pas seulement la livraison d'écrans."
     ],
     "philosophy": {
