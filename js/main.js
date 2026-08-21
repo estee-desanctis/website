@@ -237,7 +237,7 @@ function renderHome(){
   var testi = document.getElementById('testimonials-content');
   if(testi){
     testi.innerHTML =
-      '<div class="testimonials-title">'+t.testimonialsSection.title+'</div>' +
+      '<div class="testimonials-title"><span class="accent">'+t.testimonialsSection.titleAccent+'</span> '+t.testimonialsSection.titleRest+'</div>' +
       '<div class="testi-grid">' +
         '<div class="stats-box">' +
           t.testimonialsSection.stats.map(function(s){
@@ -263,8 +263,8 @@ function renderHome(){
         '</div>' +
         '<form id="contact-form">' +
           '<div class="form-row">' +
-            '<div class="field"><label for="cf-surname">'+c.form.surname+'</label><input id="cf-surname" type="text" placeholder="'+c.form.surnamePlaceholder+'"></div>' +
             '<div class="field"><label for="cf-name">'+c.form.name+'</label><input id="cf-name" type="text" placeholder="'+c.form.namePlaceholder+'"></div>' +
+            '<div class="field"><label for="cf-surname">'+c.form.surname+'</label><input id="cf-surname" type="text" placeholder="'+c.form.surnamePlaceholder+'"></div>' +
           '</div>' +
           '<div class="field" style="margin-bottom:16px;"><label for="cf-email">'+c.form.email+'</label><input id="cf-email" type="email" placeholder="'+c.form.emailPlaceholder+'"></div>' +
           '<div class="field" style="margin-bottom:16px;"><label for="cf-project">'+c.form.project+'</label><textarea id="cf-project" placeholder="'+c.form.projectPlaceholder+'"></textarea></div>' +

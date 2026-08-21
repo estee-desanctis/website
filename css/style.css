@@ -131,6 +131,7 @@ section{padding:60px 0;}
 .section-head h2.big{font-size:clamp(24px,3.5vw,32px);font-weight:700;color:var(--ink);letter-spacing:normal;margin-bottom:0;}
 .section-head h2.big .accent{color:var(--green);}
 .testimonials-title{font-size:clamp(20px,2.8vw,26px);font-weight:700;color:var(--ink);margin-bottom:16px;}
+.testimonials-title .accent{color:var(--green);}
 
 /* Why hire me — skills tag grid */
 .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}

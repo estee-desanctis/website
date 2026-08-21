@@ -66,7 +66,8 @@ window.CONTENT_FR = {
     "readMore": "Lire la suite"
   },
   "testimonialsSection": {
-    "title": "7+ clients satisfaits",
+    "titleAccent": "7+",
+    "titleRest": "clients satisfaits",
     "seeAll": "Voir toutes les recommandations",
     "stats": [
       { "label": "Qualité", "stars": 5 },
@@ -75,8 +76,8 @@ window.CONTENT_FR = {
     ]
   },
   "contactSection": {
-    "kicker": "Discutons de votre",
-    "title": "projet",
+    "kicker": "Discutons de",
+    "title": "votre projet",
     "email": "estee.desanctis@gmail.com",
     "emailLabel": "Email",
     "locationLabel": "Basée à",

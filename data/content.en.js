@@ -66,7 +66,8 @@ window.CONTENT_EN = {
     "readMore": "Read more"
   },
   "testimonialsSection": {
-    "title": "7+ satisfied clients",
+    "titleAccent": "7+",
+    "titleRest": "satisfied clients",
     "seeAll": "See all recommendations",
     "stats": [
       { "label": "Quality", "stars": 5 },
@@ -75,8 +76,8 @@ window.CONTENT_EN = {
     ]
   },
   "contactSection": {
-    "kicker": "Let's discuss your",
-    "title": "project",
+    "kicker": "Let's discuss",
+    "title": "your project",
     "email": "estee.desanctis@gmail.com",
     "emailLabel": "Email",
     "locationLabel": "Work from",
