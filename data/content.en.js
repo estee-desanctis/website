@@ -23,10 +23,10 @@ window.CONTENT_EN = {
     "follow": "Follow me on:"
   },
   "whyHire": {
-    "kicker": "Why",
-    "title": "Hire Me",
+    "kicker": "My",
+    "title": "Skills",
     "categories": [
-      { "icon": "groups", "title": "Design Leadership", "tags": ["Cross-functional collaboration", "Design ops", "Design reviews", "Design strategy", "Mentoring & team enablement", "Stakeholder management"] },
+      { "icon": "groups", "title": "Design Leadership", "tags": ["Cross-functional collaboration", "Design ops", "Design reviews", "Design strategy", "Mentoring & team enablement", "Product Roadmap"] },
       { "icon": "search", "title": "Research", "tags": ["A/B & MAB testing", "Analytics", "Interviews", "Journey mapping", "Usability testing", "User research"] },
       { "icon": "palette", "title": "Design", "tags": ["Design systems at scale", "Product & interaction design", "Prototyping", "UX writing"] },
       { "icon": "smart_toy", "title": "AI for Design", "tags": ["AI-augmented design ops", "Claude Code", "Custom GPTs & agents", "Figma Make", "MCP"] },

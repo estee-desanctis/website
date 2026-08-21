@@ -23,10 +23,10 @@ window.CONTENT_FR = {
     "follow": "Me suivre sur :"
   },
   "whyHire": {
-    "kicker": "Pourquoi",
-    "title": "me choisir",
+    "kicker": "Mes",
+    "title": "compétences",
     "categories": [
-      { "icon": "groups", "title": "Leadership Design", "tags": ["Collaboration cross-fonctionnelle", "Design ops", "Design reviews", "Gestion des parties prenantes", "Mentorat & montée en compétence", "Stratégie design"] },
+      { "icon": "groups", "title": "Leadership Design", "tags": ["Collaboration cross-fonctionnelle", "Design ops", "Design reviews", "Roadmap Produit", "Mentorat & montée en compétence", "Stratégie design"] },
       { "icon": "search", "title": "Recherche", "tags": ["A/B & MAB testing", "Analytics", "Entretiens", "Journey mapping", "Tests d'utilisabilité", "User research"] },
       { "icon": "palette", "title": "Design", "tags": ["Design systems à l'échelle", "Product & interaction design", "Prototypage", "UX writing"] },
       { "icon": "smart_toy", "title": "IA pour le design", "tags": ["Claude Code", "Design ops augmenté par l'IA", "Figma Make", "GPTs custom & agents", "MCP"] },

@@ -146,7 +146,7 @@ function renderFooter(){
   if(!footer) return;
   footer.innerHTML =
     '<div class="wrap">' +
-      '<a href="index.html" class="flogo"><img src="images/web-logo.png" alt="EcoDesign — '+t.nav.home+'"></a>' +
+      '<a href="index.html" class="logo flogo"><img src="images/web-logo.png" alt="EcoDesign — '+t.nav.home+'"></a>' +
       '<div>'+t.footer.rights+(t.footer.brand ? ' · '+t.footer.brand : '')+' · '+t.footer.siret+'</div>' +
     '</div>';
 }
@@ -205,7 +205,7 @@ function renderHome(){
   var why = document.getElementById('why-content');
   if(why){
     why.innerHTML =
-      '<div class="section-head"><h2 class="big">'+t.whyHire.kicker+' <span class="accent">'+t.whyHire.title+'</span> ?</h2></div>' +
+      '<div class="section-head"><h2 class="big">'+t.whyHire.kicker+' <span class="accent">'+t.whyHire.title+'</span></h2></div>' +
       '<div class="skills-grid">' +
         t.whyHire.categories.map(function(c){
           return '<div class="skill-card"><div class="skill-head">'+icon(c.icon,'icon')+'<h3>'+c.title+'</h3></div>' +
