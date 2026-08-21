@@ -23,7 +23,32 @@ function el(html){
   d.innerHTML = html.trim();
   return d.firstChild;
 }
-function icon(name, extraClass){ return '<span class="material-symbols-outlined'+(extraClass?' '+extraClass:'')+'" aria-hidden="true">'+name+'</span>'; }
+// Icônes en SVG inline (pas de police externe à charger : léger et fiable).
+var ICONS = {
+  star: '<path d="M12 2.5l2.9 6.1 6.6.9-4.8 4.6 1.2 6.6L12 17.5 6.1 20.7l1.2-6.6-4.8-4.6 6.6-.9L12 2.5z"/>',
+  menu: '<path d="M3 6h18M3 12h18M3 18h18"/>',
+  download: '<path d="M12 3v11"/><path d="M7 10l5 5 5-5"/><path d="M4 20h16"/>',
+  groups: '<circle cx="9" cy="8" r="3"/><path d="M3.5 20c0-3.3 2.5-6 5.5-6s5.5 2.7 5.5 6"/><circle cx="17" cy="9" r="2.4" fill="none"/><path d="M15.6 14.3c2.2.5 4.1 2.4 4.1 5.7"/>',
+  search: '<circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/>',
+  palette: '<path d="M12 3a9 9 0 100 18c1.3 0 2-.9 2-1.9 0-.5-.2-.9-.5-1.3-.3-.4-.5-.8-.5-1.2 0-.9.7-1.6 1.6-1.6H16a5 5 0 005-5c0-3.9-4-7-9-7z"/><circle cx="8" cy="11.5" r="1.1" fill="currentColor" stroke="none"/><circle cx="8.7" cy="7.7" r="1.1" fill="currentColor" stroke="none"/><circle cx="12.8" cy="6.6" r="1.1" fill="currentColor" stroke="none"/><circle cx="16.2" cy="8.7" r="1.1" fill="currentColor" stroke="none"/>',
+  smart_toy: '<rect x="5" y="9" width="14" height="10" rx="2"/><path d="M12 5v4M9 3.2h6"/><circle cx="9.5" cy="14" r="1.1" fill="currentColor" stroke="none"/><circle cx="14.5" cy="14" r="1.1" fill="currentColor" stroke="none"/><path d="M2 12.5v4M22 12.5v4"/>',
+  eco: '<path d="M19.5 4.5C10 4.5 4.5 10.3 4.5 18c0 .6 0 1.1.1 1.5H8c7.8 0 13.5-5.9 13.5-13.5 0-.5 0-1-.1-1.5z"/><path d="M6.5 19.5c2-5 6-9 12-11"/>',
+  build: '<path d="M14.9 6.4a4 4 0 00-5.6 5.2L4 17l3 3 5.4-5.3a4 4 0 005.2-5.6l-2.7 2.7-2-2 2.7-2.7z"/>',
+  arrow_forward: '<path d="M5 12h14"/><path d="M13 6l6 6-6 6"/>',
+  send: '<path d="M3 11.2L21 3l-8.2 18-2-8-7.8-1.8z"/>',
+  picture_as_pdf: '<path d="M6 2h8l5 5v15H6z"/><path d="M14 2v5h5"/><path d="M9 13.5h6M9 17h6"/>',
+  check_circle: '<circle cx="12" cy="12" r="9"/><path d="M8 12.3l2.6 2.6L16 9.5"/>',
+  arrow_back: '<path d="M19 12H5"/><path d="M11 6l-6 6 6 6"/>',
+  open_in_new: '<path d="M14 3h7v7"/><path d="M21 3l-9 9"/><path d="M19 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h6"/>',
+  mail: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>',
+  location_on: '<path d="M12 21s7-7.4 7-12.4a7 7 0 10-14 0C5 13.6 12 21 12 21z"/><circle cx="12" cy="8.8" r="2.3"/>',
+  calendar_month: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>',
+  language: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.6 4 6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-6-4-9s1.5-6.4 4-9z"/>'
+};
+function icon(name, extraClass){
+  var inner = ICONS[name] || '';
+  return '<svg class="icon-svg'+(extraClass?' '+extraClass:'')+'" aria-hidden="true" viewBox="0 0 24 24">'+inner+'</svg>';
+}
 function stars(n){
   var out = '';
   for(var i=0;i<5;i++){ out += icon('star', 'star-ico'+(i<n?' filled':'')); }
@@ -144,7 +169,7 @@ function renderHome(){
         '</div>' +
         '<div>' +
           '<div class="greeting">'+t.hero.greeting+'</div>' +
-          '<div class="hero-title">'+t.hero.line1+' <span class="highlight">'+t.hero.role+'</span></div>' +
+          '<div class="hero-title"><span class="highlight">'+t.hero.role+'</span></div>' +
           '<p class="hero-bio">'+t.hero.bio+'</p>' +
           '<div class="hero-ctas">' +
             '<a class="btn btn-primary" href="#contact">'+t.hero.ctaContact+'</a>' +
