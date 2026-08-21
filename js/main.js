@@ -90,7 +90,7 @@ function renderHeader(){
   if(!header) return;
   header.innerHTML =
     '<div class="header-inner">' +
-      '<a href="index.html" class="logo"><img src="images/logo.png" alt="EcoDesign — '+t.nav.home+'"></a>' +
+      '<a href="index.html" class="logo"><img src="images/web-logo.png" alt="EcoDesign — '+t.nav.home+'"></a>' +
       '<nav class="main-nav" id="main-nav"><ul>' +
         '<li><a href="index.html#about">'+t.nav.about+'</a></li>' +
         '<li><a href="portfolio.html">'+t.nav.work+'</a></li>' +
@@ -121,7 +121,7 @@ function renderFooter(){
   if(!footer) return;
   footer.innerHTML =
     '<div class="wrap">' +
-      '<a href="index.html" class="flogo"><img src="images/logo.png" alt="EcoDesign — '+t.nav.home+'"></a>' +
+      '<a href="index.html" class="flogo"><img src="images/web-logo.png" alt="EcoDesign — '+t.nav.home+'"></a>' +
       '<div>'+t.footer.rights+(t.footer.brand ? ' · '+t.footer.brand : '')+' · '+t.footer.siret+'</div>' +
     '</div>';
 }
@@ -138,8 +138,8 @@ function renderHome(){
         '<div class="hero-photo">' +
           '<div class="frame"></div>' +
           '<div class="photo-box">' +
-            '<img src="images/portrait.png" alt="Estée Desanctis" onerror="this.style.display=\'none\';document.getElementById(\'photo-fallback\').style.display=\'flex\';">' +
-            '<div class="photo-placeholder" id="photo-fallback" style="display:none;">Ta photo ici<br><small>(ajoute images/portrait.png)</small></div>' +
+            '<img src="images/web-portrait.png" alt="Estée Desanctis" onerror="this.style.display=\'none\';document.getElementById(\'photo-fallback\').style.display=\'flex\';">' +
+            '<div class="photo-placeholder" id="photo-fallback" style="display:none;">Ta photo ici<br><small>(ajoute images/web-portrait.png)</small></div>' +
           '</div>' +
         '</div>' +
         '<div>' +
