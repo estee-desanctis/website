@@ -202,7 +202,7 @@ section{padding:60px 0;}
 
 /* Contact */
 .contact-grid{display:grid;grid-template-columns:280px 1fr;gap:36px;}
-.contact-info{display:flex;flex-direction:column;gap:20px;}
+.contact-info{display:flex;flex-direction:column;gap:20px;background:#f6f6f4;border-radius:var(--radius);padding:24px;}
 .contact-info .item{display:flex;gap:12px;font-size:13px;}
 .contact-info .item .ico{width:20px;font-size:18px;color:var(--green-dark);flex:none;}
 .contact-info .item .label{color:#888;font-size:11px;text-transform:uppercase;}
@@ -256,17 +256,14 @@ footer .flogo img{height:56px;width:auto;margin:0 auto;}
 .project-figure{margin:16px 0 4px;}
 .project-figure img{display:block;width:100%;height:auto;max-width:100%;border-radius:var(--radius);border:1px solid #e3e3e0;background:var(--tint);}
 .project-figure figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:#666;font-style:italic;}
-.results-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;}
-.results-list .res{background:var(--tint);color:var(--green-dark);font-weight:700;font-size:13px;padding:8px 14px;border-radius:10px;}
 .stats-callouts{display:flex;gap:20px;flex-wrap:wrap;margin-bottom:20px;}
 .stat-callout{background:#f6f6f4;border-radius:var(--radius);padding:18px 22px;min-width:140px;}
 .stat-callout .stat-value{font-family:'Roboto',sans-serif;font-size:26px;color:var(--green-dark);}
 .stat-callout .stat-label{font-size:12px;color:#666;margin-top:4px;}
-.achievements{margin-top:6px;background:#f6f6f4;border-radius:var(--radius);padding:24px;}
-.achievements .ach-title{font-weight:700;font-size:13px;color:var(--ink);margin-bottom:14px;text-transform:uppercase;letter-spacing:.5px;}
-.achievements .ach-item{font-size:13.5px;color:#555;background:#fff;border:1px solid #ddd;border-radius:10px;padding:10px 14px;margin-bottom:8px;display:flex;align-items:center;gap:8px;}
-.achievements .ach-item:last-child{margin-bottom:0;}
-.achievements .ach-item .icon-svg{color:var(--green-dark);width:18px;height:18px;}
+/* Réussites clés — pastilles (mêmes codes visuels que les tags de compétences) */
+.achievements{margin-top:6px;display:flex;flex-wrap:wrap;gap:10px;}
+.achievements .ach-item{font-size:13.5px;color:#555;background:#fff;border:1px solid #ddd;border-radius:999px;padding:9px 16px 9px 12px;display:inline-flex;align-items:center;gap:8px;}
+.achievements .ach-item .icon-svg{color:var(--green-dark);width:18px;height:18px;flex:none;}
 @media (max-width:900px){.detail-columns{grid-template-columns:1fr;}}
 
 .article-body{max-width:760px;margin:0 auto;font-size:15px;color:#444;}

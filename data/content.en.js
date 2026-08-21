@@ -88,8 +88,10 @@ window.CONTENT_EN = {
     "form": {
       "surname": "Surname",
       "name": "Name",
+      "surnamePlaceholder": "Blanc",
+      "namePlaceholder": "Camille",
       "email": "Email",
-      "emailPlaceholder": "john.doe@gmail.com",
+      "emailPlaceholder": "camille.blanc@gmail.com",
       "project": "Your project",
       "projectPlaceholder": "Hello, I'm interested in a Product Designer to...",
       "send": "Send"
@@ -107,7 +109,7 @@ window.CONTENT_EN = {
       "company": "CoderPad",
       "title": "Rethinking Screen for the AI era: from a churn signal to a product roadmap",
       "subtitle": "SaaS technical-interview platform",
-      "tags": ["Product diagnosis", "Research & data", "AI roadmap", "Design leadership"],
+      "tags": ["Product roadmap", "UX & Data research", "AI design", "Accessibility"],
       "context": ["SaaS technical-interview platform", "From churn diagnosis to AI roadmap"],
       "challenge": "CoderPad Screen is our technical-assessment product for hiring developers: async take-home exercises, or live interviews run by a recruiter.\n\nOn the recruiter side, two things were compounding: a growing volume of candidates to evaluate, with few tools to tell them apart, and rising AI use by candidates — to the point where most scores were climbing, making an already bigger pile of results harder to interpret and compare.\n\nOn CoderPad's side, that showed up concretely: rising churn on strategic accounts, tougher competition, and features that were shipping too slowly to keep pace.\n\nMy job: find out what was really driving those departures, and turn that diagnosis into a concrete product roadmap to help recruiters evaluate faster and more fairly, in the AI era.",
       "coverImage": { "src": "images/web-coderpad-cover.webp", "alt": "CoderPad product visual: homepage screen and candidate performance stats (rank, duration, score)." },
@@ -145,14 +147,14 @@ window.CONTENT_EN = {
       "company": "Wisecure",
       "title": "A neighborhood-watch app built to stay fast under pressure",
       "subtitle": "Neighborhood-safety mobile app",
-      "tags": ["Mobile UX/UI", "0→1", "Safety & emergency"],
+      "tags": ["0→1", "Mobile", "Design system", "UX UI"],
       "context": ["Neighborhood-safety mobile app", "Solo UX/UI design"],
       "challenge": "Wisecure connects neighbors and certified security agents to report and track incidents in real time — a community-based alternative to traditional surveillance systems.\n\nThe problem to solve: in a watch or emergency situation, every second counts. The reporting flow needed to stay clear and fast to use even under stress, while still giving a reassuring, at-a-glance view of neighborhood activity day to day.\n\nMy job: design the mobile experience end to end — geolocated incident reporting, neighborhood dashboard, connection with certified agents — solo, from UX framing to final interface.",
       "coverImage": { "src": "images/web-wisecure-cover.webp", "alt": "Preview of the Wisecure app on mobile: home screen, incident map and alert detail." },
       "role": ["UX/UI design (0→1, solo)", "User research", "Mobile design system"],
       "team": ["Wisecure product team", "1 Designer (me)"],
       "tools": ["Figma"],
-      "results": ["Simplified, fast-to-use reporting flow", "Clear interface under stress", "End-to-end experience, from research to design system"],
+      "achievements": ["Simplified, fast-to-use reporting flow", "Clear interface under stress", "End-to-end experience, from research to design system"],
       "process": [
         { "num": "01", "step": "Understand the use case", "title": "Designing for emergencies, not comfort", "desc": "A safety app can't be designed like a typical app: it has to stay usable when the person's attention is on the incident, not the interface. I prioritized readability, quick-to-reach actions, and the fewest possible steps to report an incident." },
         { "num": "02", "step": "Geolocated reporting", "title": "A clear map to place every alert", "desc": "I designed the incident map as the main entry point: immediate localization of nearby incidents, report creation in a few steps, and a visible status so people following an alert stay reassured.", "image": { "src": "images/web-wisecure-cover.webp", "alt": "Wisecure screens: incident map and report-creation flow.", "caption": "The incident map and the report-creation flow, designed to stay simple to use under stress.", "w": 2000, "h": 1004 } },
@@ -165,7 +167,7 @@ window.CONTENT_EN = {
       "company": "Dualsun",
       "title": "Unblocking a solar B2B team with research and a scalable system",
       "subtitle": "SaaS & IoT B2B solar platforms",
-      "tags": ["Design system", "Research", "A/B testing", "Content design"],
+      "tags": ["Product roadmap", "UX & Data research", "Design System", "A/B Test"],
       "context": ["SaaS & IoT B2B solar platforms", "Sole designer, constrained budget"],
       "challenge": "As the sole designer across SaaS & IoT B2B solar platforms, on a tight budget, I had to turn complex, unintuitive journeys into clear experiences — while PMs, developers and marketing all needed me at once. A confusing roof + exposure step was causing users to drop out mid-simulator, and an inconsistent, non-WCAG-compliant design system slowed down every release across the product's three surfaces (web, installer app, IoT dashboard).\n\nMy job: redesign the core journeys, get design out of the way as a bottleneck, and grow the team's autonomy — with one designer, a tight budget and three platforms to cover, the only way forward was leverage, not more hours.",
       "coverImage": { "src": "images/web-dualsun-cover.webp", "alt": "Dualsun product visual: mobile solar production tracking and the desktop/mobile solar solutions simulator." },
@@ -199,14 +201,14 @@ window.CONTENT_EN = {
       "company": "Airbus, mission via Alten",
       "title": "Making production KPI monitoring readable, from research to dashboard",
       "subtitle": "UX study & production-monitoring dashboard",
-      "tags": ["UX research", "Dashboard", "Industrial data"],
+      "tags": ["UX research", "Dashboard", "Interviews"],
       "context": ["UX study & production-monitoring dashboard", "Alten mission, solo on the study and the dashboard"],
       "challenge": "On a mission at Airbus via Alten, I led a UX study on production monitoring: understanding how field teams and managers tracked progress, disruptions and performance indicators day to day, across several tools (AVL2/EPIQA, Google Sheets, SAP, SKYWISE, MES) that weren't always connected to each other.\n\nThe research surfaced a growing mental load as teams moved further into the analysis and optimization stages: information was scattered, and building a reliable overview meant cross-checking several sources by hand.\n\nMy job: frame this study, then design, solo, a KPI monitoring dashboard that centralizes compliance tracking, disruptions and planning in one clear place.",
       "coverImage": { "src": "images/web-airbus-cover.webp", "alt": "Overview of the Airbus UX study: personas, journey map and the production KPI monitoring dashboard." },
       "role": ["UX Designer (solo)", "User research & personas", "Journey mapping", "Monitoring dashboard design"],
       "team": ["Airbus production teams", "1 Designer (me, Alten mission)"],
       "tools": ["Figma"],
-      "results": ["Centralized overview of production monitoring", "Reduced mental load in the analysis and optimization stages", "Clearer compliance and disruption tracking for field teams"],
+      "achievements": ["Centralized overview of production monitoring", "Reduced mental load in the analysis and optimization stages", "Clearer compliance and disruption tracking for field teams"],
       "process": [
         { "num": "01", "step": "Understand the field", "title": "Personas and the reality of day-to-day monitoring", "desc": "I ran interviews with production teams to build personas representative of the roles involved in monitoring — technical profiles with days shaped by indicator tracking and disruption management.", "image": { "src": "images/web-airbus-personas.webp", "alt": "Personas from the Airbus UX study representing the roles involved in production monitoring.", "caption": "The personas built from interviews with production teams.", "w": 1600, "h": 542 } },
         { "num": "02", "step": "Map the journey", "title": "Locating where the mental load grows", "desc": "The journey map surfaced recurring friction points: fragmented tools (AVL2/EPIQA, Google Sheets, SAP, SKYWISE, MES) to cross-check by hand, with a mental load that clearly increases in the analysis and optimization stages.", "image": { "src": "images/web-airbus-journey-map.webp", "alt": "Airbus user journey map, showing friction points and how mental load evolves across stages.", "caption": "The journey map, with friction points identified in the analysis and optimization stages.", "w": 1600, "h": 1320 } },
@@ -244,9 +246,9 @@ window.CONTENT_EN = {
       "role": "Mobile app creation"
     },
     {
-      "quote": "I'm delighted with the results of this second project with Estée. She shows a lot of professionalism and delivers quality work.",
-      "name": "Lisa B.",
-      "role": "Brand identity & website design"
+      "quote": "I had the pleasure of working with Estée at Dualsun, where she brilliantly carried out her Product Designer role within my team. Her proactiveness in leading user research and workshops helped steer our UX projects with real relevance. Her ability to build wireframes and prototypes turned complex ideas into clear, actionable concepts. On top of that, her smooth collaboration with developers made my job as Product Manager a lot easier. Professional, creative, attentive and values-driven, Estée is a real asset to any project!",
+      "name": "Laura White",
+      "role": "Product Manager, Dualsun"
     }
   ]
 }

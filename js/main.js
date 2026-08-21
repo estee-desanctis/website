@@ -263,8 +263,8 @@ function renderHome(){
         '</div>' +
         '<form id="contact-form">' +
           '<div class="form-row">' +
-            '<div class="field"><label for="cf-surname">'+c.form.surname+'</label><input id="cf-surname" type="text"></div>' +
-            '<div class="field"><label for="cf-name">'+c.form.name+'</label><input id="cf-name" type="text"></div>' +
+            '<div class="field"><label for="cf-surname">'+c.form.surname+'</label><input id="cf-surname" type="text" placeholder="'+c.form.surnamePlaceholder+'"></div>' +
+            '<div class="field"><label for="cf-name">'+c.form.name+'</label><input id="cf-name" type="text" placeholder="'+c.form.namePlaceholder+'"></div>' +
           '</div>' +
           '<div class="field" style="margin-bottom:16px;"><label for="cf-email">'+c.form.email+'</label><input id="cf-email" type="email" placeholder="'+c.form.emailPlaceholder+'"></div>' +
           '<div class="field" style="margin-bottom:16px;"><label for="cf-project">'+c.form.project+'</label><textarea id="cf-project" placeholder="'+c.form.projectPlaceholder+'"></textarea></div>' +
@@ -384,9 +384,9 @@ function renderProjectDetail(){
             paragraphs(step.desc)+ (step.image ? projectFigure(step.image) : '') +'</div></div>';
         }).join('') +
         '<h3 class="h3" style="margin-bottom:8px;">'+ (getLang()==='fr' ? 'Résultats' : 'Results') +'</h3>' +
-        (p.achievements && p.achievements.length ? '<div class="achievements"><div class="ach-title">'+ (getLang()==='fr' ? 'Réussites clés' : 'Key achievements') +'</div>' +
-          p.achievements.map(function(ac){ return '<div class="ach-item">'+icon('check_circle')+' '+ac+'</div>'; }).join('') +
-        '</div>' : '<div class="results-list">'+ p.results.map(function(r){return '<span class="res">'+r+'</span>';}).join('') +'</div>') +
+        '<div class="achievements">' +
+          (p.achievements || p.results).map(function(ac){ return '<span class="ach-item">'+icon('check_circle')+' '+ac+'</span>'; }).join('') +
+        '</div>' +
         (p.resultsImage ? projectFigure(p.resultsImage) : '') +
       '</div>' +
       '<div class="side">' +

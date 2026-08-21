@@ -88,8 +88,10 @@ window.CONTENT_FR = {
     "form": {
       "surname": "Nom",
       "name": "Prénom",
+      "surnamePlaceholder": "Blanc",
+      "namePlaceholder": "Camille",
       "email": "Email",
-      "emailPlaceholder": "john.doe@gmail.com",
+      "emailPlaceholder": "camille.blanc@gmail.com",
       "project": "Votre projet",
       "projectPlaceholder": "Bonjour, je suis intéressé(e) par une Product Designer pour…",
       "send": "Envoyer"
@@ -107,7 +109,7 @@ window.CONTENT_FR = {
       "company": "CoderPad",
       "title": "Repenser Screen à l'ère de l'IA : du signal de churn à la feuille de route produit",
       "subtitle": "Plateforme SaaS de tests techniques",
-      "tags": ["Diagnostic produit", "Recherche & data", "Roadmap IA", "Leadership design"],
+      "tags": ["Roadmap produit", "Recherche UX & Data", "Design IA", "Accessibilité"],
       "context": ["SaaS de tests techniques", "Du diagnostic churn à la feuille de route IA"],
       "challenge": "CoderPad Screen est notre solution de tests techniques pour recruter des développeurs : exercices asynchrones à réaliser en autonomie, ou entretiens live encadrés par un recruteur.\n\nCôté recruteurs, le constat était double : un volume de candidatures toujours plus important, avec peu d'outils pour les départager, et une IA de plus en plus utilisée par les candidats — au point que la majorité des scores grimpe, rendant des résultats plus nombreux et plus difficiles à interpréter.\n\nCôté CoderPad, ces difficultés se traduisaient concrètement : un churn en hausse sur des comptes stratégiques, une concurrence de plus en plus agressive, et des fonctionnalités qui mettaient trop de temps à sortir en production pour suivre le rythme.\n\nMa mission : comprendre ce qui pesait vraiment dans ces départs, et transformer ce diagnostic en une feuille de route produit concrète pour aider les recruteurs à évaluer plus vite et plus juste, à l'ère de l'IA.",
       "coverImage": { "src": "images/web-coderpad-cover.webp", "alt": "Visuel de présentation de CoderPad : écran d'accueil produit et indicateurs de performance candidat (rang, durée, score)." },
@@ -145,14 +147,14 @@ window.CONTENT_FR = {
       "company": "Wisecure",
       "title": "Une app de vigilance de quartier plus rapide à utiliser en situation d'urgence",
       "subtitle": "App mobile de sécurité de voisinage",
-      "tags": ["UX/UI mobile", "0→1", "Sécurité & urgence"],
+      "tags": ["0→1", "Mobile", "Design system", "UX UI"],
       "context": ["App mobile de sécurité de voisinage", "Design UX/UI en solo"],
       "challenge": "Wisecure connecte des voisins et des agents de sécurité certifiés pour signaler et suivre des incidents en temps réel — une alternative de proximité aux dispositifs de vidéosurveillance classiques.\n\nLe problème à résoudre : en situation de vigilance ou d'urgence, chaque seconde compte. Le parcours de signalement devait rester lisible et rapide à utiliser même sous stress, tout en donnant une vue claire et rassurante de l'activité du quartier au quotidien.\n\nMa mission : concevoir l'expérience mobile de bout en bout — signalement d'incidents géolocalisé, tableau de bord de quartier, mise en relation avec des agents certifiés — en solo, du cadrage UX à l'interface finale.",
       "coverImage": { "src": "images/web-wisecure-cover.webp", "alt": "Aperçu de l'application Wisecure sur mobile : écran d'accueil, carte des signalements et fiche d'alerte." },
       "role": ["Design UX/UI (0→1, en solo)", "Recherche utilisateur", "Design system mobile"],
       "team": ["Équipe produit Wisecure", "1 Designer (moi)"],
       "tools": ["Figma"],
-      "results": ["Parcours de signalement simplifié et rapide à utiliser", "Interface claire en situation de stress", "Expérience de bout en bout, de la recherche au design system"],
+      "achievements": ["Parcours de signalement simplifié et rapide à utiliser", "Interface claire en situation de stress", "Expérience de bout en bout, de la recherche au design system"],
       "process": [
         { "num": "01", "step": "Comprendre l'usage", "title": "Concevoir pour l'urgence, pas pour le confort", "desc": "Une app de sécurité ne se conçoit pas comme une app classique : elle doit rester utilisable quand l'attention de la personne est ailleurs, sur l'incident en cours plutôt que sur l'interface. J'ai priorisé la lisibilité, des actions rapides à atteindre, et un minimum d'étapes pour signaler un incident." },
         { "num": "02", "step": "Signalement géolocalisé", "title": "Une carte claire pour situer chaque alerte", "desc": "J'ai conçu la carte de signalements comme point d'entrée principal : localisation immédiate des incidents à proximité, création de signalement en quelques étapes, et statut d'avancement visible pour rassurer les personnes qui suivent une alerte.", "image": { "src": "images/web-wisecure-cover.webp", "alt": "Écrans Wisecure : carte des signalements et fiche de création d'un signalement.", "caption": "La carte de signalements et le parcours de création d'une alerte, pensés pour rester simples à utiliser en situation de stress.", "w": 2000, "h": 1004 } },
@@ -165,7 +167,7 @@ window.CONTENT_FR = {
       "company": "Dualsun",
       "title": "Débloquer une équipe solaire B2B par la recherche et un design system évolutif",
       "subtitle": "Plateformes solaires SaaS & IoT B2B",
-      "tags": ["Design system", "Recherche", "A/B testing", "Content design"],
+      "tags": ["Roadmap produit", "Recherche UX & Data", "Design System", "A/B Test"],
       "context": ["Plateformes solaires SaaS & IoT B2B", "Seule designer, budget contraint"],
       "challenge": "Seule designer sur des plateformes solaires SaaS & IoT B2B, avec un budget serré, je devais transformer des parcours complexes et peu intuitifs en expériences claires — tout en étant sollicitée en continu par les PM, les développeurs et le marketing. Une étape toiture + exposition confuse faisait décrocher des utilisateurs en plein simulateur, et un design system incohérent, non conforme WCAG, ralentissait chaque livraison sur les trois plateformes du produit (web, app installateur, dashboard IoT).\n\nMa mission : refondre les parcours clés, sortir le design de son rôle de goulot d'étranglement, et donner plus d'autonomie à l'équipe — avec une seule designer, un budget contraint et trois plateformes à couvrir, il fallait trouver des leviers plutôt que d'ajouter des heures.",
       "coverImage": { "src": "images/web-dualsun-cover.webp", "alt": "Visuel de présentation de Dualsun : suivi de la production solaire sur mobile et simulateur de solutions solaires sur desktop et mobile." },
@@ -199,14 +201,14 @@ window.CONTENT_FR = {
       "company": "Airbus, mission via Alten",
       "title": "Rendre lisible le pilotage des KPIs de production, de la recherche au dashboard",
       "subtitle": "Étude UX & dashboard de suivi de production",
-      "tags": ["Recherche UX", "Dashboard", "Data industrielle"],
+      "tags": ["Recherche UX", "Dashboard", "Interviews"],
       "context": ["Étude UX & dashboard de suivi de production", "Mission via Alten, en solo sur l'étude et le dashboard"],
       "challenge": "En mission chez Airbus via Alten, j'ai mené une étude UX autour du pilotage de la production : comprendre comment les équipes terrain et les responsables suivaient l'avancement, les aléas et les indicateurs de performance au quotidien, entre plusieurs outils (AVL2/EPIQA, Google Sheets, SAP, SKYWISE, MES) pas toujours connectés entre eux.\n\nLa recherche a fait ressortir une charge mentale croissante à mesure que les équipes avançaient dans les phases d'analyse et d'optimisation : les informations étaient dispersées, et se faire une vue d'ensemble fiable demandait de recouper plusieurs sources à la main.\n\nMa mission : cadrer cette étude puis concevoir, en solo, un dashboard de pilotage des KPIs qui centralise le suivi de conformité, des aléas et de la planification en un seul endroit clair.",
       "coverImage": { "src": "images/web-airbus-cover.webp", "alt": "Vue d'ensemble de l'étude UX Airbus : personas, cartographie du parcours et dashboard de suivi des KPIs de production." },
       "role": ["UX Designer (en solo)", "Recherche utilisateur & personas", "Cartographie du parcours", "Design du dashboard de pilotage"],
       "team": ["Équipes production Airbus", "1 Designer (moi, mission Alten)"],
       "tools": ["Figma"],
-      "results": ["Vue d'ensemble centralisée du pilotage de production", "Charge mentale réduite dans les phases d'analyse et d'optimisation", "Suivi de conformité et des aléas plus lisible pour les équipes terrain"],
+      "achievements": ["Vue d'ensemble centralisée du pilotage de production", "Charge mentale réduite dans les phases d'analyse et d'optimisation", "Suivi de conformité et des aléas plus lisible pour les équipes terrain"],
       "process": [
         { "num": "01", "step": "Comprendre le terrain", "title": "Personas et réalité du pilotage au quotidien", "desc": "J'ai mené des entretiens avec les équipes de production pour construire des personas représentatifs des rôles impliqués dans le pilotage — des profils techniques au quotidien rythmé par le suivi d'indicateurs et la gestion des aléas.", "image": { "src": "images/web-airbus-personas.webp", "alt": "Personas de l'étude UX Airbus représentant les profils impliqués dans le pilotage de production.", "caption": "Les personas construits à partir des entretiens menés avec les équipes de production.", "w": 1600, "h": 542 } },
         { "num": "02", "step": "Cartographier le parcours", "title": "Repérer où la charge mentale augmente", "desc": "La cartographie du parcours a mis en évidence des points de friction récurrents : des outils fragmentés (AVL2/EPIQA, Google Sheets, SAP, SKYWISE, MES) à recouper manuellement, avec une charge mentale qui s'alourdit nettement dans les phases d'analyse et d'optimisation.", "image": { "src": "images/web-airbus-journey-map.webp", "alt": "Cartographie du parcours utilisateur Airbus, avec les points de friction et l'évolution de la charge mentale par étape.", "caption": "La cartographie du parcours, avec les points de friction identifiés dans les phases d'analyse et d'optimisation.", "w": 1600, "h": 1320 } },
@@ -244,9 +246,9 @@ window.CONTENT_FR = {
       "role": "Création d'une application mobile"
     },
     {
-      "quote": "Je suis ravie des résultats de cette deuxième mission avec Estée. Elle fait preuve de beaucoup de professionnalisme et d'un travail de qualité.",
-      "name": "Lisa B.",
-      "role": "Identité de marque et design de site web"
+      "quote": "J'ai eu le plaisir de travailler avec Estée chez Dualsun, où elle a brillamment exercé ses fonctions de Product Designer au sein de mon équipe. Sa proactivité dans la conduite de user research et d'ateliers a permis d'orienter nos projets UX avec pertinence. Sa capacité à réaliser des wireframes et prototypes a su transformer des idées complexes en concepts clairs et opérationnels. De plus, ses interactions fluides avec les développeurs ont grandement facilité mon travail de Product Manager. Professionnelle, créative, à l'écoute et porteuse de belles valeurs, Estée est un véritable atout pour tout projet !",
+      "name": "Laura White",
+      "role": "Product Manager, Dualsun"
     }
   ]
 }
