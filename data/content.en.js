@@ -242,14 +242,17 @@ window.CONTENT_EN = {
   ],
   "testimonials": [
     {
-      "quote": "Estée really helped us bring all our ideas to life for our UX and UI project, to improve the experience for our end users.",
-      "name": "Thomas G.",
-      "role": "Mobile app creation"
+      "quote": "I had the pleasure of working with Estée at Dualsun, where she brilliantly carried out her Product Designer role within my team. Her proactiveness in leading user research and workshops helped steer our UX projects with real relevance. [...] Professional, creative, attentive and values-driven, Estée is a real asset to any project!",
+      "name": "Laura White",
+      "role": "Product Manager, Dualsun",
+      "avatar": "data:image/webp;base64,UklGRhgDAABXRUJQVlA4IAwDAADwEQCdASpgAGAAPm0ukkYkIqGhMBcZyIANiWkACw1XE9LQ0UctAa0hGWqv8veMevUohWuqmlctp3qjgaxtEz6T7HwUV6A/5cFovCiJOR/qXTsJwt4LneW06yBk7fqcKA8z8psHZ5dggZmFJ6ADxf6jmmf//vyglBlmOsKUjCbPgJh1TiEsL2Ueg1X6CpMCzCHLpEKQ1IDZ4AD+8hfu2YWtIbQwgT9cUiEiVryXuE13Hpr96+tBPm14PZ3cDAW3QaOaPJr5Mt3+AY/nClD+8e30jKPGYXsagp86I9vs0InJy8Pk9fWcHD+CNRuOUB4i5bt4LkcntNL3iLnkE80hPPswZDis8C4766ywDvYyHt/PuitNlJKn5htPN2Y4wbf880KCSOCVqd4jW+HgShR3EryYdD8ijuUp42FhA49ozI0jtDP7IUi0gKcKH0Kd0IF0nadIGTldF5iFr1dSJ19eVOJAqy79dzw6GoXg2l5kPcGm0HY1ig0DZ0Zgzp+sH6Kfxidq2jQqX6KLQOScGC2YqAqvMwA4I6QFiGZbQVyP8yMORTVIY1kw98X9so0LsGEh1+vVs4ngGN96SVvHj5WL10dwWW0mdPdMCAaR6etZ1ENRnsL+ESjWkAUn5mnUAgfFNTS7OLzotSXmhEUo6SQ7ODyv8nOEuooCgYmeeO8VfQSwZvdGAbjjzmXm9gvvXHTEhwBjZCoPh4yzT9yUSAj2R6df6MTGo+FYBQMRhX/J5Qa/yaC+SZOTXmw8n9WsMvn5kdt5ryvnaZ6kRApc85xUXp+ULy9+bsVnugPjPJVWU/to2atekkMS4NKWRmMBZNbaF658wNmIEooaCEIX8YqQNgWV4xUkKWEenrG0c4ASrgaSNAsJkNhtu3Bh/nfC5WLH/HAWAtuidVshiXgBUviGn1ag+bpFtrqN5QYy5OLZn1QpLTcYxFpTm8RTXHJ4T3I3KKCHctu2zTxY4nWlq3D9bXUU49s76getrB10y+i+ypSPWlbuw1K8/Il3Yj4Cfr6aXNH5hkqbkiTZu8D9QAA="
     },
     {
-      "quote": "I had the pleasure of working with Estée at Dualsun, where she brilliantly carried out her Product Designer role within my team. Her proactiveness in leading user research and workshops helped steer our UX projects with real relevance. Her ability to build wireframes and prototypes turned complex ideas into clear, actionable concepts. On top of that, her smooth collaboration with developers made my job as Product Manager a lot easier. Professional, creative, attentive and values-driven, Estée is a real asset to any project!",
-      "name": "Laura White",
-      "role": "Product Manager, Dualsun"
+      "quote": "I recommend Estée to manage your Design System and create highly precise mockups!",
+      "name": "Arnaud Saint-Macary",
+      "role": "Former Product Manager, Dualsun",
+      "avatar": "data:image/webp;base64,UklGRowEAABXRUJQVlA4IIAEAAAwFgCdASpgAGAAPm0ukkWkIqGZWq0QQAbEs4BpUj/EeNJdt/yNB12j7No89Bq74/rLgHpjlDIe4Kiz9E5rZ/QbEJSIxxDjyoZWMeSpCmmBcmqxF4nJERfmQEvohVWPVAW0IcnNl+KPILx6BBa0dxp9Z5UupHwwk8zLoOWUsoC9nKBJ8aVNSTHt1MuWDKTEMbtimlG02VGAaw14k4mNTKItW5eVw4T2wk7esHrmkgyQJaHL2Ivh2DOfI8AA/vz0Aw75NGHesW0GBaoFyTsYfi18K9z0l/87FnhLypTTQi4tXaHJwPyjVg0pregPk6jy96weYcX5iyvxbULOfdNiPkZv1bDeXs6UQaVZjjtoignhGY2buyUG0yCxzvBcNQvB2kfa+++fOufYhGdKzN42XMPVxP8aiL0bt6sFqgpG6mmZ2FSpo7CV+gZ94Hqn49qmFEf2Ex23lJ1iOZVIapA67Dlyaf2zGOiDS141BhsKqpuGuBl4GXqnXOZAWO2GfZ0Tlx7aTlkBh0Y4NScXN85ZFr9p5JLwLAvd79b07IRb2UALSOmTLOXpcqcLoPElirLZzuLqiZUbE0H45LepSZiIgT12FXfBXfs5eSLxnzux/me3AqMmLtHYUp0D08+2FUtF8DV4jwfhgTl8SLMmOR991yKFBoYWs3s95GRK9qZ9F6M2T8Rvyfns0QkeRqYgjshyoxd7x/4uczXZdNw0drk7Zl44aqIxto/E0iaFnYacWPTQ+O4LRWZ0yMvgO8EsekRFzKTdGtBtc7+16h4lwBAOxLsimQhajlPILbplluGkqLP+MgxbGSHCm6IavvG4Tgkwgyy3aVM9UFvVej2k6/+ksF4GbZHUcaNyqo0udrj4ENGkJD8gJZWS/LR3mIAVSyMLvK8xFs5TOeYbtol1B8egKaxMXLdJ2zgjzhtJrGEf3GaSxz4sFYhVexHFObBaMPAFAhrRnOs2TIGezPAMukRFZJkqH8cJ56Q6Lqb8dcihDxexFehj2Ih+ZadzZvh9si7/nzoer0i/+dbUX6qBzSeUNQrIHqRlrLQELE8KoazmMmX+8BAmpnL3Fo556eMoBcgjm2rxcboedV7JIk/RO/Fz2nd3bfLttTjX1wv/gMcDb6joupqAxcIXGfu8oD91z1txvrpt3KTx2E2cw6JVrOOxxQRTkdzvu1wnieEjhy9DlEyEKBoHvz7l3PHfdUBC7BjGhJm+ED/+iuSap4wPd82/fZFiMQDOvC3JFLSPHx/coEm/gpYvcjVsrH8OcG/VqHNTgyPFxl+bWrndM9h+eUy27lI0d8Q1CG44OOTsB9FD06+kMD1sum7e0FuSm4xoJViT4Vz7Tql284HE0o5E24SJaSIbmCNFWDSc/S+HMxsrrFwBuBb1egB4CicISyC2Zfjs+ugMdEIv0p/Nbq4YzpZflRk+2nUb97oT8sy9itcLoxy5EARgToivmJkYNiqqnE9QrMtWdzkyhoJaaNSb5As+qZg+Mmjx+9V87K8K5VowEo7XMCZsR/5u4gLXyrZpHJnSQAA=",
+      "linkedin": "https://www.linkedin.com/in/arnaud-saint-macary-70594698/"
     }
   ]
 }

@@ -115,7 +115,7 @@ function renderHeader(){
   if(!header) return;
   header.innerHTML =
     '<div class="header-inner">' +
-      '<a href="index.html" class="logo"><img src="images/web-logo.png" alt="EcoDesign — '+t.nav.home+'"></a>' +
+      '<a href="index.html" class="logo"><img src="images/web-logo.svg" alt="EcoDesign — '+t.nav.home+'" width="77" height="40"></a>' +
       '<nav class="main-nav" id="main-nav"><ul>' +
         '<li><a href="index.html#about">'+t.nav.about+'</a></li>' +
         '<li><a href="portfolio.html">'+t.nav.work+'</a></li>' +
@@ -146,7 +146,7 @@ function renderFooter(){
   if(!footer) return;
   footer.innerHTML =
     '<div class="wrap">' +
-      '<a href="index.html" class="logo flogo"><img src="images/web-logo.png" alt="EcoDesign — '+t.nav.home+'"></a>' +
+      '<a href="index.html" class="logo flogo"><img src="images/web-logo.svg" alt="EcoDesign — '+t.nav.home+'" width="77" height="40"></a>' +
       '<div>'+t.footer.rights+(t.footer.brand ? ' · '+t.footer.brand : '')+' · '+t.footer.siret+'</div>' +
     '</div>';
 }
@@ -237,7 +237,7 @@ function renderHome(){
   var testi = document.getElementById('testimonials-content');
   if(testi){
     testi.innerHTML =
-      '<div class="testimonials-title"><span class="accent">'+t.testimonialsSection.titleAccent+'</span> '+t.testimonialsSection.titleRest+'</div>' +
+      '<div class="section-head"><h2 class="big"><span class="accent">'+t.testimonialsSection.titleAccent+'</span> '+t.testimonialsSection.titleRest+'</h2></div>' +
       '<div class="testi-grid">' +
         '<div class="stats-box">' +
           t.testimonialsSection.stats.map(function(s){
@@ -321,11 +321,18 @@ function articleCard(a){
 }
 
 function testiCard(te){
+  var avatarAlt = (getLang()==='fr' ? 'Photo de ' : 'Photo of ') + te.name;
+  var avatar = te.avatar
+    ? '<img src="'+te.avatar+'" alt="'+avatarAlt+'" width="34" height="34" loading="lazy" decoding="async">'
+    : initials(te.name);
+  var nameHtml = te.linkedin
+    ? '<a href="'+te.linkedin+'" target="_blank" rel="noopener">'+te.name+'</a>'
+    : te.name;
   return '<div class="testi-card">' +
     '<p class="quote">“'+te.quote+'”</p>' +
     '<div class="testi-person">' +
-      '<div class="avatar">'+initials(te.name)+'</div>' +
-      '<div><div class="name">'+te.name+'</div><div class="role">'+te.role+'</div></div>' +
+      '<div class="avatar">'+avatar+'</div>' +
+      '<div><div class="name">'+nameHtml+'</div><div class="role">'+te.role+'</div></div>' +
     '</div>' +
   '</div>';
 }
