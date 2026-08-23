@@ -167,7 +167,7 @@ function renderHome(){
             '<div class="photo-placeholder" id="photo-fallback" style="display:none;">Ta photo ici<br><small>(ajoute images/web-portrait.png)</small></div>' +
           '</div>' +
         '</div>' +
-        '<div>' +
+        '<div class="hero-text">' +
           '<div class="greeting">'+t.hero.greeting+'</div>' +
           '<div class="hero-title"><span class="highlight">'+t.hero.role+'</span></div>' +
           '<p class="hero-bio">'+t.hero.bio+'</p>' +
