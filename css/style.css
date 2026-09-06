@@ -282,6 +282,8 @@ footer .flogo{display:inline-block;margin-bottom:14px;}
 
 .article-body{max-width:760px;margin:0 auto;font-size:15px;color:#444;}
 .article-body p{margin-bottom:18px;}
+/* Noms de skills cités dans le corps d'un article — mis en évidence pour rester repérables au survol */
+.article-body .skill-name{color:var(--green-dark);font-weight:700;}
 .article-links{max-width:760px;margin:0 auto;display:flex;gap:12px;flex-wrap:wrap;justify-content:center;}
 
 .back-link{display:inline-block;margin-top:40px;font-weight:600;color:var(--green-dark);}
