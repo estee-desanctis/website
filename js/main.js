@@ -74,7 +74,10 @@ function paragraphs(text){
 // to the text placeholder when only a caption string (no image yet) is given.
 function projectFigure(img){
   if(!img) return '';
-  if(Array.isArray(img)) return img.map(projectFigure).join('');
+  // Un tableau de plusieurs images (ex : captures complémentaires d'une même étape) s'affiche
+  // côte à côte sur desktop (grille qui s'adapte à la largeur disponible), et reste empilé
+  // sur mobile grâce au breakpoint dans .figure-gallery (voir style.css).
+  if(Array.isArray(img)) return '<div class="figure-gallery">' + img.map(projectFigure).join('') + '</div>';
   if(typeof img === 'string') return imgPlaceholder(img);
   return '<figure class="project-figure"><img src="'+img.src+'" alt="'+(img.alt||'')+'" width="'+(img.w||'')+'" height="'+(img.h||'')+'" loading="lazy" decoding="async">' +
     (img.caption ? '<figcaption>'+img.caption+'</figcaption>' : '') +

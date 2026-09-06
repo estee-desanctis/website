@@ -261,6 +261,11 @@ footer .flogo{display:inline-block;margin-bottom:14px;}
 .project-figure{margin:16px 0 4px;}
 .project-figure img{display:block;width:100%;height:auto;max-width:100%;border-radius:var(--radius);border:1px solid #e3e3e0;background:var(--tint);}
 .project-figure figcaption{margin-top:8px;font-size:13px;line-height:1.5;color:#666;font-style:italic;}
+/* Plusieurs images pour une même étape (ex : deux captures complémentaires) : côte à côte
+   sur desktop, en plus petit, et toujours empilées sur mobile/petit écran. */
+.figure-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:16px 0 4px;}
+.figure-gallery .project-figure{margin:0;}
+@media (max-width:640px){.figure-gallery{grid-template-columns:1fr;}}
 .stats-callouts{display:flex;gap:20px;flex-wrap:wrap;margin-bottom:20px;}
 .stat-callout{background:#f6f6f4;border-radius:var(--radius);padding:18px 22px;min-width:140px;}
 .stat-callout .stat-value{font-family:'Roboto',sans-serif;font-size:26px;color:var(--green-dark);}
