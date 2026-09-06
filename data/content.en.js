@@ -8,7 +8,7 @@ window.CONTENT_EN = {
     "home": "Home",
     "about": "About",
     "work": "My Work",
-    "articles": "Articles",
+    "articles": "Research",
     "testimonials": "Testimonial",
     "contact": "Contact me"
   },
@@ -62,9 +62,10 @@ window.CONTENT_EN = {
   },
   "articlesSection": {
     "kicker": "See my latest",
-    "title": "articles",
-    "seeAll": "See all articles",
-    "readMore": "Read more"
+    "title": "research",
+    "seeAll": "See all research",
+    "readMore": "Read more",
+    "typeLabels": { "article": "Article", "tool": "Tool" }
   },
   "testimonialsSection": {
     "titleAccent": "7+",
@@ -225,8 +226,20 @@ window.CONTENT_EN = {
   ],
   "articles": [
     {
+      "id": "fds-skills",
+      "date": "September 2026",
+      "type": "tool",
+      "title": "FDS Skills: a free Figma design-system skill pipeline for Claude",
+      "excerpt": "Four Claude skills I use on client work to build and maintain a Figma design system, from Root tokens to auditing — free on GitHub.",
+      "body": "On client missions, I build and maintain Figma design systems with four Claude skills I wrote myself, designed to chain together as a real pipeline. fds-charte-graphique lays the brand foundations (colors, typography, logos, spacing, effects, grids, radius, stroke) directly in Figma, together with the matching Root variable collection and a WCAG contrast check shown under every color. fds-design-system picks up from there: starting from those Root tokens, it builds semantic Alias tokens (light/dark), prioritizes a component list aligned with MUI conventions, then builds those components one at a time, in English, accessible and documented. fds-new-component works at the unit level: it takes a single existing component in a Figma file already structured with Root/Alias/Components and makes it fully tokenized, themed, and accessible, without touching the rest of the system — useful for completing or fixing one isolated component. fds-audit acts as a global health check: it evaluates an existing design system's token architecture, naming, completeness and accessibility, gives a per-item verdict (keep, improve, rebuild) plus a prioritized action plan, and can then automatically route the accepted fixes back through the other three skills. All four skills are generic: they work on any Figma file, not just mine, and are free to use on GitHub for anyone who wants to try them or adapt them.",
+      "links": [
+        { "label": "See the GitHub repo", "url": "https://github.com/estee-desanctis/FDS-Skills" }
+      ]
+    },
+    {
       "id": "green-by-design",
       "date": "April 2024",
+      "type": "article",
       "title": "Green by Design: When Sustainability meets Accessibility",
       "excerpt": "Sustainability and accessibility are too often treated as separate workstreams. In practice they reinforce each other — and sometimes pull in different directions.",
       "body": "Technology now shapes our lives in countless ways, and as our dependency on digital devices and services grows, so does the environmental footprint of our digital activities. As designers, our decisions impact user behavior and the sustainability of our products. Prioritizing efficiency and minimalism — fewer media, simpler animations, leaner interfaces — leads to faster loading times, less data transferred, and longer device lifespans: better products, a smaller footprint, and lower operational costs. Accessibility points the same way: designing digital services that work for everyone, regardless of ability or context, isn't just a box to check for compliance, it expands a product's reach and value while cutting down on redesigns and support driven by usability issues. The two goals don't always align: voice control, for instance, improves accessibility but can increase energy consumption through continuous data processing. Navigating that tension thoughtfully, based on real user needs and context, is exactly what makes this kind of design work interesting.",
@@ -237,6 +250,7 @@ window.CONTENT_EN = {
     {
       "id": "accessible-font-checker",
       "date": "November 2025",
+      "type": "tool",
       "title": "Accessible Font Checker: a free Figma tool to test how readable your fonts really are",
       "excerpt": "A free, open-source Figma file that spots ambiguous letters in under 2 minutes — the kind that make text unreadable for people with dyslexia or low vision.",
       "body": "Font readability, and content perceivability more broadly, is a pillar of digital accessibility — yet it's often overlooked in design projects. Some fonts, however attractive, cause real readability problems for people with dyslexia or low vision: ambiguous letters (like m and w), identical glyphs (i, l, 1), or shapes that are too similar (a, e, o). After a conversation with Designers Éthiques, I noticed how few tools made these issues easy to spot, so I built Accessible Font Checker, a free, open-source Figma file designed to quickly test a font's accessibility: it identifies ambiguous letters, checks readability across short sentences, long sentences and full paragraphs, helps you adjust line-height and letter-spacing for clarity, and lets you score each criterion and export the result to share with a team or client. It's built for anyone — designers, developers, project leads — with no accessibility expertise required: just swap the font in Figma's local styles and follow the visual cues. Two minutes are enough for a first pass, and the file stays free, open source, and open to contributions.",

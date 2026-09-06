@@ -314,9 +314,15 @@ function projectCard(p){
   '</a>';
 }
 
+function typeChip(a){
+  var t = T();
+  var labels = t.articlesSection.typeLabels || {};
+  var type = a.type || 'article';
+  return '<span class="tag type-chip type-chip-'+type+'">'+(labels[type] || type)+'</span>';
+}
 function articleCard(a){
   return '<a class="article-card" href="articles-article.html?id='+a.id+'">' +
-    '<div class="date">'+a.date+'</div>' +
+    '<div class="article-card-top"><div class="date">'+a.date+'</div>'+typeChip(a)+'</div>' +
     '<h3>'+a.title+'</h3>' +
     '<p>'+a.excerpt+'</p>' +
     '<div class="readmore">'+T().articlesSection.readMore+' '+icon('arrow_forward')+'</div>' +
@@ -418,7 +424,7 @@ function renderArticleDetail(){
   c.innerHTML =
     '<div class="breadcrumb"><a href="index.html">'+t.nav.home+'</a> / <a href="articles.html">'+t.nav.articles+'</a></div>' +
     '<div class="detail-hero" style="text-align:center;">' +
-      '<div class="status" style="text-align:center;">'+a.date+'</div>' +
+      '<div class="status" style="text-align:center;">'+a.date+' · '+typeChip(a)+'</div>' +
       '<h1 style="text-align:center;">'+a.title+'</h1>' +
     '</div>' +
     '<div class="article-body"><p>'+a.body.split('. ').join('. </p><p>')+'</p></div>' +

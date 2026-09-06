@@ -183,7 +183,11 @@ section{padding:60px 0;}
 /* Articles */
 .articles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
 .article-card{background:#f6f6f4;border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;min-height:220px;}
-.article-card .date{font-size:11px;color:#888;margin-bottom:8px;}
+.article-card-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px;}
+.article-card .date{font-size:11px;color:#888;}
+/* Chip qui distingue un article écrit d'un outil partagé, au premier coup d'œil */
+.type-chip{font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;}
+.type-chip-tool{background:var(--green-dark);color:#fff;}
 .article-card h3{font-size:16px;margin-bottom:10px;color:var(--ink);}
 .article-card p{font-size:13px;color:#666;flex:1;}
 .article-card .readmore{margin-top:14px;color:var(--green-dark);font-weight:700;font-size:13px;}

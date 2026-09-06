@@ -8,7 +8,7 @@ window.CONTENT_FR = {
     "home": "Accueil",
     "about": "À propos",
     "work": "Mes projets",
-    "articles": "Articles",
+    "articles": "Recherche",
     "testimonials": "Témoignages",
     "contact": "Me contacter"
   },
@@ -61,10 +61,11 @@ window.CONTENT_FR = {
     "downloadPortfolio": "Télécharger mon portfolio (PDF)"
   },
   "articlesSection": {
-    "kicker": "Découvrez mes derniers",
-    "title": "articles",
-    "seeAll": "Voir tous les articles",
-    "readMore": "Lire la suite"
+    "kicker": "Découvrez mes dernières",
+    "title": "recherches",
+    "seeAll": "Voir toutes les recherches",
+    "readMore": "Lire la suite",
+    "typeLabels": { "article": "Article", "tool": "Outil" }
   },
   "testimonialsSection": {
     "titleAccent": "7+",
@@ -225,8 +226,20 @@ window.CONTENT_FR = {
   ],
   "articles": [
     {
+      "id": "fds-skills",
+      "date": "Septembre 2026",
+      "type": "tool",
+      "title": "FDS Skills : un pipeline de skills Figma design system pour Claude, en libre accès",
+      "excerpt": "Quatre skills Claude que j'utilise en mission pour construire et maintenir un design system dans Figma, du Root à l'audit — en libre accès sur GitHub.",
+      "body": "Sur mes missions, je construis et je fais vivre des design systems Figma avec quatre skills Claude que j'ai écrites moi-même, pensées pour s'enchaîner comme un vrai pipeline. fds-charte-graphique pose les fondations de marque (couleurs, typographie, logos, espacements, effets, grilles, rayons, traits) directement dans Figma, avec la collection de variables Root qui va avec et un contrôle de contraste WCAG affiché sous chaque couleur. fds-design-system prend le relais : à partir de ces tokens Root, elle construit les tokens sémantiques Alias (clair/sombre), priorise une liste de composants alignée sur les conventions MUI, puis construit ces composants un par un, en anglais, accessibles et documentés. fds-new-component intervient à l'unité : elle prend un seul composant existant dans un fichier Figma déjà structuré en Root/Alias/Components et le rend pleinement tokenisé, thémé et accessible, sans toucher au reste du système — utile pour compléter ou réparer un composant isolé. fds-audit, enfin, sert de bilan de santé global : elle évalue l'architecture des tokens, le naming, la complétude et l'accessibilité d'un design system existant, donne un verdict par élément (garder, améliorer, refondre) et un plan d'action priorisé, et peut ensuite relancer automatiquement les trois autres skills pour appliquer les corrections retenues. Les quatre skills sont génériques : elles fonctionnent sur n'importe quel fichier Figma, pas seulement les miens, et sont en libre accès sur GitHub pour toute personne qui veut les essayer ou les adapter.",
+      "links": [
+        { "label": "Voir le repo GitHub", "url": "https://github.com/estee-desanctis/FDS-Skills" }
+      ]
+    },
+    {
       "id": "green-by-design",
       "date": "Avril 2024",
+      "type": "article",
       "title": "Green by Design : quand la sobriété numérique rencontre l'accessibilité",
       "excerpt": "Sobriété numérique et accessibilité sont trop souvent traitées comme deux chantiers séparés. Elles se renforcent en réalité mutuellement — et parfois s'affrontent.",
       "body": "La technologie façonne aujourd'hui presque tous les aspects de nos vies, et notre dépendance croissante aux appareils et services numériques fait grandir leur empreinte environnementale. En tant que designers, nos décisions influencent directement le comportement des utilisateurs et la soutenabilité de nos produits numériques. Prioriser l'efficacité et le minimalisme — moins de médias, des animations plus simples, des interfaces épurées — accélère le chargement, réduit la donnée transférée et prolonge la durée de vie des appareils : de meilleurs produits, un moindre impact, et des coûts d'exploitation réduits. L'accessibilité va dans le même sens : rendre un service utilisable par tous, quels que soient les capacités ou le contexte, ce n'est pas seulement une case à cocher légale, c'est élargir l'audience et la valeur d'un produit tout en réduisant les refontes et le support liés aux problèmes d'usabilité. Les deux logiques ne sont pas toujours alignées : le contrôle vocal, par exemple, améliore l'accessibilité mais peut augmenter la consommation énergétique par le traitement de données en continu. Naviguer ces tensions avec discernement, selon le contexte et les besoins réels des utilisateurs, est justement ce qui rend ce travail de design intéressant.",
@@ -237,6 +250,7 @@ window.CONTENT_FR = {
     {
       "id": "accessible-font-checker",
       "date": "Novembre 2025",
+      "type": "tool",
       "title": "Accessible Font Checker : un outil Figma gratuit pour tester la lisibilité de vos polices",
       "excerpt": "Un fichier Figma gratuit et open source pour repérer en 2 minutes les lettres ambiguës qui peuvent rendre un texte illisible pour les personnes dyslexiques ou malvoyantes.",
       "body": "La lisibilité de la typographie, et plus largement la perceptibilité du contenu, est un pilier de l'accessibilité numérique — pourtant souvent négligé dans les projets de design. Certaines polices, aussi esthétiques soient-elles, posent des problèmes majeurs de lisibilité pour les personnes dyslexiques ou malvoyantes : lettres ambiguës (comme m et w), glyphes identiques (i, l, 1), ou formes trop similaires (a, e, o). Après une discussion avec les Designers Éthiques, j'ai constaté que peu d'outils permettaient d'identifier ces problèmes simplement, et j'ai donc créé Accessible Font Checker, un fichier Figma gratuit et open source pensé pour tester rapidement l'accessibilité d'une police : identifier les lettres ambiguës, vérifier la lisibilité sur des phrases courtes, longues ou des paragraphes entiers, ajuster l'interlignage et l'espacement pour améliorer la clarté, puis noter chaque critère et exporter le résultat pour le partager avec une équipe ou un client. L'outil s'adresse à tout le monde — designers, développeurs, chefs de projet — sans besoin d'être expert en accessibilité : il suffit de changer la police dans les styles locaux Figma et de suivre les indications visuelles. Deux minutes suffisent pour un premier test, et le fichier reste gratuit, open source et ouvert aux contributions.",
