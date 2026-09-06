@@ -155,7 +155,7 @@ section{padding:60px 0;}
 .about-philosophy .philosophy-quote .q-accent{color:var(--tint);font-weight:700;}
 .about-philosophy .philosophy-author{font-size:12px;font-weight:700;color:var(--tint);margin:-6px 0 12px;}
 .about-philosophy .philosophy-sub{font-size:12.5px;color:#ccc;margin:0;}
-.pillars-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.pillars-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
 .pillar-card{background:#fff;border:1px solid #eee;border-radius:var(--radius);padding:22px;display:flex;flex-direction:column;}
 .pillar-card h3{font-size:15px;color:var(--green-dark);margin-bottom:8px;}
 .pillar-card p{font-size:13px;color:#666;margin-bottom:14px;flex:1;}
