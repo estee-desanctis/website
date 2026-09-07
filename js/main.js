@@ -122,7 +122,7 @@ function renderHeader(){
       '<nav class="main-nav" id="main-nav"><ul>' +
         '<li><a href="index.html#about">'+t.nav.about+'</a></li>' +
         '<li><a href="portfolio.html">'+t.nav.work+'</a></li>' +
-        '<li><a href="articles.html">'+t.nav.articles+'</a></li>' +
+        '<li><a href="contributions.html">'+t.nav.articles+'</a></li>' +
         '<li><a href="index.html#testimonials">'+t.nav.testimonials+'</a></li>' +
         '<li><a href="index.html#contact">'+t.nav.contact+'</a></li>' +
       '</ul></nav>' +
@@ -234,7 +234,7 @@ function renderHome(){
       '<div class="articles-grid">' +
         sortedArticles(t).map(articleCard).join('') +
       '</div>' +
-      '<div class="center-link"><a href="articles.html">'+t.articlesSection.seeAll+' '+icon('arrow_forward')+'</a></div>';
+      '<div class="center-link"><a href="contributions.html">'+t.articlesSection.seeAll+' '+icon('arrow_forward')+'</a></div>';
   }
 
   var testi = document.getElementById('testimonials-content');
@@ -321,7 +321,7 @@ function typeChip(a){
   return '<span class="tag type-chip type-chip-'+type+'">'+(labels[type] || type)+'</span>';
 }
 function articleCard(a){
-  return '<a class="article-card" href="articles-article.html?id='+a.id+'">' +
+  return '<a class="article-card" href="contribution.html?id='+a.id+'">' +
     '<div class="article-card-top"><div class="date">'+a.date+'</div>'+typeChip(a)+'</div>' +
     '<h3>'+a.title+'</h3>' +
     '<p>'+a.excerpt+'</p>' +
@@ -422,7 +422,7 @@ function renderArticleDetail(){
   document.title = a.title + ' — EcoDesign';
   var c = document.getElementById('detail-content');
   c.innerHTML =
-    '<div class="breadcrumb"><a href="index.html">'+t.nav.home+'</a> / <a href="articles.html">'+t.nav.articles+'</a></div>' +
+    '<div class="breadcrumb"><a href="index.html">'+t.nav.home+'</a> / <a href="contributions.html">'+t.nav.articles+'</a></div>' +
     '<div class="detail-hero" style="text-align:center;">' +
       '<div class="status" style="text-align:center;">'+a.date+' · '+typeChip(a)+'</div>' +
       '<h1 style="text-align:center;">'+a.title+'</h1>' +
@@ -431,7 +431,7 @@ function renderArticleDetail(){
     (a.links && a.links.length ? '<div class="article-links">'+ a.links.map(function(l){
       return '<a class="btn btn-primary btn-sm" href="'+l.url+'" target="_blank" rel="noopener">'+l.label+' '+icon('open_in_new')+'</a>';
     }).join('') +'</div>' : '') +
-    '<div style="text-align:center;"><a class="back-link" href="articles.html">'+icon('arrow_back')+' '+t.nav.articles+'</a></div>';
+    '<div style="text-align:center;"><a class="back-link" href="contributions.html">'+icon('arrow_back')+' '+t.nav.articles+'</a></div>';
 }
 
 function render(){
@@ -440,9 +440,9 @@ function render(){
   var page = document.body.dataset.page;
   if(page === 'home') renderHome();
   if(page === 'portfolio-list') renderPortfolioList();
-  if(page === 'articles-list') renderArticlesList();
+  if(page === 'contributions-list') renderArticlesList();
   if(page === 'portfolio-detail') renderProjectDetail();
-  if(page === 'articles-detail') renderArticleDetail();
+  if(page === 'contribution-detail') renderArticleDetail();
 }
 
 document.addEventListener('DOMContentLoaded', render);

@@ -8,7 +8,7 @@ window.CONTENT_FR = {
     "home": "Accueil",
     "about": "À propos",
     "work": "Mes projets",
-    "articles": "Recherche",
+    "articles": "Contributions",
     "testimonials": "Témoignages",
     "contact": "Me contacter"
   },
@@ -62,8 +62,8 @@ window.CONTENT_FR = {
   },
   "articlesSection": {
     "kicker": "Découvrez mes dernières",
-    "title": "recherches",
-    "seeAll": "Voir toutes les recherches",
+    "title": "contributions",
+    "seeAll": "Voir toutes les contributions",
     "readMore": "Lire la suite",
     "typeLabels": { "article": "Article", "tool": "Outil" }
   },
