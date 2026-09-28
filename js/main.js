@@ -219,7 +219,7 @@ function renderHome(){
     proj.innerHTML =
       '<div class="section-head"><h2 class="big">'+t.projectsSection.kicker+' <span class="accent">'+t.projectsSection.title+'</span></h2></div>' +
       '<div class="projects-grid">' +
-        t.projects.map(projectCard).join('') +
+        t.projects.slice(0,2).map(projectCard).join('') +
       '</div>' +
       '<div class="center-link"><a href="portfolio.html">'+t.projectsSection.seeMore+' '+icon('arrow_forward')+'</a></div>';
   }
