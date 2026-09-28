@@ -167,6 +167,44 @@ window.CONTENT_EN = {
       ]
     },
     {
+      "id": "ekho",
+      "status": "Jun–Sep 2026 · 4 months",
+      "company": "Ekho",
+      "title": "From concept to app: brand, design system and MVP for a new way to meet people",
+      "subtitle": "Location-based social dating app",
+      "tags": ["0→1", "B2C", "Mobile", "Design system", "Brand identity"],
+      "context": ["Location-based social dating app", "0→1 product design, sole designer"],
+      "challenge": "Ekho rethinks dating: instead of swiping through profiles, the app suggests a venue matched to your current mood — and connections happen in person, between people sharing the same mindset at the same place at the same moment.\n\nStarting from scratch on a brand-new concept, with a team of 3 developers and 1 business lead, no dedicated PM. Everything needed to be created: brand identity, user flows, MVP logic. And for such an unfamiliar concept to work, the experience had to be immediate — the right venue, in seconds, matched to the moment.\n\nMy mission: own the entire product design dimension — from brand identity and design system, to flow diagrams and MVP roadmap, through to high-fidelity UI and product QA.",
+      "coverImage": { "src": "images/web-ekho-cover.webp", "alt": "Ekho app overview: mood selection, venue card and connection screen." },
+      "role": [
+        "Brand identity & visual guidelines",
+        "Mobile design system",
+        "User flow diagrams & information architecture",
+        "Product roadmap & dev tickets (MVP)",
+        "High-fidelity UI design",
+        "Product QA",
+        "Sole designer, working with 3 developers (1 back-end, 2 mobile) and 1 business lead, no dedicated PM"
+      ],
+      "team": ["1 Back-end developer", "2 Mobile developers", "1 Business lead"],
+      "tools": ["Figma"],
+      "links": [
+        { "label": "Ekho website", "url": "https://www.ekhoapp.fr/" },
+        { "label": "Android app", "url": "https://play.google.com/store/apps/details?id=fr.ekho.app" }
+      ],
+      "achievements": [
+        "Brand identity built from scratch (visual guidelines, mobile design system)",
+        "MVP specified and shipped: roadmap, flow diagrams, dev tickets, team meetings",
+        "High-fidelity UI for the 3 core flows (mood → venue, matching, messaging)",
+        "Product QA: conformance checks and dev feedback throughout delivery"
+      ],
+      "process": [
+        { "num": "01", "step": "Building the identity", "title": "A brand to create from nothing", "desc": "First priority: give Ekho a distinct visual personality — modern, warm and immediate, suited to a mass-market mobile product. I defined the visual guidelines (colors, typography, iconography, tone) and built the mobile design system on top, so that every screen that followed would stay consistent regardless of delivery pace." },
+        { "num": "02", "step": "Structuring the MVP", "title": "Roadmap, flows and tickets for a team without a PM", "desc": "Together with the business lead, we prioritized MVP features: which moods, how to match venues to users, what the connection flow would look like, and in what order to ship. I translated these decisions into user flow diagrams and dev tickets the engineering team could work from directly. Team meetings had a structured agenda — to move forward, not clarify the same questions on a loop." },
+        { "num": "03", "step": "Designing the flows", "title": "Three flows to make self-evident for an unfamiliar concept", "desc": "Choose your mood and get the right venue in seconds. Understand why that venue matches your moment. Discover someone there and start a conversation. Three flows users had to grasp without any learning curve — for a concept no one had seen before. The challenge: make every interaction feel natural from the very first open." },
+        { "num": "04", "step": "Supporting delivery", "title": "Product QA: checking the concept holds up in real states", "desc": "I followed each delivery with the dev team: checking conformance to designs, flagging gaps, giving feedback on edge cases and empty states. QA was also the opportunity to verify the experience stayed readable in real conditions — not just in ideal mockups." }
+      ]
+    },
+    {
       "id": "dualsun",
       "status": "2023-2025 · ~2 years",
       "company": "Dualsun",

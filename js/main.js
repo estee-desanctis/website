@@ -405,6 +405,7 @@ function renderProjectDetail(){
         '<div class="block"><h3>'+ (getLang()==='fr'?'Mon rôle':'My role') +'</h3><ul>'+ p.role.map(function(r){return '<li>• '+r+'</li>';}).join('') +'</ul></div>' +
         '<div class="block"><h3>'+ (getLang()==='fr'?'Équipe':'Team') +'</h3><ul>'+ p.team.map(function(r){return '<li>• '+r+'</li>';}).join('') +'</ul></div>' +
         '<div class="block"><h3>'+ (getLang()==='fr'?'Outils':'Tools') +'</h3><ul>'+ p.tools.map(function(r){return '<li>• '+r+'</li>';}).join('') +'</ul></div>' +
+        (p.links && p.links.length ? '<div class="block"><h3>'+ (getLang()==='fr'?'Liens':'Links') +'</h3><ul>'+ p.links.map(function(l){return '<li>'+icon('open_in_new')+' <a href="'+l.url+'" target="_blank" rel="noopener">'+l.label+'</a></li>';}).join('') +'</ul></div>' : '') +
       '</div>' +
     '</div>' +
     '<div style="text-align:center;"><a class="back-link" href="portfolio.html">'+icon('arrow_back')+' '+t.nav.work+'</a></div>';
