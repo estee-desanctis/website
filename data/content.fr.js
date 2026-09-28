@@ -168,7 +168,7 @@ window.CONTENT_FR = {
     },
     {
       "id": "ekho",
-      "status": "Juin–Sept 2026 • 4 mois",
+      "status": "2025 - 2026 • 1 an",
       "company": "Ekho",
       "title": "Du concept à l'app : charte, design system et MVP pour une nouvelle façon de se rencontrer",
       "subtitle": "Application mobile de rencontres géolocalisées",
@@ -201,7 +201,7 @@ window.CONTENT_FR = {
         { "num": "01", "step": "Poser l'identité", "title": "Une marque à créer de zéro", "desc": "La première priorité : donner à Ekho une personnalité visuelle distincte, adaptée à un produit mobile grand public qui devait paraître à la fois moderne, chaleureux et immédiat. J'ai défini la charte graphique — couleurs, typographie, iconographie, tonalité — et construit le design system mobile sur cette base, pour que toutes les interfaces qui suivraient restent cohérentes quelle que soit la vitesse de livraison." },
         { "num": "02", "step": "Structurer le MVP", "title": "Roadmap, flux et tickets pour une équipe sans PM", "desc": "Avec le commercial, on a priorisé les fonctionnalités du MVP : quelles humeurs, quel matching lieu/utilisateur, quel parcours de mise en relation, dans quel ordre livrer. J'ai traduit ces décisions en diagrammes de flux et en tickets dev directement utilisables par l'équipe technique. Les réunions d'équipe avaient un ordre du jour structuré — pour avancer plutôt que clarifier les mêmes points en boucle." },
         { "num": "03", "step": "Concevoir les parcours", "title": "Trois parcours à rendre évidents pour un concept inédit", "desc": "Choisir son humeur et obtenir le bon lieu en quelques secondes. Comprendre pourquoi ce lieu correspond au moment. Découvrir une personne sur place et engager la conversation. Trois parcours que les utilisateurs devaient saisir sans apprentissage, pour un concept que personne ne connaissait encore — l'enjeu : rendre chaque interaction naturelle dès la première ouverture." },
-        { "num": "04", "step": "Accompagner la livraison", "title": "QA produit : vérifier que le concept reste lisible dans ses états réels", "desc": "J'ai suivi chaque livraison avec l'équipe dev : vérification de la conformité aux maquettes, identification des écarts, retours sur les cas limites et les états vides. La QA était aussi l'occasion de valider que l'expérience restait lisible en conditions réelles — pas seulement dans les maquettes idéales." }
+        { "num": "04", "step": "Accompagner la livraison", "title": "QA produit : vérifier que le concept reste lisible dans ses états réels", "desc": "J'ai suivi chaque livraison avec l'équipe dev : vérification de la conformité aux maquettes, identification des écarts, retours sur les cas limites et les états vides. La QA était aussi l'occasion de valider que l'expérience restait lisible en conditions réelles — pas seulement dans les maquettes idéales.", "image": { "src": "images/web-ekho-stores.webp", "alt": "Captures de l'application Ekho disponible sur l'App Store et le Google Play Store.", "caption": "L'application Ekho, disponible sur l'App Store et le Google Play Store.", "w": 1200, "h": 600 } }
       ]
     },
     {

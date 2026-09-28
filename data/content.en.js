@@ -168,7 +168,7 @@ window.CONTENT_EN = {
     },
     {
       "id": "ekho",
-      "status": "Jun–Sep 2026 · 4 months",
+      "status": "2025 - 2026 · 1 year",
       "company": "Ekho",
       "title": "From concept to app: brand, design system and MVP for a new way to meet people",
       "subtitle": "Location-based social dating app",
@@ -201,7 +201,7 @@ window.CONTENT_EN = {
         { "num": "01", "step": "Building the identity", "title": "A brand to create from nothing", "desc": "First priority: give Ekho a distinct visual personality — modern, warm and immediate, suited to a mass-market mobile product. I defined the visual guidelines (colors, typography, iconography, tone) and built the mobile design system on top, so that every screen that followed would stay consistent regardless of delivery pace." },
         { "num": "02", "step": "Structuring the MVP", "title": "Roadmap, flows and tickets for a team without a PM", "desc": "Together with the business lead, we prioritized MVP features: which moods, how to match venues to users, what the connection flow would look like, and in what order to ship. I translated these decisions into user flow diagrams and dev tickets the engineering team could work from directly. Team meetings had a structured agenda — to move forward, not clarify the same questions on a loop." },
         { "num": "03", "step": "Designing the flows", "title": "Three flows to make self-evident for an unfamiliar concept", "desc": "Choose your mood and get the right venue in seconds. Understand why that venue matches your moment. Discover someone there and start a conversation. Three flows users had to grasp without any learning curve — for a concept no one had seen before. The challenge: make every interaction feel natural from the very first open." },
-        { "num": "04", "step": "Supporting delivery", "title": "Product QA: checking the concept holds up in real states", "desc": "I followed each delivery with the dev team: checking conformance to designs, flagging gaps, giving feedback on edge cases and empty states. QA was also the opportunity to verify the experience stayed readable in real conditions — not just in ideal mockups." }
+        { "num": "04", "step": "Supporting delivery", "title": "Product QA: checking the concept holds up in real states", "desc": "I followed each delivery with the dev team: checking conformance to designs, flagging gaps, giving feedback on edge cases and empty states. QA was also the opportunity to verify the experience stayed readable in real conditions — not just in ideal mockups.", "image": { "src": "images/web-ekho-stores.webp", "alt": "Ekho app on the App Store and Google Play Store.", "caption": "Ekho, available on the App Store and Google Play Store.", "w": 1200, "h": 503 } }
       ]
     },
     {
