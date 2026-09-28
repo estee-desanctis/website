@@ -262,6 +262,13 @@ window.CONTENT_FR = {
   ],
   "testimonials": [
     {
+      "quote": "Estée apporte bien plus que son expertise Design : elle sait prendre du recul sur nos pratiques et créer une dynamique collective autour des sujets qui méritent d'être approfondis.\n\nOn a notamment travaillé ensemble sur l'accessibilité, l'optimisation de notre Design System et l'intégration de l'IA dans nos process Design. Grâce à elle, j'ai beaucoup appris sur l'accessibilité, et notre Design System s'est nettement amélioré grâce aux bonnes pratiques mises en place.\n\nElle a aussi une très bonne connaissance des outils IA, notamment autour des skills et de l'automatisation, et contribuait activement à faire évoluer nos pratiques en partageant de nouvelles façons de les intégrer dans notre travail.\n\nJ'ai beaucoup apprécié travailler avec elle chez CoderPad et je la recommande sans hésiter.",
+      "name": "Gabriela Cruz Enriquez",
+      "role": "Product Designer, CoderPad",
+      "avatar": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgdmlld0JveD0iMCAwIDgwIDgwIj48Y2lyY2xlIGN4PSI0MCIgY3k9IjQwIiByPSI0MCIgZmlsbD0iIzhCNUNGNiIvPjx0ZXh0IHg9IjQwIiB5PSI0NyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMiIgZm9udC13ZWlnaHQ9ImJvbGQiPkdDPC90ZXh0Pjwvc3ZnPg==",
+      "linkedin": "https://www.linkedin.com/in/gabrielace/"
+    },
+    {
       "quote": "J'ai eu le plaisir de travailler avec Estée chez Dualsun, où elle a brillamment exercé ses fonctions de Product Designer au sein de mon équipe. Sa proactivité dans la conduite de user research et d'ateliers a permis d'orienter nos projets UX avec pertinence. [...] Professionnelle, créative, à l'écoute et porteuse de belles valeurs, Estée est un véritable atout pour tout projet !",
       "name": "Laura White",
       "role": "Product Manager, Dualsun",
