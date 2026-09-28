@@ -3,9 +3,6 @@
 // (variables window.CONTENT_FR et window.CONTENT_EN). Modifie ces fichiers pour changer le texte,
 // ajouter un projet, un article ou un témoignage — pas besoin de toucher à ce fichier.
 
-// Page externe (Malt) listant tous les avis clients.
-var TESTIMONIALS_URL = 'https://www.malt.fr/profile/esteedesanctis#appraisals-section';
-
 function getLang(){
   var saved = localStorage.getItem('ed_lang');
   if(saved === 'fr' || saved === 'en') return saved;
@@ -242,14 +239,9 @@ function renderHome(){
     testi.innerHTML =
       '<div class="section-head"><h2 class="big"><span class="accent">'+t.testimonialsSection.titleAccent+'</span> '+t.testimonialsSection.titleRest+'</h2></div>' +
       '<div class="testi-grid">' +
-        '<div class="stats-box">' +
-          t.testimonialsSection.stats.map(function(s){
-            return '<div class="stat-row">'+s.label+'<div class="stars" role="img" aria-label="'+s.stars+'/5">'+stars(s.stars)+'</div></div>';
-          }).join('') +
-        '</div>' +
         t.testimonials.map(testiCard).join('') +
       '</div>' +
-      '<div class="center-link"><a href="'+TESTIMONIALS_URL+'" target="_blank" rel="noopener">'+t.testimonialsSection.seeAll+' '+icon('arrow_forward')+'</a></div>';
+      '<div class="center-link"><a href="'+t.testimonialsSection.seeAllLink+'" target="_blank" rel="noopener">'+t.testimonialsSection.seeAll+' '+icon('arrow_forward')+'</a></div>';
   }
 
   var contact = document.getElementById('contact-content');
