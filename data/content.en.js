@@ -68,10 +68,13 @@ window.CONTENT_EN = {
     "typeLabels": { "article": "Article", "tool": "Tool" }
   },
   "testimonialsSection": {
-    "titleAccent": "They",
-    "titleRest": "recommend me",
-    "seeAll": "See my LinkedIn recommendations",
-    "seeAllLink": "https://www.linkedin.com/in/estee-desanctis/details/recommendations/?detailScreenTabIndex=0"
+    "titleBefore": "They",
+    "titleAccent": "recommend",
+    "titleAfter": "me",
+    "seeAll": "LinkedIn Recommendations",
+    "seeAllLink": "https://www.linkedin.com/in/estee-desanctis/details/recommendations/?detailScreenTabIndex=0",
+    "seeAll2": "Client Reviews",
+    "seeAllLink2": "https://www.malt.fr/profile/esteedesanctis/#appraisals-section"
   },
   "contactSection": {
     "kicker": "Let's discuss",
@@ -258,7 +261,7 @@ window.CONTENT_EN = {
   ],
   "testimonials": [
     {
-      "quote": "Estée brings far more than design expertise: she steps back to assess our practices and creates collective momentum around topics worth exploring in depth.\n\nWe worked together on accessibility, optimizing our Design System, and integrating AI into our design process. [...] our Design System improved significantly through the best practices she put in place.\n\n[...] I would recommend her without hesitation.",
+      "quote": "Estée brings far more than design expertise: she steps back to assess our practices and creates collective momentum around topics worth exploring in depth.\n\nWe worked together on accessibility, optimizing our Design System, and integrating AI into our design process. Thanks to her, I learned a great deal about accessibility, and our Design System improved significantly through the best practices she put in place. [...]",
       "name": "Gabriela Cruz Enriquez",
       "role": "Product Designer, CoderPad",
       "avatar": "data:image/webp;base64,UklGRkwGAABXRUJQVlA4IEAGAADwGwCdASpQAFAAPkkcikQioaEa3LZ8KASEsYBmZCf5RNAwXelr/J7sPnZvRn5//VZ70F+19hT/XfAvxm/FY+Zwf1Pfb+bPffwAng88z4XGq4rDUBPFs0MPU3/k4UfogfsAxcn3V7lry/bjzp68hyAMxFuKgh5NZUKxIBDQ/11DAx0uriw+WfTiWiqbg+dUzJqTtyvsOrhBIbOsIgALrQAM+VE/oIiOfPWcEnsIrxDEOtvX/LfHNpgG47W9BSpSUZccaQoPNz9a6wbmmbP8U53cxE3187pByEvEGnJJe+wrpEttwQ/67bQAAP7+ryeWBAbIRAQbOZr+mP+y3Bn/4QANzgiHajihLmKjFWftI/0jy2a/qbRuuf/K3VB+/Tk1RP60CStCnU62Tk/oeE0h/P5ghfUnfkiaB3cawe/ENWi88CW2qIAsnekrznGA+AdYey6ptz4E7L36yihld58J3KR/zqZDeuyQZwDx+Wq1r7lVeB1qbZe2/EOmBEgB4bjJYjJmkBArG8FfIOZHL2KygLrXJryQ0BLniQr6R39gy5aX73XV5icDulEeso3QxMNXR7r/I3RuPZiE1meM4wRYJFSyt+4jVY/X97hzGuCZdVNultRL4MH9bAWSrifzGHNqujbJAwuQe1e/+q8YJcIvgODS97/RXJrBwJbpuNAH+LWQdQwzEbsOhc3SNAbvbbIJvmuuXC/F9/ZVGMBraBEmgXIbRFblv23N+fG23sgo6AY1edUNmXQj02cdmTMkSwTFLDeXYLrUwd2KAm7cT/ffbXEDnacH6NNrsj/8RjWf+c+u0rQMUK7tcMF8nl9J9guen6dTDISTWokua5N6+EYqE55UmeySez3I2vqntZV6LvHnmvcIJHvWOb9vUndr0G03JWsRuZu9IXymcBFuhS9wPoe+jvQMWssWV4SEgBcZKWkSNOQK0Nf+z0CHFZg0f2Pw/mUvXffIx/QfhFmab/f7RcZc8zGfJm/lt5cHhHceJiQMbexEKY9kMR+REud7HA9oe3frNuh5MfY7lZJsSW4erdII0NfnTNd/T+S7tdRA4GE8b2zFsp7UVjHMEextfyoOFufAuy+uzAUUv8PJZKQ4tgO8qsGvmPaYAiAooP0xx7RpZ5ypWRbRpt2OI+i40bGPaAM4mQrVX4Z6uujrF6ljQnM4LbGLLQG7sEEhRGtEp/s/dmGlNd2LCrx+nXrd/Qg05RdL10LpfSkgPaZfls6bfeoB3oiB+I8qeZTN9SboYkB/7meastzx/1j9T0ppwytlC8EP7RyTUrixbzecJ5jOp9CjjJLDnitrO+TUSmjEyJu8BG08JMQ66Mqq6gQGP2a5GER+pBj801HS6H08vOFKlL+0lpd5wkx4444Fbus+utMXl101melXH/HHl2EZea5iix5fudGBOKvK/bz6kgvTj4J+oLAfexxKo9iRKBXVPEoJ8hM8HV02VeHRHsHzSmK+02/rpqNO0GqVHIVGZUXhJQsAt8FP7674bMAI5O84XF8mvqRedcb14jaPcJiJiar12ZWZpqPMyOi2k/RfwoCzlP03E6AVzxrp9iEsjNnh9awY0arQ8g20ZZTo3/dmqW2V6wpladRrONe7CYt92hMcerLO69wTaJhysPxikIko5EK3DCeeu/2d20GJL/oWF7p0jJB0+tqdinOnlupjyoUR6vNQmC+bE1BaScWr/qSuJL0A7gU8e2LeOVw1pKzlKf7nm3I705vsUovJcOp1PZgJ8OwuNocrHdDOeatrYdABTOy2HPW939ZtABetw09bCB1uwIsSlsiygCH27kIfocrtiL3iOO+ErakFtBacJ3A7yWIK8aEUZKhv6ImNCxbYRggv7xztcLtO8Wv+jgwj8ysymiHH0Y8MM8NbVG9bQb1Py2xOCPTdRO9AAnyUEtgSIrnTdUw1BoDl9yGZtCd4rwKSDbhgiRF2tdrrQsBiv2cJznUKbgg7Q/dYil3oXKeEs0hPzMNFf1s8wyDD+u3l6rZXqtVvFrpG+pxGokMrQc73InVCdOD7Xu4b6no8Ng9uoZSCZwZbuwVB5YBO8RnB/+jDyE3AoMshYqVmmkKfMZfaSsQd8VfmCSTnR96JXgijCNjRZm/XMT+dJwMUDoBWsfchkAAA",

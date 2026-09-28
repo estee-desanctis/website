@@ -68,14 +68,13 @@ window.CONTENT_FR = {
     "typeLabels": { "article": "Article", "tool": "Outil" }
   },
   "testimonialsSection": {
-    "titleAccent": "7+",
-    "titleRest": "clients satisfaits",
-    "seeAll": "Voir toutes les recommandations",
-    "stats": [
-      { "label": "Qualité", "stars": 5 },
-      { "label": "Délais", "stars": 5 },
-      { "label": "Communication", "stars": 5 }
-    ]
+    "titleBefore": "Ils",
+    "titleAccent": "recommandent",
+    "titleAfter": "",
+    "seeAll": "Recommandations LinkedIn",
+    "seeAllLink": "https://www.linkedin.com/in/estee-desanctis/details/recommendations/?detailScreenTabIndex=0",
+    "seeAll2": "Avis Clients",
+    "seeAllLink2": "https://www.malt.fr/profile/esteedesanctis/#appraisals-section"
   },
   "contactSection": {
     "kicker": "Discutons de",
@@ -262,10 +261,10 @@ window.CONTENT_FR = {
   ],
   "testimonials": [
     {
-      "quote": "Estée apporte bien plus que son expertise Design : elle sait prendre du recul sur nos pratiques et créer une dynamique collective autour des sujets qui méritent d'être approfondis.\n\nOn a notamment travaillé ensemble sur l'accessibilité, l'optimisation de notre Design System et l'intégration de l'IA dans nos process Design. Grâce à elle, j'ai beaucoup appris sur l'accessibilité, et notre Design System s'est nettement amélioré grâce aux bonnes pratiques mises en place.\n\nElle a aussi une très bonne connaissance des outils IA, notamment autour des skills et de l'automatisation, et contribuait activement à faire évoluer nos pratiques en partageant de nouvelles façons de les intégrer dans notre travail.\n\nJ'ai beaucoup apprécié travailler avec elle chez CoderPad et je la recommande sans hésiter.",
+      "quote": "Estée apporte bien plus que son expertise Design : elle sait prendre du recul sur nos pratiques et créer une dynamique collective autour des sujets qui méritent d'être approfondis.\n\nOn a notamment travaillé ensemble sur l'accessibilité, l'optimisation de notre Design System et l'intégration de l'IA dans nos process Design. Grâce à elle, j'ai beaucoup appris sur l'accessibilité, et notre Design System s'est nettement amélioré grâce aux bonnes pratiques mises en place. [...]",
       "name": "Gabriela Cruz Enriquez",
       "role": "Product Designer, CoderPad",
-      "avatar": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgdmlld0JveD0iMCAwIDgwIDgwIj48Y2lyY2xlIGN4PSI0MCIgY3k9IjQwIiByPSI0MCIgZmlsbD0iIzhCNUNGNiIvPjx0ZXh0IHg9IjQwIiB5PSI0NyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyMiIgZm9udC13ZWlnaHQ9ImJvbGQiPkdDPC90ZXh0Pjwvc3ZnPg==",
+      "avatar": "data:image/webp;base64,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",
       "linkedin": "https://www.linkedin.com/in/gabrielace/"
     },
     {
@@ -274,13 +273,6 @@ window.CONTENT_FR = {
       "role": "Product Manager, Dualsun",
       "avatar": "data:image/webp;base64,UklGRhgDAABXRUJQVlA4IAwDAADwEQCdASpgAGAAPm0ukkYkIqGhMBcZyIANiWkACw1XE9LQ0UctAa0hGWqv8veMevUohWuqmlctp3qjgaxtEz6T7HwUV6A/5cFovCiJOR/qXTsJwt4LneW06yBk7fqcKA8z8psHZ5dggZmFJ6ADxf6jmmf//vyglBlmOsKUjCbPgJh1TiEsL2Ueg1X6CpMCzCHLpEKQ1IDZ4AD+8hfu2YWtIbQwgT9cUiEiVryXuE13Hpr96+tBPm14PZ3cDAW3QaOaPJr5Mt3+AY/nClD+8e30jKPGYXsagp86I9vs0InJy8Pk9fWcHD+CNRuOUB4i5bt4LkcntNL3iLnkE80hPPswZDis8C4766ywDvYyHt/PuitNlJKn5htPN2Y4wbf880KCSOCVqd4jW+HgShR3EryYdD8ijuUp42FhA49ozI0jtDP7IUi0gKcKH0Kd0IF0nadIGTldF5iFr1dSJ19eVOJAqy79dzw6GoXg2l5kPcGm0HY1ig0DZ0Zgzp+sH6Kfxidq2jQqX6KLQOScGC2YqAqvMwA4I6QFiGZbQVyP8yMORTVIY1kw98X9so0LsGEh1+vVs4ngGN96SVvHj5WL10dwWW0mdPdMCAaR6etZ1ENRnsL+ESjWkAUn5mnUAgfFNTS7OLzotSXmhEUo6SQ7ODyv8nOEuooCgYmeeO8VfQSwZvdGAbjjzmXm9gvvXHTEhwBjZCoPh4yzT9yUSAj2R6df6MTGo+FYBQMRhX/J5Qa/yaC+SZOTXmw8n9WsMvn5kdt5ryvnaZ6kRApc85xUXp+ULy9+bsVnugPjPJVWU/to2atekkMS4NKWRmMBZNbaF658wNmIEooaCEIX8YqQNgWV4xUkKWEenrG0c4ASrgaSNAsJkNhtu3Bh/nfC5WLH/HAWAtuidVshiXgBUviGn1ag+bpFtrqN5QYy5OLZn1QpLTcYxFpTm8RTXHJ4T3I3KKCHctu2zTxY4nWlq3D9bXUU49s76getrB10y+i+ypSPWlbuw1K8/Il3Yj4Cfr6aXNH5hkqbkiTZu8D9QAA=",
       "linkedin": "https://www.linkedin.com/in/laurawhite13/"
-    },
-    {
-      "quote": "Je recommande de Estée pour gérer votre Design System et vous faire des maquettes très précises !",
-      "name": "Arnaud Saint-Macary",
-      "role": "Product Manager, Dualsun",
-      "avatar": "data:image/webp;base64,UklGRowEAABXRUJQVlA4IIAEAAAwFgCdASpgAGAAPm0ukkWkIqGZWq0QQAbEs4BpUj/EeNJdt/yNB12j7No89Bq74/rLgHpjlDIe4Kiz9E5rZ/QbEJSIxxDjyoZWMeSpCmmBcmqxF4nJERfmQEvohVWPVAW0IcnNl+KPILx6BBa0dxp9Z5UupHwwk8zLoOWUsoC9nKBJ8aVNSTHt1MuWDKTEMbtimlG02VGAaw14k4mNTKItW5eVw4T2wk7esHrmkgyQJaHL2Ivh2DOfI8AA/vz0Aw75NGHesW0GBaoFyTsYfi18K9z0l/87FnhLypTTQi4tXaHJwPyjVg0pregPk6jy96weYcX5iyvxbULOfdNiPkZv1bDeXs6UQaVZjjtoignhGY2buyUG0yCxzvBcNQvB2kfa+++fOufYhGdKzN42XMPVxP8aiL0bt6sFqgpG6mmZ2FSpo7CV+gZ94Hqn49qmFEf2Ex23lJ1iOZVIapA67Dlyaf2zGOiDS141BhsKqpuGuBl4GXqnXOZAWO2GfZ0Tlx7aTlkBh0Y4NScXN85ZFr9p5JLwLAvd79b07IRb2UALSOmTLOXpcqcLoPElirLZzuLqiZUbE0H45LepSZiIgT12FXfBXfs5eSLxnzux/me3AqMmLtHYUp0D08+2FUtF8DV4jwfhgTl8SLMmOR991yKFBoYWs3s95GRK9qZ9F6M2T8Rvyfns0QkeRqYgjshyoxd7x/4uczXZdNw0drk7Zl44aqIxto/E0iaFnYacWPTQ+O4LRWZ0yMvgO8EsekRFzKTdGtBtc7+16h4lwBAOxLsimQhajlPILbplluGkqLP+MgxbGSHCm6IavvG4Tgkwgyy3aVM9UFvVej2k6/+ksF4GbZHUcaNyqo0udrj4ENGkJD8gJZWS/LR3mIAVSyMLvK8xFs5TOeYbtol1B8egKaxMXLdJ2zgjzhtJrGEf3GaSxz4sFYhVexHFObBaMPAFAhrRnOs2TIGezPAMukRFZJkqH8cJ56Q6Lqb8dcihDxexFehj2Ih+ZadzZvh9si7/nzoer0i/+dbUX6qBzSeUNQrIHqRlrLQELE8KoazmMmX+8BAmpnL3Fo556eMoBcgjm2rxcboedV7JIk/RO/Fz2nd3bfLttTjX1wv/gMcDb6joupqAxcIXGfu8oD91z1txvrpt3KTx2E2cw6JVrOOxxQRTkdzvu1wnieEjhy9DlEyEKBoHvz7l3PHfdUBC7BjGhJm+ED/+iuSap4wPd82/fZFiMQDOvC3JFLSPHx/coEm/gpYvcjVsrH8OcG/VqHNTgyPFxl+bWrndM9h+eUy27lI0d8Q1CG44OOTsB9FD06+kMD1sum7e0FuSm4xoJViT4Vz7Tql284HE0o5E24SJaSIbmCNFWDSc/S+HMxsrrFwBuBb1egB4CicISyC2Zfjs+ugMdEIv0p/Nbq4YzpZflRk+2nUb97oT8sy9itcLoxy5EARgToivmJkYNiqqnE9QrMtWdzkyhoJaaNSb5As+qZg+Mmjx+9V87K8K5VowEo7XMCZsR/5u4gLXyrZpHJnSQAA=",
-      "linkedin": "https://www.linkedin.com/in/arnaud-saint-macary-70594698/"
     }
   ]
 }

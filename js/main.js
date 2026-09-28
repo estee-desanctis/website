@@ -237,11 +237,15 @@ function renderHome(){
   var testi = document.getElementById('testimonials-content');
   if(testi){
     testi.innerHTML =
-      '<div class="section-head"><h2 class="big"><span class="accent">'+t.testimonialsSection.titleAccent+'</span> '+t.testimonialsSection.titleRest+'</h2></div>' +
+      '<div class="section-head"><h2 class="big">'+(t.testimonialsSection.titleBefore ? t.testimonialsSection.titleBefore+' ' : '')+'<span class="accent">'+t.testimonialsSection.titleAccent+'</span>'+(t.testimonialsSection.titleAfter ? ' '+t.testimonialsSection.titleAfter : '')+'</h2></div>' +
       '<div class="testi-grid">' +
         t.testimonials.map(testiCard).join('') +
       '</div>' +
-      '<div class="center-link"><a href="'+t.testimonialsSection.seeAllLink+'" target="_blank" rel="noopener">'+t.testimonialsSection.seeAll+' '+icon('arrow_forward')+'</a></div>';
+      '<div class="center-link">' +
+        '<a href="'+t.testimonialsSection.seeAllLink+'" target="_blank" rel="noopener">'+t.testimonialsSection.seeAll+'</a>' +
+        ' · ' +
+        '<a href="'+t.testimonialsSection.seeAllLink2+'" target="_blank" rel="noopener">'+t.testimonialsSection.seeAll2+'</a>' +
+      '</div>';
   }
 
   var contact = document.getElementById('contact-content');
@@ -330,7 +334,7 @@ function testiCard(te){
     ? '<a href="'+te.linkedin+'" target="_blank" rel="noopener">'+te.name+'</a>'
     : te.name;
   return '<div class="testi-card">' +
-    '<p class="quote">“'+te.quote+'”</p>' +
+    '<p class="quote">'+te.quote+'</p>' +
     '<div class="testi-person">' +
       '<div class="avatar">'+avatar+'</div>' +
       '<div><div class="name">'+nameHtml+'</div><div class="role">'+te.role+'</div></div>' +
