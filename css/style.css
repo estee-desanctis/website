@@ -178,7 +178,7 @@ section{padding:60px 0;}
 @media (max-width:760px){.projects-grid{grid-template-columns:1fr;}}
 
 .center-link{text-align:center;margin-top:36px;}
-.center-link a{font-weight:600;color:var(--green-dark);}
+.center-link a{font-weight:600;color:var(--green-dark);}.center-link a+a{margin-left:8px;}
 
 /* Articles */
 .articles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
@@ -194,12 +194,10 @@ section{padding:60px 0;}
 @media (max-width:820px){.articles-grid{grid-template-columns:1fr;}}
 
 /* Testimonials */
-.testi-grid{display:grid;grid-template-columns:180px 1fr 1fr;gap:20px;align-items:stretch;}
-.stats-box{background:#f6f6f4;border-radius:var(--radius);padding:20px;display:flex;flex-direction:column;gap:16px;justify-content:flex-start;}
-.stat-row{font-size:13px;font-weight:600;}
-.stars{display:flex;gap:2px;margin-top:2px;}
+.testi-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start;}
+
 .star-ico{font-size:14px;color:#f5a623;}
-.testi-card{background:#fff;border:1px solid #eee;border-radius:var(--radius);padding:22px;}
+.testi-card{background:#fff;border:1px solid #eee;border-radius:var(--radius);padding:22px;height:100%;box-sizing:border-box;}
 .testi-card p.quote{font-size:13.5px;color:#555;margin-bottom:16px;}
 .testi-person{display:flex;align-items:center;gap:10px;}
 .avatar{width:34px;height:34px;border-radius:50%;background:var(--tint);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--green-dark);font-size:13px;overflow:hidden;flex:none;}
