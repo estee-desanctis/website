@@ -68,7 +68,7 @@ window.CONTENT_FR = {
     "typeLabels": { "article": "Article", "tool": "Outil" }
   },
   "testimonialsSection": {
-    "titleBefore": "Ils",
+    "titleBefore": "Elles me",
     "titleAccent": "recommandent",
     "titleAfter": "",
     "seeAll": "Recommandations LinkedIn",
