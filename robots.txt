@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://estee-desanctis.github.io/website/sitemap.xml

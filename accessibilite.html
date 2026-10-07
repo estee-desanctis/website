@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Déclaration d'accessibilité — EcoDesign</title>
+<meta name="description" content="Déclaration d'accessibilité du portfolio d'Estée Desanctis : état des vérifications, limites connues, contact.">
+<link rel="canonical" href="https://estee-desanctis.github.io/website/accessibilite.html">
+<link rel="alternate" hreflang="fr" href="https://estee-desanctis.github.io/website/accessibilite.html">
+<link rel="alternate" hreflang="en" href="https://estee-desanctis.github.io/website/en/accessibility.html">
+<link rel="alternate" hreflang="x-default" href="https://estee-desanctis.github.io/website/accessibilite.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Déclaration d'accessibilité — EcoDesign">
+<meta property="og:description" content="Déclaration d'accessibilité du portfolio d'Estée Desanctis : état des vérifications, limites connues, contact.">
+<meta property="og:url" content="https://estee-desanctis.github.io/website/accessibilite.html">
+<link rel="icon" type="image/svg+xml" href="images/web-favicon.svg">
+<link rel="alternate icon" href="images/web-favicon.png">
+<link rel="preload" href="fonts/roboto-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu principal</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo"><img src="images/web-logo.svg" alt="EcoDesign — Accueil" width="77" height="40"></a>
+    <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+      <ul role="list">
+        <li><a href="index.html#about">À propos</a></li>
+        <li><a href="portfolio.html">Mes projets</a></li>
+        <li><a href="contributions.html">Contributions</a></li>
+        <li><a href="index.html#testimonials">Témoignages</a></li>
+        <li><a href="index.html#contact">Me contacter</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <ul class="lang-switch" role="list" aria-label="Langue"><li><a href="accessibilite.html" lang="fr" hreflang="fr" aria-current="true"><span aria-hidden="true">FR</span><span class="sr-only">Français</span></a></li><li><a href="en/accessibility.html" lang="en" hreflang="en"><span aria-hidden="true">EN</span><span class="sr-only">English</span></a></li></ul>
+      <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-nav"><svg class="icon-svg" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg><span class="sr-only">Menu</span></button>
+    </div>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+
+<section>
+  <div class="wrap">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane"><ol><li><a href="index.html">Accueil</a></li><li aria-current="page">Déclaration d'accessibilité</li></ol></nav>
+    <article class="decl">
+      <header class="detail-hero centered"><h1>Déclaration d'accessibilité</h1></header>
+      <p class="decl-lead">Cette déclaration s'applique au portfolio d'Estée Desanctis (EcoDesign), accessible à l'adresse https://estee-desanctis.github.io/website/. Elle indique ce qui a été vérifié, ce qui ne l'a pas encore été et comment me signaler un problème.</p>
+      <section class="decl-section"><h2>Engagement</h2><p>Je conçois des produits numériques accessibles et je veux que mon propre site le soit. L'objectif de ce site est de respecter le RGAA 4.1 et les WCAG 2.2 au niveau AA.</p></section>
+      <section class="decl-section"><h2>État de conformité</h2><p>Ce site n'a pas fait l'objet d'un audit de conformité complet au RGAA. Son état de conformité n'est donc pas évalué, et je n'annonce aucun taux de conformité.</p><p>Ce document est une déclaration de transparence : il rend compte de vérifications partielles et des corrections qu'elles ont permises. Il ne constitue pas une déclaration de conformité.</p></section>
+      <section class="decl-section"><h2>Ce qui a été vérifié</h2><p>Vérifications réalisées le 6 octobre 2026 sur les pages listées plus bas :</p><ul><li>contrôle automatique avec axe-core 4.14.0 (règles WCAG 2.0, 2.1 et 2.2, niveaux A et AA, et bonnes pratiques) : aucune anomalie détectée par l'outil ;</li><li>validation du code HTML (html-validate 11.16.2) et du CSS : aucune erreur ;</li><li>contrôle de la structure par script : un seul titre de niveau 1 par page, hiérarchie des titres continue, repères de page, lien d'évitement, langue de chaque page, noms des liens, boutons et champs de formulaire, textes alternatifs des images, signalement des ouvertures de nouvelle fenêtre, liens internes et ancres ;</li><li>contrastes calculés selon la formule des WCAG à partir des couleurs du CSS : texte au moins 4,5:1, composants d'interface et indicateur de focus au moins 3:1 ;</li><li>comparaison du contenu avant et après la refonte du site : aucun texte perdu.</li></ul><p>Ces contrôles ont été faits sur une page simulée (JSDOM), pas dans un navigateur. Un outil automatique ne couvre qu'une partie des critères du RGAA.</p></section>
+      <section class="decl-section"><h2>Ce qui n'a pas encore été vérifié</h2><ul><li>la lecture avec des lecteurs d'écran (NVDA, JAWS, VoiceOver) ;</li><li>la navigation au clavier dans un navigateur réel et l'ordre de tabulation ;</li><li>l'affichage à 320 pixels de large, le zoom à 400 % et l'espacement du texte modifié par l'utilisateur ;</li><li>les contrastes mesurés sur le rendu final (images de fond, dégradés) ;</li><li>le menu mobile sur de vrais appareils (iOS, Android).</li></ul></section>
+      <section class="decl-section"><h2>Contenus non vérifiés ou connus comme limités</h2><ul><li><strong>Documents PDF</strong> (CV et portfolio, en français et en anglais) : leur accessibilité n'a pas été vérifiée.</li><li><strong>Vidéo de la page Dualsun</strong> (tutoriel de branchement) : sans bande-son, avec une description courte et une légende, mais sans transcription détaillée des étapes.</li><li><strong>Captures d'écran de produits</strong> : leurs textes alternatifs décrivent le contenu en résumé ; le texte contenu dans les images n'est pas toujours retranscrit en entier.</li><li><strong>Termes anglais</strong> isolés dans les textes français (noms d'outils, intitulés de poste) : ils ne sont pas tous balisés avec leur langue. Les citations complètes en anglais le sont.</li><li><strong>Services tiers</strong> (LinkedIn, Behance, Figma, Malt, Medium, Gmail) : leur accessibilité ne dépend pas de ce site. Le formulaire de contact ouvre la rédaction Gmail dans une nouvelle fenêtre ; l'adresse e-mail est aussi affichée en clair sur la page d'accueil.</li></ul></section>
+      <section class="decl-section"><h2>Mesures d'accessibilité mises en œuvre</h2><ul><li>pages en HTML statique, lisibles et navigables sans JavaScript ;</li><li>lien d'évitement, structure par repères, titres hiérarchisés, listes sémantiques ;</li><li>langue déclarée par page, version française et version anglaise sur des adresses distinctes ;</li><li>indicateur de focus visible, menu mobile utilisable au clavier (état annoncé, fermeture par la touche Échap) ;</li><li>tailles de texte en unités relatives, respect de la préférence de réduction des animations ;</li><li>couleurs conformes aux seuils de contraste, polices hébergées sur le site ;</li><li>vidéo avec commandes et sans lecture automatique, à la place d'un GIF animé ;</li><li>ouvertures de nouvelle fenêtre et téléchargements de PDF signalés dans le nom des liens.</li></ul></section>
+      <section class="decl-section"><h2>Technologies utilisées</h2><p>HTML5, CSS, SVG et un JavaScript léger (menu mobile et formulaire), en amélioration progressive. WAI-ARIA est utilisé avec parcimonie. Les pages sont générées à l'avance à partir d'un script ; aucune bibliothèque tierce n'est chargée par le navigateur.</p></section>
+      <section class="decl-section"><h2>Pages ayant fait l'objet des vérifications</h2><h3 lang="fr">Version française</h3><ul class="decl-pages" lang="fr"><li><a href="index.html">Accueil</a></li><li><a href="portfolio.html">Mes projets</a></li><li><a href="contributions.html">Contributions</a></li><li><a href="projets/coderpad.html">Repenser Screen à l'ère de l'IA : du signal de churn à la feuille de route produit</a></li><li><a href="projets/wisecure.html">Une app de vigilance de quartier plus rapide à utiliser en situation d'urgence</a></li><li><a href="projets/ekho.html">Du concept à l'app : charte, design system et MVP pour une nouvelle façon de se rencontrer</a></li><li><a href="projets/dualsun.html">Débloquer une équipe solaire B2B par la recherche et un design system évolutif</a></li><li><a href="projets/airbus.html">Rendre lisible le pilotage des KPIs de production, de la recherche au dashboard</a></li><li><a href="articles/fds-skills.html">FDS Skills : un pipeline de skills Figma design system pour Claude, en libre accès</a></li><li><a href="articles/accessible-font-checker.html">Accessible Font Checker : un outil Figma gratuit pour tester la lisibilité de vos polices</a></li><li><a href="articles/green-by-design.html">Green by Design : quand la sobriété numérique rencontre l'accessibilité</a></li><li><a href="accessibilite.html">Déclaration d'accessibilité</a></li></ul><h3 lang="en">English version</h3><ul class="decl-pages" lang="en"><li><a href="en/index.html">Home<span class="sr-only"> (English)</span></a></li><li><a href="en/portfolio.html">My Work<span class="sr-only"> (English)</span></a></li><li><a href="en/contributions.html">Contributions<span class="sr-only"> (English)</span></a></li><li><a href="en/projects/coderpad.html">Rethinking Screen for the AI era: from a churn signal to a product roadmap<span class="sr-only"> (English)</span></a></li><li><a href="en/projects/wisecure.html">A neighborhood-watch app built to stay fast under pressure<span class="sr-only"> (English)</span></a></li><li><a href="en/projects/ekho.html">From concept to app: brand, design system and MVP for a new way to meet people<span class="sr-only"> (English)</span></a></li><li><a href="en/projects/dualsun.html">Unblocking a solar B2B team with research and a scalable system<span class="sr-only"> (English)</span></a></li><li><a href="en/projects/airbus.html">Making production KPI monitoring readable, from research to dashboard<span class="sr-only"> (English)</span></a></li><li><a href="en/articles/fds-skills.html">FDS Skills: a free Figma design-system skill pipeline for Claude<span class="sr-only"> (English)</span></a></li><li><a href="en/articles/accessible-font-checker.html">Accessible Font Checker: a free Figma tool to test how readable your fonts really are<span class="sr-only"> (English)</span></a></li><li><a href="en/articles/green-by-design.html">Green by Design: When Sustainability meets Accessibility<span class="sr-only"> (English)</span></a></li><li><a href="en/accessibility.html">Accessibility statement<span class="sr-only"> (English)</span></a></li></ul></section>
+      <section class="decl-section"><h2>Retour d'information et contact</h2><p>Si vous ne parvenez pas à accéder à un contenu ou à une fonctionnalité, écrivez-moi à <a href="mailto:estee.desanctis@gmail.com">estee.desanctis@gmail.com</a> en indiquant l'adresse de la page, le problème rencontré et l'outil que vous utilisez (navigateur, lecteur d'écran). Je réponds dans les meilleurs délais et je m'efforce de proposer une alternative accessible.</p></section>
+      <section class="decl-section"><h2>Voies de recours</h2><p>Si votre demande reste sans réponse satisfaisante, vous pouvez écrire au Défenseur des droits : par le <a href="https://formulaire.defenseurdesdroits.fr" target="_blank" rel="noopener">formulaire en ligne<span class="sr-only"> (nouvelle fenêtre)</span></a>, ou par courrier gratuit, sans affranchissement : Défenseur des droits, Libre réponse 71120, 75342 Paris CEDEX 07.</p></section>
+      <section class="decl-section"><h2>Établissement de cette déclaration</h2><p>Déclaration rédigée le 6 octobre 2026 par Estée Desanctis, éditrice du site (EcoDesign, SIRET 893 874 487 00018). Elle sera mise à jour lorsqu'un audit RGAA complet aura été réalisé.</p></section>
+    </article>
+    <p class="back"><a class="back-link" href="index.html"><svg class="icon-svg" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M19 12H5"/><path d="M11 6l-6 6 6 6"/></svg> Accueil</a></p>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <a href="index.html" class="logo flogo"><img src="images/web-logo.svg" alt="EcoDesign — Accueil" width="77" height="40"></a>
+    <p>2026 Tous droits réservés · ECODESIGN · SIRET 893 874 487 00018 · <a href="accessibilite.html" aria-current="page">Déclaration d'accessibilité</a></p>
+  </div>
+</footer>
+<script src="js/site.js" defer></script>
+</body>
+</html>

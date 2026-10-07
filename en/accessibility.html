@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accessibility statement — EcoDesign</title>
+<meta name="description" content="Accessibility statement for Estée Desanctis's portfolio: what has been checked, known limits, contact.">
+<link rel="canonical" href="https://estee-desanctis.github.io/website/en/accessibility.html">
+<link rel="alternate" hreflang="fr" href="https://estee-desanctis.github.io/website/accessibilite.html">
+<link rel="alternate" hreflang="en" href="https://estee-desanctis.github.io/website/en/accessibility.html">
+<link rel="alternate" hreflang="x-default" href="https://estee-desanctis.github.io/website/accessibilite.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Accessibility statement — EcoDesign">
+<meta property="og:description" content="Accessibility statement for Estée Desanctis's portfolio: what has been checked, known limits, contact.">
+<meta property="og:url" content="https://estee-desanctis.github.io/website/en/accessibility.html">
+<link rel="icon" type="image/svg+xml" href="../images/web-favicon.svg">
+<link rel="alternate icon" href="../images/web-favicon.png">
+<link rel="preload" href="../fonts/roboto-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../css/style.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo"><img src="../images/web-logo.svg" alt="EcoDesign — Home" width="77" height="40"></a>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <ul role="list">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="portfolio.html">My Work</a></li>
+        <li><a href="contributions.html">Contributions</a></li>
+        <li><a href="index.html#testimonials">Testimonial</a></li>
+        <li><a href="index.html#contact">Contact me</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <ul class="lang-switch" role="list" aria-label="Language"><li><a href="../accessibilite.html" lang="fr" hreflang="fr"><span aria-hidden="true">FR</span><span class="sr-only">Français</span></a></li><li><a href="accessibility.html" lang="en" hreflang="en" aria-current="true"><span aria-hidden="true">EN</span><span class="sr-only">English</span></a></li></ul>
+      <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-nav"><svg class="icon-svg" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg><span class="sr-only">Menu</span></button>
+    </div>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+
+<section>
+  <div class="wrap">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li aria-current="page">Accessibility statement</li></ol></nav>
+    <article class="decl">
+      <header class="detail-hero centered"><h1>Accessibility statement</h1></header>
+      <p class="decl-lead">This statement applies to Estée Desanctis's portfolio (EcoDesign), available at https://estee-desanctis.github.io/website/. It says what has been checked, what has not been checked yet, and how to report a problem.</p>
+      <section class="decl-section"><h2>Commitment</h2><p>I design accessible digital products and I want my own site to be accessible too. The goal of this site is to meet RGAA 4.1 and WCAG 2.2 at level AA.</p></section>
+      <section class="decl-section"><h2>Conformance status</h2><p>This site has not undergone a full RGAA conformance audit. Its conformance status is therefore not assessed, and I do not claim any conformance rate.</p><p>This document is a transparency statement: it reports partial checks and the fixes they led to. It is not a statement of conformance.</p></section>
+      <section class="decl-section"><h2>What has been checked</h2><p>Checks carried out on 6 October 2026 on the pages listed below:</p><ul><li>automated testing with axe-core 4.14.0 (WCAG 2.0, 2.1 and 2.2 rules, levels A and AA, and best practices): no issue detected by the tool;</li><li>validation of the HTML (html-validate 11.16.2) and CSS code: no errors;</li><li>structure checks by script: a single level-1 heading per page, continuous heading hierarchy, page landmarks, skip link, language of each page, names of links, buttons and form fields, image text alternatives, new-window warnings, internal links and anchors;</li><li>contrast ratios computed with the WCAG formula from the CSS colours: text at least 4.5:1, interface components and focus indicator at least 3:1;</li><li>comparison of the content before and after the site rebuild: no text lost.</li></ul><p>These checks were run on a simulated page (JSDOM), not in a browser. An automated tool only covers part of the RGAA criteria.</p></section>
+      <section class="decl-section"><h2>What has not been checked yet</h2><ul><li>reading with screen readers (NVDA, JAWS, VoiceOver);</li><li>keyboard navigation in a real browser and tab order;</li><li>display at 320 pixels wide, 400% zoom and user-modified text spacing;</li><li>contrast measured on the final rendering (background images, gradients);</li><li>the mobile menu on real devices (iOS, Android).</li></ul></section>
+      <section class="decl-section"><h2>Content not checked or known to be limited</h2><ul><li><strong>PDF documents</strong> (CV and portfolio, in French and English): their accessibility has not been checked.</li><li><strong>Video on the Dualsun page</strong> (wiring tutorial): no soundtrack, with a short description and a caption, but no detailed transcript of the steps.</li><li><strong>Product screenshots</strong>: their text alternatives summarise the content; text inside the images is not always transcribed in full.</li><li><strong>English terms</strong> inside French text (tool names, job titles): they are not all marked with their language. Full quotations in English are.</li><li><strong>Third-party services</strong> (LinkedIn, Behance, Figma, Malt, Medium, Gmail): their accessibility does not depend on this site. The contact form opens Gmail's compose window in a new window; the email address is also shown in plain text on the home page.</li></ul></section>
+      <section class="decl-section"><h2>Accessibility measures in place</h2><ul><li>static HTML pages, readable and navigable without JavaScript;</li><li>skip link, landmark structure, ordered headings, semantic lists;</li><li>language declared per page, French and English versions at separate addresses;</li><li>visible focus indicator, mobile menu usable with the keyboard (state announced, closes with the Escape key);</li><li>relative text sizes, reduced-motion preference respected;</li><li>colours that meet contrast thresholds, fonts hosted on the site;</li><li>video with controls and no autoplay, instead of an animated GIF;</li><li>new-window opening and PDF downloads announced in the link names.</li></ul></section>
+      <section class="decl-section"><h2>Technologies used</h2><p>HTML5, CSS, SVG and light JavaScript (mobile menu and form), as progressive enhancement. WAI-ARIA is used sparingly. Pages are generated in advance by a script; no third-party library is loaded by the browser.</p></section>
+      <section class="decl-section"><h2>Pages covered by the checks</h2><h3 lang="fr">Version française</h3><ul class="decl-pages" lang="fr"><li><a href="../index.html">Accueil<span class="sr-only"> (français)</span></a></li><li><a href="../portfolio.html">Mes projets<span class="sr-only"> (français)</span></a></li><li><a href="../contributions.html">Contributions<span class="sr-only"> (français)</span></a></li><li><a href="../projets/coderpad.html">Repenser Screen à l'ère de l'IA : du signal de churn à la feuille de route produit<span class="sr-only"> (français)</span></a></li><li><a href="../projets/wisecure.html">Une app de vigilance de quartier plus rapide à utiliser en situation d'urgence<span class="sr-only"> (français)</span></a></li><li><a href="../projets/ekho.html">Du concept à l'app : charte, design system et MVP pour une nouvelle façon de se rencontrer<span class="sr-only"> (français)</span></a></li><li><a href="../projets/dualsun.html">Débloquer une équipe solaire B2B par la recherche et un design system évolutif<span class="sr-only"> (français)</span></a></li><li><a href="../projets/airbus.html">Rendre lisible le pilotage des KPIs de production, de la recherche au dashboard<span class="sr-only"> (français)</span></a></li><li><a href="../articles/fds-skills.html">FDS Skills : un pipeline de skills Figma design system pour Claude, en libre accès<span class="sr-only"> (français)</span></a></li><li><a href="../articles/accessible-font-checker.html">Accessible Font Checker : un outil Figma gratuit pour tester la lisibilité de vos polices<span class="sr-only"> (français)</span></a></li><li><a href="../articles/green-by-design.html">Green by Design : quand la sobriété numérique rencontre l'accessibilité<span class="sr-only"> (français)</span></a></li><li><a href="../accessibilite.html">Déclaration d'accessibilité<span class="sr-only"> (français)</span></a></li></ul><h3 lang="en">English version</h3><ul class="decl-pages" lang="en"><li><a href="index.html">Home</a></li><li><a href="portfolio.html">My Work</a></li><li><a href="contributions.html">Contributions</a></li><li><a href="projects/coderpad.html">Rethinking Screen for the AI era: from a churn signal to a product roadmap</a></li><li><a href="projects/wisecure.html">A neighborhood-watch app built to stay fast under pressure</a></li><li><a href="projects/ekho.html">From concept to app: brand, design system and MVP for a new way to meet people</a></li><li><a href="projects/dualsun.html">Unblocking a solar B2B team with research and a scalable system</a></li><li><a href="projects/airbus.html">Making production KPI monitoring readable, from research to dashboard</a></li><li><a href="articles/fds-skills.html">FDS Skills: a free Figma design-system skill pipeline for Claude</a></li><li><a href="articles/accessible-font-checker.html">Accessible Font Checker: a free Figma tool to test how readable your fonts really are</a></li><li><a href="articles/green-by-design.html">Green by Design: When Sustainability meets Accessibility</a></li><li><a href="accessibility.html">Accessibility statement</a></li></ul></section>
+      <section class="decl-section"><h2>Feedback and contact</h2><p>If you cannot access a piece of content or a feature, write to me at <a href="mailto:estee.desanctis@gmail.com">estee.desanctis@gmail.com</a> with the page address, the problem you met and the tool you use (browser, screen reader). I reply as soon as possible and try to offer an accessible alternative.</p></section>
+      <section class="decl-section"><h2>Enforcement procedure</h2><p>If your request does not get a satisfactory answer, you can write to the French Defender of Rights (Défenseur des droits): through the <a href="https://formulaire.defenseurdesdroits.fr" target="_blank" rel="noopener">online form<span class="sr-only"> (opens in a new window)</span></a>, or by free postage-paid mail: Défenseur des droits, Libre réponse 71120, 75342 Paris CEDEX 07, France.</p></section>
+      <section class="decl-section"><h2>How this statement was produced</h2><p>Statement written on 6 October 2026 by Estée Desanctis, publisher of the site (EcoDesign, SIRET 893 874 487 00018). It will be updated once a full RGAA audit has been carried out.</p></section>
+    </article>
+    <p class="back"><a class="back-link" href="index.html"><svg class="icon-svg" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M19 12H5"/><path d="M11 6l-6 6 6 6"/></svg> Home</a></p>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <a href="index.html" class="logo flogo"><img src="../images/web-logo.svg" alt="EcoDesign — Home" width="77" height="40"></a>
+    <p>2026 All rights reserved · ECODESIGN · SIRET 893 874 487 00018 · <a href="accessibility.html" aria-current="page">Accessibility statement</a></p>
+  </div>
+</footer>
+<script src="../js/site.js" defer></script>
+</body>
+</html>
